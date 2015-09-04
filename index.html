@@ -4,6 +4,47 @@
  <meta charset="utf-8"/>
  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
  <title>Young Jimmy</title>
+ <meta itemprop="inLanguage" content="en" />
+</head>
+<body> 
+  <div id="nav">
+    <img id="young_jimmy_logo" src="images/logo_young_jimmy.png"/>
+    <div id="controls">
+      <img id="song_art"/>
+      <div id="song_title"></div>
+      <div id="button_previous" class="button">&#x25C4;&#x25C4;</div>
+      <div id="button_play_pause" class="button">&#x25B6;</div>
+      <div id="button_next" class="button">&#x25C4;&#x25C4;</div>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+
+
+<!-- https%3A//api.soundcloud.com/playlists/5281179 -->
+
+
+  <div class="band">
+    <div class="album_title">DATE NIGHT</div>
+    <img class="album_cover" src="images/date_night_single.jpg"/>
+  </div>
+  
+  <div class="band">
+    <div class="album_title">HOOD ROCK 2</div>
+    <img class="img_main" src="images/young_jimmy_main_384x596.png"/>
+</div>
+
+
+  <div class="spacer"></div>
+
+
+  <video preload="auto" x-webkit-airplay="allow" class="video_main" id="video_boyz">
+    <source src="videos/boyz.mov" type="video/mp4">
+  </video>
+
+  <iframe id="soundcloud_player_iframe" width="480" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F131015586&auto_play=false"></iframe>
+
+
  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400,700' rel='stylesheet' type='text/css'/>
  <link rel="stylesheet" type="text/css" href="style.css"/>
  <script src="http://code.jquery.com/jquery.min.js"></script>
@@ -11,31 +52,5 @@
  <script src="http://connect.soundcloud.com/sdk.js"></script>
  <script src="http://w.soundcloud.com/player/api.js"></script>
  <script src="code.js"></script>
- <meta itemprop="inLanguage" content="en" />
-</head>
-<body> 
-  <div id="nav">
-    <img src="images/logo_young_jimmy.png"/>
-
-    <div id="controls">
-      <div id="button_previous" class="button">&#x25C4;&#x25C4;</div>
-      <div id="button_play_pause" class="button">&#x25B6;</div>
-      <div id="button_next" class="button">&#x25C4;&#x25C4;</div>
-    </div>
-
-  </div>
-  <div class="spacer"></div>
-
-
-  <iframe id="soundcloud_player_iframe" width="480" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/5281179&auto_play=false"></iframe>
-
-  
-  <div class="album_title">HOOD &nbsp; &nbsp; &nbsp; &nbsp;ROCK 2</div>
-  <div class="band"><img class="img_main" src="images/young_jimmy_main_384x596.png"/></div>
-  <div class="spacer"></div>
-
-  <video preload="auto" x-webkit-airplay="allow" class="video_main" id="video_boyz">
-    <source src="videos/boyz.mov" type="video/mp4">
-  </video>
 </body>
 </html>
