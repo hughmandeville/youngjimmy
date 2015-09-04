@@ -63,7 +63,31 @@ html, body {
  color: #4D90FE;
 }
 
-
+#controls {
+ position: fixed;
+ right: 20px;
+ top: 10px;
+}
 .button {
+ font-family: "courier new", courier, monospace;
  cursor: pointer;
+ display: inline-block;
+ vertical-align: middle;
+ horizontal-align: center;
+ line-height: 20px;
+}
+.button:hover {
+ color: red;
+}
+#button_play_pause {
+ width: 32px;
+ margin-left: 5px;
+ text-align: center;
+ font-size: 18px;
+}
+#button_next, #button_previous {
+ font-size: 16px;
+}
+#button_next {
+   transform: scale(-1, 1);
 }
