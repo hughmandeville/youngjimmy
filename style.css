@@ -1,4 +1,8 @@
 @font-face {
+  font-family: "Easycore";
+  src: url(fonts/easycore.ttf) format("truetype");
+}
+@font-face {
   font-family: "Edition";
   src: url(fonts/edition.tff) format("truetype");
 }
@@ -6,7 +10,6 @@
   font-family: "Friday Lovers";
   src: url(fonts/friday_lovers.otf) format("opentype");
 }
-
 
 html, body {
   background: #000000;
@@ -33,6 +36,7 @@ a {
   z-index: 0;
 }
 
+
 .col2-1, .col2-2 {
  display: inline-block;
  vertical-align: top;
@@ -40,12 +44,16 @@ a {
  margin: 0;
 }
 
-.col2 {
- width: 645px;
+.col1, .col1-1, .col2 {
+ width: 800px;
  margin: 0 auto;
  padding: 0;
  vertical-align: top;
 }
+.col1 .promo_image {
+ width: 800px;
+}
+
 .col2-1 {
  width: 300px;
  height: 300px;
@@ -83,35 +91,59 @@ a {
 }
 
 .album_title {
-  font-family: Edition, arial;
   font-size: 64px;
   color: #ffffff;
   z-index: 2;
   text-align: center;
   margin-bottom: 10px;
 }
+.album_date_night {
+  font-family: Easycore, Edition, arial;
+}
+.album_hood_rock_2 {
+  font-family: Edition, arial;
+}
 .col2-2 {
  font-family: arial;
  font-size: 24px;
  line-height: 1.5em;
 }
-.col2-2 .album_title {
+.col2 .album_title {
+ font-family:  verdana, tahoma arial;
  font-size: 24px;
- font-family: arial;
 }
+.album_date_night .album_title {
+ font-family:  verdana, tahoma arial;
+} 
+
 .album_artist {
- color: #d0d0d0;
+ color: red;
+ font-family:  verdana, tahoma arial;
+ font-size: 20px;
 }
 .album_label {
+ font-family: verdana, tahoma, arial;
  font-size: 18px;
  color: #a0a0a0;
 }
 .album_date {
+ font-family:  verdana, tahoma arial;
  font-size: 18px;
  font-weight: 600;
 }
+.alt_chars {
+ font-family: verdana, tahoma arial;
+ font-style: italic;
+}
 
+#footer {
+   margin: 40px auto;
+   font-family: 'Friday Lovers', arial;
+   font-size: 12px;
+   text-align: center;
+   color: #a0a0a0;
 
+}
 
 .audio_button {
  font-family: serif;
@@ -159,7 +191,7 @@ a {
 #song_title {
   display: inline-block;
   font-weight: 200;
-  font-family:  Edition, 'courier new', monospace;
+  font-family:  Easycore, Edition, 'courier new', monospace;
   margin-right: 20px;
   line-height: 20px;
   font-size: 18pt;
@@ -178,4 +210,11 @@ a {
 #nav {
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.caption {
+ font-size: 14px;
+ font-family: tahoma, verdana, helvetica;
+ color: #a0a0a0;
+ padding: 0 10px;
 }
