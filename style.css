@@ -37,42 +37,65 @@ a {
 }
 
 
-.col2-1, .col2-2 {
- display: inline-block;
+.one-col, .two-col, .three-col {
  vertical-align: top;
  padding: 0;
- margin: 0;
-}
-
-.col1, .col2 {
  margin: 0 auto;
- padding: 0;
- vertical-align: top;
 }
 
-.col2 {
- width: 880px;
+.one-col, .three-col {
+ width: 900px;
 }
-
-.col1, .col1 .promo_image {
+.two-col {
  width: 800px;
 }
 
-.col2-1 {
+.two-col-1, .two-col-2 {
+ display: inline-block;
+ vertical-align: top;
+ padding: 0;
+ margin: 0 auto;
+}
+
+
+.one-col .promo_image {
+ width: 100%;
+}
+
+.two-col-1 {
  width: 300px;
  height: 300px;
 }
-.col2-1 .album_cover {
+.two-col-1 .album_cover {
  padding: 0;
  margin:0;
  width: 300px;
- height: 315px;
+ height: 300px;
 }
 
-.col2-2 {
+.two-col-2 {
  padding: 0 20px;
- width: 500px;
+ width: 450px;
  height: 300px;
+}
+
+.three-col {
+  vertical-align: center;
+  font-family: 'Friday Lovers', arial;
+  font-size: 22pt;
+  line-height: 2.5em;
+}
+.three-col-1,.three-col-3 {
+  vertical-align: top;
+  display: inline-block;
+  width: 250px;
+  text-align: center;
+  margin-top: 80px;
+}
+.three-col-2 {
+  vertical-align: top;
+  display: inline-block;
+  width: 385px;
 }
 
 
@@ -107,12 +130,12 @@ a {
 .album_hood_rock_2 {
   font-family: Edition, arial;
 }
-.col2-2 {
+.two-col-2 {
  font-family: arial;
  font-size: 24px;
  line-height: 1.5em;
 }
-.col2 .album_title {
+.two-col .album_title {
  font-family:  verdana, tahoma arial;
  font-size: 24px;
 }
@@ -147,19 +170,6 @@ a {
    text-align: center;
    color: #a0a0a0;
 
-}
-
-.audio_button {
- font-family: serif;
- position: inline-block;
- font-weight: 400;
- text-align: right;
- cursor: pointer;
-  padding: 0 4px;
-  float: left;
-}
-.audio_button:hover {
- color: #4D90FE;
 }
 
 #controls {
@@ -225,7 +235,6 @@ a {
 }
 
 
-
 .table_tracks {
  font-family:  Easycore, Edition, arial;
  font-size: 24pt;
@@ -241,12 +250,27 @@ a {
 }
 .table_tracks tr:hover {
   background: #222;
-}
-.col_action {
- width: 60px;
- text-align: center;
+  color: red;
 }
 
 .row_track {
  cursor: pointer;
+}
+.track {
+ cursor: pointer;
+}
+.track:hover {
+ color: red;
+}
+
+@media all and (max-width: 449px) {
+}
+
+@media all and (min-width: 450px) and (max-width: 767px) {
+}
+
+@media all and (min-width: 768px) and (max-width: 1019px) {
+}
+
+@media all and (min-width: 900px) {
 }

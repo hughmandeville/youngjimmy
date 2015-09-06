@@ -69,7 +69,7 @@ function setup_soundcloud_player() {
         update_song_info();
     });
 
-    $(".row_track").on("click", function() {
+    $(".track").on("click", function() {
         $(".col_action").html("play");
         $(this).find(".col_action").html("pause");
         sc_widget.next($(this).data("track"));
