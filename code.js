@@ -33,10 +33,14 @@ $(function() {
     });
     $("#button_previous").on("click", function() {
         sc_widget.prev();
+        $("#button_play_pause").html("&#9612;&#9612;");
+        audio_state = "playing";
         update_song_info();
     });
     $("#button_next").on("click", function() {
         sc_widget.next();
+        $("#button_play_pause").html("&#9612;&#9612;");
+        audio_state = "playing";
         update_song_info();
     });
 

@@ -44,13 +44,17 @@ a {
  margin: 0;
 }
 
-.col1, .col1-1, .col2 {
- width: 800px;
+.col1, .col2 {
  margin: 0 auto;
  padding: 0;
  vertical-align: top;
 }
-.col1 .promo_image {
+
+.col2 {
+ width: 880px;
+}
+
+.col1, .col1 .promo_image {
  width: 800px;
 }
 
@@ -67,7 +71,7 @@ a {
 
 .col2-2 {
  padding: 0 20px;
- width: 300px;
+ width: 500px;
  height: 300px;
 }
 
@@ -217,4 +221,23 @@ a {
  font-family: tahoma, verdana, helvetica;
  color: #a0a0a0;
  padding: 0 10px;
+}
+
+
+
+.table_tracks {
+ font-family:  Easycore, Edition, arial;
+ font-size: 24pt;
+ color: #d0d0d0;
+}
+.table_tracks td {
+   padding: 0 10px;
+   border: 1px solid #333;
+   border-collapse: collapse;
+}
+.table_tracks, .table_tracks tr, .table_tracks td, .table_tracks th {
+   border-collapse: collapse;
+}
+.table_tracks tr:hover {
+  background: #222;
 }
