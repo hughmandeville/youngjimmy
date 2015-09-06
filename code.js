@@ -8,15 +8,40 @@
  */
 var audio_state = "paused";
 var sc_widget = null;
+var rotate_covers_timer = null;
 
 $(function() {
+
+    setup_soundcloud_player();
+
+    rotate_covers_timer = setInterval(rotate_covers, 10000);
+
+    /* play or pause video depending on scroll position */
+    $(document).on( 'scroll', function(){
+        var boyz_top = $("#video_boyz").position().top;
+        var boyz_bottom = boyz_top + $("#video_boyz").height();
+        var document_top = $(document).scrollTop();
+
+        if ((document_top >= (boyz_top - 50)) && (document_top <= (boyz_bottom + 50))) {
+            $("#video_boyz").get(0).play();
+        } else {
+            $("#video_boyz").get(0).pause();
+        }
+    });
+
+});
+
+
+/**
+ * Setup the SoundCloud player.
+ */
+function setup_soundcloud_player() {
     var sc_iframe = document.querySelector('#soundcloud_player_iframe');
     sc_widget = SC.Widget(sc_iframe);
 
     sc_widget.bind(SC.Widget.Events.READY, function() {
         update_song_info();
     });
-
 
     $("#button_play_pause").on("click", function() {
         update_song_info();
@@ -44,28 +69,36 @@ $(function() {
         update_song_info();
     });
 
-
-    
-    $(document).on( 'scroll', function(){
-        var boyz_top = $("#video_boyz").position().top;
-        var boyz_bottom = boyz_top + $("#video_boyz").height();
-        var document_top = $(document).scrollTop();
-
-        if ((document_top >= (boyz_top - 50)) && (document_top <= (boyz_bottom + 50))) {
-            $("#video_boyz").get(0).play();
-        } else {
-            $("#video_boyz").get(0).pause();
-        }
+    $(".row_track").on("click", function() {
+        $(".col_action").html("play");
+        $(this).find(".col_action").html("pause");
+        sc_widget.next($(this).data("track"));
+        $("#button_play_pause").html("&#9612;&#9612;");
+        audio_state = "playing";
+        update_song_info();
     });
 
-});
+}
+
+// get state from player and figure what to set play/pause buttons/labels to
+function play_pause_display() {
+    $(".col_action").html("play");
+    //$(this).find(".col_action").html("pause");
+}
 
 
+function rotate_covers() {
+    if ($("#hood_rock_2_cover").attr("src") == "images/hood_rock_2_front_400x400.png") {
+        $("#hood_rock_2_cover").attr("src", "images/hood_rock_2_back_400x400.png");
+    } else {
+        $("#hood_rock_2_cover").attr("src", "images/hood_rock_2_front_400x400.png");
+    }
+}
 
 
 function update_song_info() {
     sc_widget.getCurrentSound(function(sound) {
-        $("#song_title").html("<a href=\"" + sound.permalink + "\">" + sound.title + "</a>");
+        $("#song_title").html("<a href=\"https://soundcloud.com/cheezcakekidzrecords/" + sound.permalink + "\">" + sound.title + "</a>");
 
         $("#nav").css("background-image", "linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9) ), url('" + sound.waveform_url + "')");
 

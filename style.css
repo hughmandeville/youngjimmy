@@ -203,7 +203,8 @@ a {
   vertical-align: top;
 }
 #soundcloud_player_iframe {
-  display: none;
+  height: 20px; 
+  width: 100%;
 }
 #song_art {
  height: 16px;
@@ -240,4 +241,12 @@ a {
 }
 .table_tracks tr:hover {
   background: #222;
+}
+.col_action {
+ width: 60px;
+ text-align: center;
+}
+
+.row_track {
+ cursor: pointer;
 }
