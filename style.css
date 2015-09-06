@@ -118,17 +118,23 @@ a {
 }
 
 .album_title {
-  font-size: 64px;
+  font-size: 60pt;
   color: #ffffff;
   z-index: 2;
   text-align: center;
   margin-bottom: 10px;
 }
 .album_date_night {
+  font-size: 70pt;
   font-family: Easycore, Edition, arial;
 }
 .album_hood_rock_2 {
+  font-size: 60pt;
   font-family: Edition, arial;
+}
+.album_hood_rock {
+  font-size: 40pt;
+  font-family: Charcoal, Impact, Sans-Serif;
 }
 .two-col-2 {
  font-family: arial;
