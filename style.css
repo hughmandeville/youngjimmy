@@ -47,7 +47,7 @@ a {
  width: 900px;
 }
 .two-col {
- width: 800px;
+  width: 750px;
 }
 
 .two-col-1, .two-col-2 {
@@ -75,8 +75,7 @@ a {
 
 .two-col-2 {
  padding: 0 20px;
- width: 450px;
- height: 300px;
+ width: 400px;
 }
 
 .three-col {
