@@ -13,7 +13,7 @@ var rotate_covers_timer = null;
 $(function() {
     setup_soundcloud_player();
 
-    rotate_covers_timer = setInterval(rotate_covers, 10000);
+    rotate_images_timer = setInterval(rotate_images, 10000);
 
     /* play or pause video depending on scroll position */
     $(document).on( 'scroll', function(){
@@ -94,11 +94,16 @@ function play_pause_display() {
 }
 
 
-function rotate_covers() {
+function rotate_images() {
     if ($("#hood_rock_2_cover").attr("src") == "images/hood_rock_2_front_400x400.png") {
         $("#hood_rock_2_cover").attr("src", "images/hood_rock_2_back_400x400.png");
     } else {
         $("#hood_rock_2_cover").attr("src", "images/hood_rock_2_front_400x400.png");
+    }
+    if ($("#promo_image").attr("src") == "images/hood_rock_2_promo.jpg") {
+        $("#promo_image").attr("src", "images/date_night_promo.jpg");
+    } else {
+        $("#promot_image").attr("src", "images/hood_rock_2_promo.jpg");
     }
 }
 

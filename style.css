@@ -58,13 +58,12 @@ a {
 }
 
 
-.one-col .promo_image {
+.one-col #promo_image {
  width: 100%;
 }
 
 .two-col-1 {
  width: 300px;
- height: 300px;
 }
 .two-col-1 .album_cover {
  padding: 0;
@@ -135,7 +134,7 @@ a {
   font-size: 40pt;
   font-family: Charcoal, Impact, Sans-Serif;
 }
-.two-col-2 {
+.two-col {
  font-family: arial;
  font-size: 24px;
  line-height: 1.5em;
@@ -294,7 +293,7 @@ a {
 }
 .button_close {
   font-size: 20pt;
-  font-family: verdana, tahoma, arial;
+  font-family: "Helvetica Neue","Segoe UI",Helvetica,Arial,"Lucida Grande",sans-serif;
   font-weight: 600;
   cursor: pointer;
   vertical-align: center;
