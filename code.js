@@ -11,7 +11,6 @@ var sc_widget = null;
 var rotate_covers_timer = null;
 
 $(function() {
-
     setup_soundcloud_player();
 
     rotate_covers_timer = setInterval(rotate_covers, 10000);
@@ -29,6 +28,14 @@ $(function() {
         }
     });
 
+    $("#button_xray").on("click", function() {
+        if ($("#modal_jaw").css("display") == "none") {
+            $("#modal_jaw").css("display","block");
+        }
+    });
+    $("#modal_jaw").on("click", function() {   
+        $("#modal_jaw").css("display","none");
+    });
 });
 
 
