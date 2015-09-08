@@ -103,7 +103,7 @@ function rotate_images() {
     if ($("#promo_image").attr("src") == "images/hood_rock_2_promo.jpg") {
         $("#promo_image").attr("src", "images/date_night_promo.jpg");
     } else {
-        $("#promot_image").attr("src", "images/hood_rock_2_promo.jpg");
+        $("#promo_image").attr("src", "images/hood_rock_2_promo.jpg");
     }
 }
 
