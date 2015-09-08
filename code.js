@@ -79,7 +79,7 @@ function setup_soundcloud_player() {
     $(".track").on("click", function() {
         $(".col_action").html("play");
         $(this).find(".col_action").html("pause");
-        sc_widget.next($(this).data("track"));
+        sc_widget.skip($(this).data("track"));
         $("#button_play_pause").html("&#9612;&#9612;");
         audio_state = "playing";
         update_song_info();
