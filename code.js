@@ -56,7 +56,6 @@ function setup_soundcloud_player() {
         update_song_info();
     });
 
-
     
     $("#button_play_pause").on("click", function() {
         update_song_info();

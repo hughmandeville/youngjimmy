@@ -266,6 +266,9 @@ a {
 .track:hover {
  color: red;
 }
+.track_title {
+  min-width: 300px;
+}
 
 @media all and (max-width: 449px) {
 }
