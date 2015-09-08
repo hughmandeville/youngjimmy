@@ -49,7 +49,15 @@ function setup_soundcloud_player() {
     sc_widget.bind(SC.Widget.Events.READY, function() {
         update_song_info();
     });
+    sc_widget.bind(SC.Widget.Events.FINISH, function() {
+        update_song_info();
+    });
+    sc_widget.bind(SC.Widget.Events.PLAY, function() {
+        update_song_info();
+    });
 
+
+    
     $("#button_play_pause").on("click", function() {
         update_song_info();
         // XXX: instead of state could check isPaused
