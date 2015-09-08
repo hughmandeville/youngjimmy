@@ -1,5 +1,5 @@
 # youngjimmy
-Source code for the Young Jimmy website.
+Source code for the Young Jimmy website [www.youngjimmy.com](http://www.youngjimmy.com).
 
 Files and Directories
 =====================
