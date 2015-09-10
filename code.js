@@ -109,6 +109,10 @@ function rotate_images() {
     }
     if ($("#promo_image").attr("src") == "images/hood_rock_2_promo.jpg") {
         $("#promo_image").attr("src", "images/date_night_promo.jpg");
+    } else if ($("#promo_image").attr("src") == "images/date_night_promo.jpg") {
+        $("#promo_image").attr("src", "images/hood_rock_2_promo_2.jpg");
+    } else if ($("#promo_image").attr("src") == "images/hood_rock_promo_2.jpg") {
+        $("#promo_image").attr("src", "images/hood_rock_2_promo_.jpg");
     } else {
         $("#promo_image").attr("src", "images/hood_rock_2_promo.jpg");
     }
