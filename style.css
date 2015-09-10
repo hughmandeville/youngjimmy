@@ -148,7 +148,7 @@ a {
 } 
 
 .album_artist {
- color: red;
+ color: #feef00;
  font-family:  verdana, tahoma arial;
  font-size: 20px;
 }
@@ -190,7 +190,7 @@ a {
  line-height: 20px;
 }
 .button:hover {
- color: red;
+ color: #feef00;
 }
 #button_play_pause {
  width: 32px;
@@ -254,7 +254,7 @@ a {
 }
 .table_tracks tr:hover {
   background: #222;
-  color: red;
+  color: #feef00;
 }
 .table_tracks tr:hover .button_itunes {
   background: #222;
@@ -269,7 +269,7 @@ a {
  cursor: pointer;
 }
 .track:hover {
- color: red;
+ color: #feef00;
 }
 .track_title {
   min-width: 300px;
@@ -314,7 +314,7 @@ a {
   cursor: pointer;
 }
 #button_xray:hover {
-  color: red;
+  color: #feef00;
   text-decoration: underline;
 }
 .button_itunes {
