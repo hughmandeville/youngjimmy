@@ -9,6 +9,8 @@
 var audio_state = "paused";
 var sc_widget = null;
 var rotate_covers_timer = null;
+var checking_scroll = false;
+var checking_doc_top = 0;
 
 $(function() {
     setup_soundcloud_player();
@@ -18,29 +20,18 @@ $(function() {
     // the video is 1920x1080
     var width = $(window).width();
     var height = Math.ceil((width / 1920) * 1080);
-    $("#video_boyz").css("height", height);
-    $("#video_boyz").css("width", width);
+    $("#vimeo_iframe").css("height", height);
+    $("#vimeo_iframe").css("width", width);
     $(window).resize(function() {
         var width = $(window).width();
         var height = Math.ceil((width / 1920) * 1080);
-        $("#video_boyz").css("height", height);
-        $("#video_boyz").css("width", width);
+        $("#vimeo_iframe").css("height", height);
+        $("#vimeo_iframe").css("width", width);
     });
+
     
     /* play or pause video depending on scroll position */
-    $(document).on( 'scroll', function(){
-        var boyz_top = $("#video_boyz").position().top;
-        var boyz_bottom = boyz_top + $("#video_boyz").height();
-        var document_top = $(document).scrollTop();
-
-        /*
-        if ((document_top >= (boyz_top - 50)) && (document_top <= (boyz_bottom + 50))) {
-            $("#video_boyz").get(0).play();
-        } else {
-            $("#video_boyz").get(0).pause();
-        }
-        */
-    });
+    $(document).on('scroll', check_scroll);
 
     $("#button_xray").on("click", function() {
         if ($("#modal_jaw").css("display") == "none") {
@@ -51,6 +42,38 @@ $(function() {
         $("#modal_jaw").css("display","none");
     });
 });
+
+
+function check_scroll() {
+    if (checking_scroll == true) {
+        return;
+    }        
+    checking_scroll = true;
+    
+    var vimeo_top = $("#vimeo_iframe").position().top;
+    var vimeo_bottom = vimeo_top + $("#vimeo_iframe").height();
+    var document_top = $(document).scrollTop();
+
+    checking_doc_top = document_top;
+    
+    var vimeo_iframe = $("#vimeo_iframe");
+    if ((document_top >= (vimeo_top - 50)) && (document_top <= (vimeo_bottom + 50))) {
+        //"https://player.vimeo.com";
+        $("#button_play_pause").html("&#x25B6;");
+        audio_state = "paused";
+        sc_widget.pause();
+        vimeo_iframe[0].contentWindow.postMessage({method: "play"}, "*");
+    } else {
+        vimeo_iframe[0].contentWindow.postMessage({method: "pause"}, "*");
+    }
+    window.setTimeout(function() {
+        checking_scroll = false;
+        var document_top = $(document).scrollTop();
+        if (checking_doc_top != document_top) {
+            check_scroll();
+        }
+    }, 1000);        
+}
 
 
 /**
