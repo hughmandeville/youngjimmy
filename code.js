@@ -49,7 +49,7 @@ function check_scroll() {
         return;
     }        
     checking_scroll = true;
-    
+
     var vimeo_top = $("#vimeo_iframe").position().top;
     var vimeo_bottom = vimeo_top + $("#vimeo_iframe").height();
     var document_top = $(document).scrollTop();
@@ -58,7 +58,6 @@ function check_scroll() {
     
     var vimeo_iframe = $("#vimeo_iframe");
     if ((document_top >= (vimeo_top - 50)) && (document_top <= (vimeo_bottom + 50))) {
-        //"https://player.vimeo.com";
         $("#button_play_pause").html("&#x25B6;");
         audio_state = "paused";
         sc_widget.pause();
@@ -153,6 +152,12 @@ function rotate_images() {
     } else {
         $("#promo_image").attr("src", "images/hood_rock_2_promo.jpg");
     }
+    if ($("#hood_rock_cover").attr("src") == "images/hood_rock_front_400x400.png") {
+        $("#hood_rock_cover").attr("src", "images/hood_rock_back_400x400.png");
+    } else {
+        $("#hood_rock_cover").attr("src", "images/hood_rock_front_400x400.png");
+    }
+
 }
 
 
