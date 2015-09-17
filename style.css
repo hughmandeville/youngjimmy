@@ -312,7 +312,7 @@ a {
   cursor: pointer;
 }
 .button_close:hover {
-  color: red;
+ color: #feef00;
 }
 #button_xray {
   cursor: pointer;
