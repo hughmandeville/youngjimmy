@@ -17,7 +17,10 @@ Files and Directories
     style.css                    - Main style sheet.
 
 
-Analytics
-=========
 
+Links
+=====
 [Google Analytics](http://www.google.com/analytics/)
+[Google Web Master Tools](https://www.google.com/webmasters/tools/home)
+[Open Graph Object Debugger](https://developers.facebook.com/tools/debug/og/object/)
+[Twitter Card Validator](https://cards-dev.twitter.com/validator)
