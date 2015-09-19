@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /stats
+Sitemap: http://youngjimmy.com/sitemap.xml
