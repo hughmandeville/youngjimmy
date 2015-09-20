@@ -36,20 +36,18 @@ a {
   z-index: 0;
 }
 
-#nav_icons {
- position: fixed;
- left: 20px;
- top: 20px;
+#social_links {
+  //margin: 0 auto;
+  position: fixed;
+  top: 15px;
+  left: 10px;
+ z-index: 103;
 }
-.nav_icon {
- height: 32px;
-}
-
-#socail_links {
-  display: block;
-  margin: 0 auto;  
-  z-index: 0;
-  border: 1px solid red;
+.social_link {
+ display: inline-block;
+  width: 30px;
+ margin-right: 20px;
+ vertical-align: middle;
 }
 
 
