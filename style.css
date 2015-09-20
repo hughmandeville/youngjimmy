@@ -36,6 +36,23 @@ a {
   z-index: 0;
 }
 
+#nav_icons {
+ position: fixed;
+ left: 20px;
+ top: 20px;
+}
+.nav_icon {
+ height: 32px;
+}
+
+#socail_links {
+  display: block;
+  margin: 0 auto;  
+  z-index: 0;
+  border: 1px solid red;
+}
+
+
 
 .one-col, .two-col, .three-col {
  vertical-align: top;
