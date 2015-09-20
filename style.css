@@ -36,88 +36,6 @@ a {
   z-index: 0;
 }
 
-#social_links {
-  //margin: 0 auto;
-  position: fixed;
-  top: 15px;
-  left: 10px;
- z-index: 103;
-}
-.social_link {
- display: inline-block;
-  width: 30px;
- margin-right: 20px;
- vertical-align: middle;
-}
-
-
-
-.one-col, .two-col, .three-col {
- vertical-align: top;
- padding: 0;
- margin: 0 auto;
-}
-
-.one-col, .three-col {
- width: 900px;
-}
-.two-col {
-  width: 750px;
-}
-
-.two-col-1, .two-col-2 {
- display: inline-block;
- vertical-align: top;
- padding: 0;
- margin: 0 auto;
-}
-
-
-.one-col #promo_image {
- width: 100%;
-}
-
-.two-col-1 {
- width: 300px;
-}
-.two-col-1 .album_cover {
- padding: 0;
- margin:0;
- width: 300px;
- height: 300px;
-}
-
-.two-col-2 {
- padding: 0 20px;
- width: 400px;
-}
-
-.three-col {
-  vertical-align: center;
-  font-family: 'Friday Lovers', arial;
-  font-size: 22pt;
-  line-height: 2.5em;
-}
-.three-col-1,.three-col-3 {
-  vertical-align: top;
-  display: inline-block;
-  width: 250px;
-  text-align: center;
-  margin-top: 80px;
-}
-.three-col-2 {
-  vertical-align: top;
-  display: inline-block;
-  width: 385px;
-}
-
-
-.img_main {
-  display: block; 
-  width: 384px;
-  margin: 0 auto;
-}
-
 .video_main {
  position; relative;
  border: 0;
@@ -195,36 +113,17 @@ a {
 
 }
 
-#controls {
- position: fixed;
- right: 20px;
- top: 20px;
-}
 .button {
- font-family: "courier new", courier, monospace;
  cursor: pointer;
  display: inline-block;
  vertical-align: middle;
  horizontal-align: center;
- line-height: 20px;
-}
-.button:hover {
- color: #feef00;
 }
 #button_play_pause {
- width: 32px;
  margin-left: 5px;
- text-align: center;
- font-size: 18px;
 }
-#button_next, #button_previous {
- font-size: 16px;
-}
-#button_next {
- -ms-transform: scale(-1, 1);
- -webkit-transform: scale(-1, 1);
- transform: scale(-1, 1);
-}
+
+
 #song_title {
   display: inline-block;
   font-weight: 200;
@@ -294,16 +193,146 @@ a {
   min-width: 300px;
 }
 
-@media all and (max-width: 449px) {
+@media all and (max-width: 479px) {
+  #song_title {
+	display: none;
+  }
+  #controls {
+	position: relative;
+	display: block;
+	text-align: center;
+	margin-top: 100px;
+  }
+  #social_links {
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+  }
+  .social_link {
+	display: inline-block;
+	width: 30px;
+	margin-right: 20px;
+	vertical-align: middle;
+  }
+
+  .one-col, .three-col {
+	width: 100%;
+  }
+  .two-col {
+    display: none;
+  }
+  .three-col {
+	position: relative;
+    display: block;
+	width: 100%;
+  }
+  .three-col-2 {
+	width: 100%;
+  }
+  .img_main {
+	width: 100%;
+  }
+  #promo_image {	
+	width: 100%;
+  }
+  .three-col-1,.three-col-3 {
+	display: none;
+  }
+
 }
 
-@media all and (min-width: 450px) and (max-width: 767px) {
-}
 
 @media all and (min-width: 768px) and (max-width: 1019px) {
-}
 
-@media all and (min-width: 900px) {
+@media all and (min-width: 480px) {
+  #controls {
+	position: fixed;
+	right: 20px;
+	top: 20px;
+	z-index: 105;
+  }
+  #social_links {
+	position: fixed;
+	top: 15px;
+	left: 10px;
+	z-index: 103;
+  }
+  .social_link {
+	display: inline-block;
+	width: 30px;
+	margin-right: 20px;
+	vertical-align: middle;
+  }
+
+  #promo_image {	
+	margin-top: 100px;
+  }
+
+  .one-col, .three-col {
+	width: 900px;
+  }
+  .two-col {
+	width: 750px;
+  }
+  .two-col-1, .two-col-2 {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0;
+	margin: 0 auto;
+  }
+  .two-col-1 {
+	width: 300px;
+  }
+  .two-col-1 .album_cover {
+	padding: 0;
+	margin:0;
+	width: 300px;
+	height: 300px;
+  }
+  
+  .two-col-2 {
+	padding: 0 20px;
+	width: 400px;
+  }
+  
+  .three-col {
+	vertical-align: center;
+	font-family: 'Friday Lovers', arial;
+	font-size: 22pt;
+	line-height: 2.5em;
+  }
+  .three-col-1,.three-col-3 {
+	vertical-align: top;
+	display: inline-block;
+	width: 250px;
+	text-align: center;
+	margin-top: 80px;
+  }
+  .three-col-2 {
+	vertical-align: top;
+	display: inline-block;
+	width: 385px;
+  }  
+  .one-col, .two-col, .three-col {
+	vertical-align: top;
+	padding: 0;
+	margin: 0 auto;
+  }  
+  .two-col-1, .two-col-2 {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0;
+	margin: 0 auto;
+  }
+  .one-col #promo_image {
+	width: 100%;
+  }
+  .img_main {
+	display: block; 
+	width: 384px;
+	margin: 0 auto;
+  }
 }
 
 #modal_jaw {
@@ -324,7 +353,6 @@ a {
   font-weight: 600;
   cursor: pointer;
   vertical-align: center;
-  cursor: pointer;
 }
 .button_close:hover {
  color: #feef00;
