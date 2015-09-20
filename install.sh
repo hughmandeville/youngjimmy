@@ -8,6 +8,7 @@ scp style.css youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp images/*jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/*png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/young_jimmy_og.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
+#scp images/young_jimmy_120x120.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 
 
 
