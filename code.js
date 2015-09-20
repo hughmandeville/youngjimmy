@@ -3,7 +3,6 @@
  *
  * To Do
  *  - Have playlist loop.
- *  - Fix play/pause buttons on iphone.
  *  - Make look good on iphone.
  */
 var audio_state = "paused";
@@ -58,7 +57,7 @@ function check_scroll() {
     
     var vimeo_iframe = $("#vimeo_iframe");
     if ((document_top >= (vimeo_top - 50)) && (document_top <= (vimeo_bottom + 50))) {
-        $("#button_play_pause").html("&#x25B6;");
+        $("#button_play_pause").attr("src","images/button_play.png");
         audio_state = "paused";
         sc_widget.pause();
         vimeo_iframe[0].contentWindow.postMessage({method: "play"}, "*");
@@ -97,24 +96,24 @@ function setup_soundcloud_player() {
         update_song_info();
         // XXX: instead of state could check isPaused
         if (audio_state == "playing") {
-            $("#button_play_pause").html("&#x25B6;");
+            $("#button_play_pause").attr("src","images/button_play.png");
             audio_state = "paused";
             sc_widget.pause();
         } else {
-            $("#button_play_pause").html("&#9612;&#9612;");
+            $("#button_play_pause").attr("src","images/button_pause.png");
             audio_state = "playing";
             sc_widget.play();
         }
     });
     $("#button_previous").on("click", function() {
         sc_widget.prev();
-        $("#button_play_pause").html("&#9612;&#9612;");
+        $("#button_play_pause").attr("src","images/button_pause.png");
         audio_state = "playing";
         update_song_info();
     });
     $("#button_next").on("click", function() {
         sc_widget.next();
-        $("#button_play_pause").html("&#9612;&#9612;");
+        $("#button_play_pause").attr("src","images/button_pause.png");
         audio_state = "playing";
         update_song_info();
     });
@@ -123,7 +122,7 @@ function setup_soundcloud_player() {
         $(".col_action").html("play");
         $(this).find(".col_action").html("pause");
         sc_widget.skip($(this).data("track"));
-        $("#button_play_pause").html("&#9612;&#9612;");
+        $("#button_play_pause").attr("src","images/button_pause.png");
         audio_state = "playing";
         update_song_info();
     });
