@@ -11,9 +11,17 @@ var rotate_covers_timer = null;
 var checking_scroll = false;
 var checking_doc_top = 0;
 
-$(function() {
+$(function() {    
     setup_soundcloud_player();
 
+    // Having issues controlling SoundCloud player on iOS so hiding the control buttons on iOS.
+    // And increasing the SoundCloud player's height at the bottom of the page.
+    if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+        $("#controls").css("display", "none");
+        $("#soundcloud_player_iframe").css("height","400px");
+        $("#social_links").css("margin-top", "100px");
+    }
+        
     rotate_images_timer = setInterval(rotate_images, 10000);
 
     // the video is 1920x1080
@@ -30,7 +38,7 @@ $(function() {
 
     
     /* play or pause video depending on scroll position */
-    $(document).on('scroll', check_scroll);
+    //$(document).on('scroll', check_scroll);
 
     $("#button_xray").on("click", function() {
         if ($("#modal_jaw").css("display") == "none") {
@@ -81,6 +89,10 @@ function setup_soundcloud_player() {
     var sc_iframe = document.querySelector('#soundcloud_player_iframe');
     sc_widget = SC.Widget(sc_iframe);
 
+    if (sc_widget == null) {
+        return;
+    }
+    
     sc_widget.bind(SC.Widget.Events.READY, function() {
         update_song_info();
     });
@@ -165,16 +177,5 @@ function update_song_info() {
         $("#song_title").html("<a href=\"https://soundcloud.com/cheezcakekidzrecords/" + sound.permalink + "\">" + sound.title + "</a>");
 
         $("#nav").css("background-image", "linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9) ), url('" + sound.waveform_url + "')");
-
-        /*
-        if (sound.artwork_url != null) {
-            $("#song_art").attr("src", sound.artwork_url);
-            $("#song_art").css("display", "inline-block");
-        } else {
-            $("#song_art").attr("src", "");
-            $("#song_art").css("display", "none");
-        }
-        */
-
     });
 }

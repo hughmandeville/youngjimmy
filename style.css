@@ -37,10 +37,10 @@ a {
 }
 
 .video_main {
- position; relative;
+ position: relative;
+ color: #feef00;
  border: 0;
  width: 100%;
- height: 240px;
  top: 0;
  left: 0;
 }
@@ -105,12 +105,11 @@ a {
 }
 
 #footer {
-   margin: 40px auto;
-   font-family: 'Friday Lovers', arial;
-   font-size: 12px;
-   text-align: center;
-   color: #a0a0a0;
-
+  margin: 40px auto;
+  font-family: 'Friday Lovers', arial;
+  font-size: 12px;
+  text-align: center;
+  color: #a0a0a0;
 }
 
 .button {
@@ -132,10 +131,6 @@ a {
   font-size: 18pt;
   text-align: center;
   vertical-align: top;
-}
-#soundcloud_player_iframe {
-  height: 20px; 
-  width: 100%;
 }
 #song_art {
  height: 16px;
@@ -162,9 +157,9 @@ a {
  color: #d0d0d0;
 }
 .table_tracks td {
-   padding: 0 10px;
-   border: 1px solid #333;
-   border-collapse: collapse;
+  padding: 0 10px;
+  border: 1px solid #333;
+  border-collapse: collapse;
 }
 .table_tracks, .table_tracks tr, .table_tracks td, .table_tracks th {
    border-collapse: collapse;
@@ -207,6 +202,10 @@ a {
 	text-align: center;
 	margin-top: 100px;
   }
+  #controls .button {
+	width: 32px;
+	padding: 10px;
+  }  
   #social_links {
 	position: relative;
 	margin-top: 20px;
@@ -236,15 +235,15 @@ a {
   }
 
   .table_tracks {
-   border: 1px solid red;
+	width: 100%;
+	max-width: 400px;
   }
   .two-col-1 .album_cover {
 	padding: 0;
 	margin:0;
 	max-width: 300px;
 	max-height: 300px;
-  }
-  
+  }  
   
   .three-col {
 	position: relative;
@@ -266,6 +265,13 @@ a {
   .three-col-1,.three-col-3 {
 	display: none;
   }
+  #soundcloud_player_iframe {
+	height: 20px; 
+	width: 100%;
+  }
+  .video_main {
+	height: 320px;
+  }
 }
 
 
@@ -276,6 +282,11 @@ a {
 	top: 20px;
 	z-index: 101;
   }
+  #controls .button {
+	width: 24px;
+	padding: 0 4px;
+  }
+
   #song_title  {
 	margin-right: 20px;
   }
@@ -296,8 +307,6 @@ a {
   #promo_image {	
 	margin-top: 100px;
   }
-
-
   
   .one-col, .three-col {
 	width: 900px;
@@ -306,9 +315,8 @@ a {
 	width: 710px;
   }
   .table_tracks {
-    width: 400px;
+    max-width: 400px;
   }
-
   
   .two-col-1, .two-col-2 {
 	display: inline-block;
@@ -370,6 +378,14 @@ a {
 	display: block; 
 	width: 384px;
 	margin: 0 auto;
+  }
+  #soundcloud_player_iframe {
+	height: 20px; 
+	width: 100%;
+  }
+
+  .video_main {
+	height: 480px;
   }
 }
 
