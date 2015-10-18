@@ -302,8 +302,14 @@ a {
 	width: 30px;
 	margin: 0 10px;
 	vertical-align: middle;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
   }
-
+  .social_link:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+  
   #promo_image {	
 	margin-top: 100px;
   }
