@@ -10,6 +10,10 @@
   font-family: "Friday Lovers";
   src: url(fonts/friday_lovers.otf) format("opentype");
 }
+@font-face {
+  font-family: "La Maison de Papier";
+  src: url(fonts/la_maison_de_papier.ttf) format("truetype");
+}
 
 html, body {
   background: #000000;
@@ -58,6 +62,10 @@ a {
   z-index: 2;
   text-align: center;
   margin-bottom: 10px;
+}
+.album_the_movies {
+  font-size: 50pt;
+  font-family: "La Maison de Papier", Edition, Easycore, arial;
 }
 .album_date_night {
   font-size: 70pt;
