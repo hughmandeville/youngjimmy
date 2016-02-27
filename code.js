@@ -155,11 +155,13 @@ function rotate_images() {
         $("#hood_rock_2_cover").attr("src", "images/hood_rock_2_front_400x400.png");
     }
     if ($("#promo_image").attr("src") == "images/hood_rock_2_promo.jpg") {
+        $("#promo_image").attr("src", "images/the_movies_promo.png");
+    } else if ($("#promo_image").attr("src") == "images/the_movies_promo.png") {
         $("#promo_image").attr("src", "images/date_night_promo.jpg");
     } else if ($("#promo_image").attr("src") == "images/date_night_promo.jpg") {
         $("#promo_image").attr("src", "images/hood_rock_2_promo_2.jpg");
     } else if ($("#promo_image").attr("src") == "images/hood_rock_promo_2.jpg") {
-        $("#promo_image").attr("src", "images/hood_rock_2_promo_.jpg");
+        $("#promo_image").attr("src", "images/hood_rock_2_promo.jpg");
     } else {
         $("#promo_image").attr("src", "images/hood_rock_2_promo.jpg");
     }
