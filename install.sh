@@ -10,6 +10,8 @@ scp style.css youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp images/young_jimmy_og.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/young_jimmy_120x120.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/button_itunes_available.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
+#scp images/the_movies_promo.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
+#scp images/the_movies_front_400x400.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 
 
 
