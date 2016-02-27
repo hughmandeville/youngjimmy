@@ -1,6 +1,6 @@
 /*
  * http://developers.soundcloud.com/docs/api/html5-widget
- *
+ * 
  * To Do
  *  - Have playlist loop.
  *  - Make look good on iphone.
@@ -173,11 +173,11 @@ function rotate_images() {
 
 }
 
-
 function update_song_info() {
     sc_widget.getCurrentSound(function(sound) {
         $("#song_title").html("<a href=\"https://soundcloud.com/cheezcakekidzrecords/" + sound.permalink + "\">" + sound.title + "</a>");
-
-        $("#nav").css("background-image", "linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9) ), url('" + sound.waveform_url + "')");
+        // See Waveform.js for showing waveforms.
+        // https://developers.soundcloud.com/blog/waveforms-let-s-talk-about-them
+        // sound.waveform_url
     });
 }
