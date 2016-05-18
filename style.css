@@ -1,4 +1,8 @@
 @font-face {
+  font-family: "Brushed Traveler";
+  src: url(fonts/brushed_traveler.ttf) format("truetype");
+}
+@font-face {
   font-family: "Easycore";
   src: url(fonts/easycore.ttf) format("truetype");
 }
@@ -67,7 +71,7 @@ a {
   font-size: 60pt;
   font-family: "La Maison de Papier", Edition, Easycore, arial;
 }
-.album_date_night, .album_uptown_gun_sounds {
+.album_date_night {
   font-size: 70pt;
   font-family: Easycore, Edition, arial;
 }
@@ -79,6 +83,11 @@ a {
   font-size: 40pt;
   font-family: Charcoal, Impact, Sans-Serif;
 }
+.album_uptown_gun_sounds {
+  font-size: 26pt;
+  font-family: "Brushed Traveler", arial;
+}
+
 .two-col {
  font-family: arial;
  font-size: 24px;
@@ -174,7 +183,6 @@ a {
 }
 .table_tracks tr:hover {
   background: #222;
-  color: #feef00;
 }
 .table_tracks tr:hover .button_itunes {
   background: #222;
@@ -188,7 +196,7 @@ a {
 .track {
  cursor: pointer;
 }
-.track:hover {
+.playable:hover, .table_tracks tr:hover .playable {
  color: #feef00;
 }
 
