@@ -131,6 +131,9 @@ function setup_soundcloud_player() {
     });
 
     $(".track").on("click", function() {
+        if ($(this).data("track").length == 0) {
+            return;
+        }
         $(".col_action").html("play");
         $(this).find(".col_action").html("pause");
         sc_widget.skip($(this).data("track"));
