@@ -149,12 +149,16 @@ function play_pause_display() {
 
 
 function rotate_images() {
+
     if ($("#hood_rock_2_cover").attr("src") == "images/hood_rock_2_front_400x400.png") {
         $("#hood_rock_2_cover").attr("src", "images/hood_rock_2_back_400x400.png");
     } else {
         $("#hood_rock_2_cover").attr("src", "images/hood_rock_2_front_400x400.png");
     }
-    if ($("#promo_image").attr("src") == "images/hood_rock_2_promo.jpg") {
+
+    if ($("#promo_image").attr("src") == "images/uptown_gun_sounds_promo.jpg") {
+        $("#promo_image").attr("src", "images/hood_rock_2_promo.jpg");
+    } else if ($("#promo_image").attr("src") == "images/hood_rock_2_promo.jpg") {
         $("#promo_image").attr("src", "images/the_movies_promo.png");
     } else if ($("#promo_image").attr("src") == "images/the_movies_promo.png") {
         $("#promo_image").attr("src", "images/date_night_promo.jpg");
@@ -165,6 +169,7 @@ function rotate_images() {
     } else {
         $("#promo_image").attr("src", "images/hood_rock_2_promo.jpg");
     }
+    
     if ($("#hood_rock_cover").attr("src") == "images/hood_rock_front_400x400.png") {
         $("#hood_rock_cover").attr("src", "images/hood_rock_back_400x400.png");
     } else {
