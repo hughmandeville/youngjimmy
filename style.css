@@ -194,7 +194,11 @@ a {
  cursor: pointer;
 }
 .track {
- cursor: pointer;
+  cursor: pointer;
+  color: #aaa;
+}
+.playable {
+  color: #ffffff;
 }
 .playable:hover, .table_tracks tr:hover .playable {
  color: #feef00;
@@ -461,8 +465,32 @@ a {
   color: #ffffff;
   max-width: 710px;
   width: 100%;
-  font-family:  'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
+  font-family:  Edition, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 400;
   margin: 0 auto;
+}
+#bio .text {
+  padding: 10px;
+}
+
+.covers_grid {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+ text-align: center;
+}
+.covers_grid img {
+  flex-grow: 1;
+  width: 300px;
+}
+.poster {
+  width: 380px;
+  margin: 0 auto;
+  text-align: center;
+}
+.poster img {
+  width: 380px;
 }
