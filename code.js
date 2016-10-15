@@ -1,6 +1,6 @@
 /*
  * http://developers.soundcloud.com/docs/api/html5-widget
- * 
+ *
  * To Do
  *  - Have playlist loop.
  *  - Make look good on iphone.
@@ -11,7 +11,7 @@ var rotate_covers_timer = null;
 var checking_scroll = false;
 var checking_doc_top = 0;
 
-$(function() {    
+$(function() {
     setup_soundcloud_player();
 
     // Having issues controlling SoundCloud player on iOS so hiding the control buttons on iOS.
@@ -21,7 +21,7 @@ $(function() {
         $("#soundcloud_player_iframe").css("height","400px");
         $("#social_links").css("margin-top", "100px");
     }
-        
+
     rotate_images_timer = setInterval(rotate_images, 10000);
 
     // the video is 1920x1080
@@ -36,7 +36,6 @@ $(function() {
         $("#vimeo_iframe").css("width", width);
     });
 
-    
     /* play or pause video depending on scroll position */
     //$(document).on('scroll', check_scroll);
 
@@ -45,7 +44,7 @@ $(function() {
             $("#modal_jaw").css("display","block");
         }
     });
-    $("#modal_jaw").on("click", function() {   
+    $("#modal_jaw").on("click", function() {
         $("#modal_jaw").css("display","none");
     });
 });
@@ -54,7 +53,7 @@ $(function() {
 function check_scroll() {
     if (checking_scroll == true) {
         return;
-    }        
+    }
     checking_scroll = true;
 
     var vimeo_top = $("#vimeo_iframe").position().top;
@@ -62,7 +61,7 @@ function check_scroll() {
     var document_top = $(document).scrollTop();
 
     checking_doc_top = document_top;
-    
+
     var vimeo_iframe = $("#vimeo_iframe");
     if ((document_top >= (vimeo_top - 50)) && (document_top <= (vimeo_bottom + 50))) {
         $("#button_play_pause").attr("src","images/button_play.png");
@@ -78,7 +77,7 @@ function check_scroll() {
         if (checking_doc_top != document_top) {
             check_scroll();
         }
-    }, 1000);        
+    }, 1000);
 }
 
 
@@ -92,7 +91,7 @@ function setup_soundcloud_player() {
     if (sc_widget == null) {
         return;
     }
-    
+
     sc_widget.bind(SC.Widget.Events.READY, function() {
         update_song_info();
     });
@@ -103,7 +102,6 @@ function setup_soundcloud_player() {
         update_song_info();
     });
 
-    
     $("#button_play_pause").on("click", function() {
         update_song_info();
         // XXX: instead of state could check isPaused
@@ -159,26 +157,23 @@ function rotate_images() {
         $("#hood_rock_2_cover").attr("src", "images/hood_rock_2_front_400x400.png");
     }
 
-    if ($("#promo_image").attr("src") == "images/uptown_gun_sounds_promo.jpg") {
-        $("#promo_image").attr("src", "images/hood_rock_2_promo.jpg");
-    } else if ($("#promo_image").attr("src") == "images/hood_rock_2_promo.jpg") {
-        $("#promo_image").attr("src", "images/the_movies_promo.png");
-    } else if ($("#promo_image").attr("src") == "images/the_movies_promo.png") {
-        $("#promo_image").attr("src", "images/date_night_promo.jpg");
-    } else if ($("#promo_image").attr("src") == "images/date_night_promo.jpg") {
-        $("#promo_image").attr("src", "images/hood_rock_2_promo_2.jpg");
-    } else if ($("#promo_image").attr("src") == "images/hood_rock_promo_2.jpg") {
-        $("#promo_image").attr("src", "images/hood_rock_2_promo.jpg");
-    } else {
-        $("#promo_image").attr("src", "images/hood_rock_2_promo.jpg");
+    var promo_images = ["images/uptown_gun_sounds_promo.png",
+                        "images/the_movies_promo.png",
+                        "images/date_night_promo.jpg",
+                        "images/hood_rock_2_promo_2.jpg"];
+    var cur_image = $("#promo_image").attr("src");
+    var index = promo_images.indexOf(cur_image);
+    index++;
+    if (index >= promo_images.length) {
+        index = 0;
     }
-    
+    $("#promo_image").attr("src", promo_images[index]);
+    //console.log("id " + index + ", src " + promo_images[index]);
     if ($("#hood_rock_cover").attr("src") == "images/hood_rock_front_400x400.png") {
         $("#hood_rock_cover").attr("src", "images/hood_rock_back_400x400.png");
     } else {
         $("#hood_rock_cover").attr("src", "images/hood_rock_front_400x400.png");
     }
-
 }
 
 function update_song_info() {
