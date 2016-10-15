@@ -157,7 +157,8 @@ function rotate_images() {
         $("#hood_rock_2_cover").attr("src", "images/hood_rock_2_front_400x400.png");
     }
 
-    var promo_images = ["images/uptown_gun_sounds_promo.png",
+    var promo_images = ["images/boys_in_the_hood_promo.png",
+                        "images/uptown_gun_sounds_promo.png",
                         "images/the_movies_promo.png",
                         "images/date_night_promo.jpg",
                         "images/hood_rock_2_promo_2.jpg"];
