@@ -291,6 +291,9 @@ a {
   .video_main {
 	height: 320px;
   }
+  #bullets {
+	margin-top: -32px;
+  }
 }
 
 
@@ -412,6 +415,10 @@ a {
   .video_main {
 	height: 480px;
   }
+
+  #bullets {
+	margin-top: -60px;
+  }
 }
 
 #modal_jaw {
@@ -497,7 +504,6 @@ a {
 #bullets {
   font-family: arial, sans-serif;
   font-weight: 700;
-  margin-top: -60px;
   text-align: center;
   font-size: 30px;
 }
