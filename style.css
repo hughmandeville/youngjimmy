@@ -80,7 +80,7 @@ a {
 }
 .album_hood_rock {
   font-size: 40pt;
-  font-family: Charcoal, Impact, Sans-Serif;
+  font-family: Charcoal, Impact, sans-serif;
 }
 .album_uptown_gun_sounds {
   font-size: 26pt;
@@ -492,4 +492,24 @@ a {
 }
 .poster img {
   width: 380px;
+}
+
+#bullets {
+  font-family: arial, sans-serif;
+  font-weight: 700;
+  margin-top: -60px;
+  text-align: center;
+  font-size: 30px;
+}
+.bullet {
+  display: inline-block;
+  cursor: pointer;
+  color: #616161;
+  margin: 0 4px;
+}
+.bullet:hover {
+  color: #feef00;
+}
+.bullet_selected {
+  color: #E0E0E0;
 }
