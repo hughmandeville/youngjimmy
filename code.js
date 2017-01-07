@@ -10,8 +10,33 @@ var sc_widget = null;
 var rotate_covers_timer = null;
 var checking_scroll = false;
 var checking_doc_top = 0;
+var image_index = 0;
+
+var promo_images = [
+    {
+        "src"  : "images/boys_in_the_hood_promo.png",
+        "desc" : "Boys in the Hood"
+    },
+    {
+        "src"  : "images/uptown_gun_sounds_promo.png",
+        "desc" : "Uptown Gun Sounds"
+    },
+    {
+        "src"  : "images/the_movies_promo.png",
+        "desc" : "The Movies"
+    },
+    {
+        "src"  : "images/date_night_promo.jpg",
+        "desc" : "Date Night"
+    },
+    {
+        "src"  : "images/hood_rock_2_promo_2.jpg",
+        "desc" : "Hood Rock 2"
+    }
+];
 
 $(function() {
+    create_bullets();
     setup_soundcloud_player();
 
     // Having issues controlling SoundCloud player on iOS so hiding the control buttons on iOS.
@@ -50,35 +75,6 @@ $(function() {
 });
 
 
-function check_scroll() {
-    if (checking_scroll == true) {
-        return;
-    }
-    checking_scroll = true;
-
-    var vimeo_top = $("#vimeo_iframe").position().top;
-    var vimeo_bottom = vimeo_top + $("#vimeo_iframe").height();
-    var document_top = $(document).scrollTop();
-
-    checking_doc_top = document_top;
-
-    var vimeo_iframe = $("#vimeo_iframe");
-    if ((document_top >= (vimeo_top - 50)) && (document_top <= (vimeo_bottom + 50))) {
-        $("#button_play_pause").attr("src","images/button_play.png");
-        audio_state = "paused";
-        sc_widget.pause();
-        vimeo_iframe[0].contentWindow.postMessage({method: "play"}, "*");
-    } else {
-        vimeo_iframe[0].contentWindow.postMessage({method: "pause"}, "*");
-    }
-    window.setTimeout(function() {
-        checking_scroll = false;
-        var document_top = $(document).scrollTop();
-        if (checking_doc_top != document_top) {
-            check_scroll();
-        }
-    }, 1000);
-}
 
 
 /**
@@ -150,33 +146,42 @@ function play_pause_display() {
 
 
 function rotate_images() {
-
-    if ($("#hood_rock_2_cover").attr("src") == "images/hood_rock_2_front_400x400.png") {
-        $("#hood_rock_2_cover").attr("src", "images/hood_rock_2_back_400x400.png");
-    } else {
-        $("#hood_rock_2_cover").attr("src", "images/hood_rock_2_front_400x400.png");
-    }
-
-    var promo_images = ["images/boys_in_the_hood_promo.png",
-                        "images/uptown_gun_sounds_promo.png",
-                        "images/the_movies_promo.png",
-                        "images/date_night_promo.jpg",
-                        "images/hood_rock_2_promo_2.jpg"];
     var cur_image = $("#promo_image").attr("src");
-    var index = promo_images.indexOf(cur_image);
-    index++;
-    if (index >= promo_images.length) {
-        index = 0;
+    image_index++;
+    if (image_index >= promo_images.length) {
+        image_index = 0;
     }
-    $("#promo_image").attr("src", promo_images[index]);
-    //console.log("id " + index + ", src " + promo_images[index]);
-    if ($("#hood_rock_cover").attr("src") == "images/hood_rock_front_400x400.png") {
-        $("#hood_rock_cover").attr("src", "images/hood_rock_back_400x400.png");
-    } else {
-        $("#hood_rock_cover").attr("src", "images/hood_rock_front_400x400.png");
-    }
+    update_promo_image(image_index);
 }
 
+function update_promo_image(index) {
+    $("#promo_image").attr("src", promo_images[index]["src"]);
+    $(".bullet").removeClass("bullet_selected");
+    $(".bullet[data-index=" + index + "]").addClass("bullet_selected");
+    image_index = index;
+}
+
+/**
+ * Create bullets under promo images.
+ */
+function create_bullets() {
+    var bullets_html = "";
+    for (var i = 0; i < promo_images.length; i++) {
+        bullets_html += "<div data-index=\"" + i + "\" title=\"" + promo_images[i]["desc"] +
+            "\" class=\"bullet\">&bull;</div>";
+    }
+    $("#bullets").html(bullets_html);
+    $(".bullet").on("click", function() {
+        var index = $(this).data("index");
+        update_promo_image(index);
+    });
+    update_promo_image(image_index);
+}
+
+
+/**
+ * Update song info.
+ */
 function update_song_info() {
     sc_widget.getCurrentSound(function(sound) {
         $("#song_title").html("<a href=\"https://soundcloud.com/cheezcakekidzrecords/" + sound.permalink + "\">" + sound.title + "</a>");
@@ -184,4 +189,40 @@ function update_song_info() {
         // https://developers.soundcloud.com/blog/waveforms-let-s-talk-about-them
         // sound.waveform_url
     });
+}
+
+
+
+/**
+ * Not longer used.
+ * Check scroll position to figure out if you need to start video playing.
+ */
+function check_scroll() {
+    if (checking_scroll == true) {
+        return;
+    }
+    checking_scroll = true;
+
+    var vimeo_top = $("#vimeo_iframe").position().top;
+    var vimeo_bottom = vimeo_top + $("#vimeo_iframe").height();
+    var document_top = $(document).scrollTop();
+
+    checking_doc_top = document_top;
+
+    var vimeo_iframe = $("#vimeo_iframe");
+    if ((document_top >= (vimeo_top - 50)) && (document_top <= (vimeo_bottom + 50))) {
+        $("#button_play_pause").attr("src","images/button_play.png");
+        audio_state = "paused";
+        sc_widget.pause();
+        vimeo_iframe[0].contentWindow.postMessage({method: "play"}, "*");
+    } else {
+        vimeo_iframe[0].contentWindow.postMessage({method: "pause"}, "*");
+    }
+    window.setTimeout(function() {
+        checking_scroll = false;
+        var document_top = $(document).scrollTop();
+        if (checking_doc_top != document_top) {
+            check_scroll();
+        }
+    }, 1000);
 }
