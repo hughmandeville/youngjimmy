@@ -506,12 +506,14 @@ a {
   font-weight: 700;
   text-align: center;
   font-size: 30px;
+  z-index: 2;
+
 }
 .bullet {
   display: inline-block;
   cursor: pointer;
   color: #616161;
-  margin: 0 4px;
+  margin: 0 6px;
 }
 .bullet:hover {
   color: #feef00;
