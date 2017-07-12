@@ -14,6 +14,14 @@ var image_index = 0;
 
 var promo_images = [
     {
+        "src"  : "images/the_partys_over_promo.png",
+        "desc" : "The Party's Over"
+    },
+    {
+        "src"  : "images/tha_black_punks_promo.png",
+        "desc" : "Tha Black Punks!"
+    },
+    {
         "src"  : "images/boys_in_the_hood_promo.png",
         "desc" : "Boys in the Hood"
     },
@@ -64,13 +72,11 @@ $(function() {
     /* play or pause video depending on scroll position */
     //$(document).on('scroll', check_scroll);
 
-    $("#button_xray").on("click", function() {
-        if ($("#modal_jaw").css("display") == "none") {
-            $("#modal_jaw").css("display","block");
-        }
+    $(".album_cover").on("mouseover", function() {
+        $(this).attr("src", $(this).data("back"));
     });
-    $("#modal_jaw").on("click", function() {
-        $("#modal_jaw").css("display","none");
+    $(".album_cover").on("mouseout", function() {
+        $(this).attr("src", $(this).data("cover"));
     });
 });
 
