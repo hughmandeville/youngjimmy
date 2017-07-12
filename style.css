@@ -59,6 +59,20 @@ a {
   position: relative;
 }
 
+.album_name {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+}
+.album_link {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #e0e0e0;
+}
+
+
 .album_title {
   font-size: 60pt;
   color: #ffffff;
@@ -499,6 +513,9 @@ a {
 }
 .poster img {
   width: 380px;
+}
+.album_cover {
+  cursor: pointer;
 }
 
 #bullets {
