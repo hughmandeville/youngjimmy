@@ -39,7 +39,7 @@ a {
 }
 #nav #young_jimmy_logo {
   display: block;
-  margin: 0 auto;  
+  margin: 0 auto;
   height: 80px;
   z-index: 105;
 }
@@ -112,7 +112,7 @@ a {
 }
 .album_date_night .album_title {
  font-family:  verdana, tahoma arial;
-} 
+}
 
 .album_artist {
  color: #feef00;
@@ -140,6 +140,9 @@ a {
   font-size: 12px;
   text-align: center;
   color: #a0a0a0;
+}
+#footer img {
+  width: 240px;
 }
 
 .button {
@@ -225,119 +228,119 @@ a {
 
 @media all and (max-width: 899px) {
   #song_title {
-	display: block;
-	font-size: 24pt;
-	margin-bottom: 8px;
+    display: block;
+    font-size: 24pt;
+    margin-bottom: 8px;
   }
   #controls {
-	position: relative;
-	display: block;
-	text-align: center;
-	margin-top: 100px;
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-top: 100px;
   }
   #controls .button {
-	width: 32px;
-	padding: 10px;
-  }  
+    width: 32px;
+    padding: 10px;
+  }
   #social_links {
-	position: relative;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	text-align: center;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
   }
   .social_link {
-	display: inline-block;
-	width: 30px;
-	margin-right: 20px;
-	vertical-align: middle;
+    display: inline-block;
+    width: 30px;
+    margin-right: 20px;
+    vertical-align: middle;
   }
 
   .one-col, .three-col {
-	width: 100%;
+    width: 100%;
   }
   .two-col {
   }
   .two-col-1, .two-col-2 {
-	display: block;
-	max-width: 400px;
-	text-align: center;
-	margin: 0 auto;
-	vertical-align: top;
-	padding: 0;
-	font-size: 16pt;
+    display: block;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    vertical-align: top;
+    padding: 0;
+    font-size: 16pt;
   }
 
   .table_tracks {
-	width: 100%;
-	max-width: 400px;
+    width: 100%;
+    max-width: 400px;
   }
   .two-col-1 .album_cover {
-	padding: 0;
-	margin:0;
-	max-width: 300px;
-	max-height: 300px;
-  }  
-  
+    padding: 0;
+    margin:0;
+    max-width: 300px;
+    max-height: 300px;
+  }
+
   .three-col {
-	position: relative;
+    position: relative;
     display: block;
-	width: 100%;
+    width: 100%;
   }
   .three-col-2 {
-	width: 100%;
-	margin: 0 auto;
-	text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
   }
   .img_main {
-	max-width: 384px;
-	width: 100%;
+    max-width: 384px;
+    width: 100%;
   }
-  #promo_image {	
-	width: 100%;
+  #promo_image {    
+    width: 100%;
   }
   .three-col-1,.three-col-3 {
-	display: none;
+    display: none;
   }
   #soundcloud_player_iframe {
-	height: 20px; 
-	width: 100%;
+    height: 20px;
+    width: 100%;
   }
   .video_main {
-	height: 320px;
+    height: 320px;
   }
   #bullets {
-	margin-top: -32px;
+    margin-top: -32px;
   }
 }
 
 
 @media all and (min-width: 900px) {
   #controls {
-	position: fixed;
-	right: 20px;
-	top: 20px;
-	z-index: 101;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 101;
   }
   #controls .button {
-	width: 24px;
-	padding: 0 4px;
+    width: 24px;
+    padding: 0 4px;
   }
 
   #song_title  {
-	margin-right: 20px;
+    margin-right: 20px;
   }
 
   #social_links {
-	position: fixed;
-	top: 15px;
-	left: 10px;
-	z-index: 101;
+    position: fixed;
+    top: 15px;
+    left: 10px;
+    z-index: 101;
   }
   .social_link {
-	display: inline-block;
-	width: 30px;
-	margin: 0 10px;
-	vertical-align: middle;
+    display: inline-block;
+    width: 30px;
+    margin: 0 10px;
+    vertical-align: middle;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
   }
@@ -345,93 +348,93 @@ a {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
   }
-  
-  #promo_image {	
-	margin-top: 100px;
+
+  #promo_image {
+    margin-top: 100px;
   }
-  
+
   .one-col, .three-col {
-	width: 900px;
+    width: 900px;
   }
   .two-col {
-	width: 710px;
+    width: 710px;
   }
   .table_tracks {
     max-width: 400px;
   }
-  
+
   .two-col-1, .two-col-2 {
-	display: inline-block;
-	text-align: center;
-	vertical-align: top;
-	padding: 0;
-	margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    padding: 0;
+    margin: 0 auto;
   }
- 
-  .two-col-1 { 
-	font-size: 16pt;
-	width: 300px;
+
+  .two-col-1 {
+    font-size: 16pt;
+    width: 300px;
   }
   .two-col-1 .album_cover {
-	padding: 0;
-	margin:0;
-	width: 300px;
-	height: 300px;
+    padding: 0;
+    margin:0;
+    width: 300px;
+    height: 300px;
   }
-  
+
   .two-col-2 {
-	padding: 0 20px;
-	width: 400px;
+    padding: 0 20px;
+    width: 400px;
   }
-  
+
   .three-col {
-	vertical-align: center;
-	font-family: 'Friday Lovers', arial;
-	font-size: 22pt;
-	line-height: 2.5em;
+    vertical-align: center;
+    font-family: 'Friday Lovers', arial;
+    font-size: 22pt;
+    line-height: 2.5em;
   }
   .three-col-1,.three-col-3 {
-	vertical-align: top;
-	display: inline-block;
-	width: 250px;
-	text-align: center;
-	margin-top: 80px;
+    vertical-align: top;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    margin-top: 80px;
   }
   .three-col-2 {
-	vertical-align: top;
-	display: inline-block;
-	width: 385px;
-  }  
-  .one-col, .two-col, .three-col {
-	vertical-align: top;
-	padding: 0;
-	margin: 0 auto;
-  }  
-  .two-col-1, .two-col-2 {
-	display: inline-block;
-	vertical-align: top;
-	padding: 0;
-	margin: 0 auto;
+    vertical-align: top;
+    display: inline-block;
+    width: 385px;
   }
-  .one-col #promo_image {
-	width: 100%;
+  .one-col, .two-col, .three-col {
+    vertical-align: top;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .two-col-1, .two-col-2 {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .one-col #promo_image, .one-col #promo_start img {
+    width: 100%;
   }
   .img_main {
-	display: block; 
-	width: 384px;
-	margin: 0 auto;
+    display: block;
+    width: 384px;
+    margin: 0 auto;
   }
   #soundcloud_player_iframe {
-	height: 20px; 
-	width: 100%;
+    height: 20px;
+    width: 100%;
   }
 
   .video_main {
-	height: 480px;
+    height: 480px;
   }
 
   #bullets {
-	margin-top: -60px;
+    margin-top: -60px;
   }
 }
 
@@ -500,12 +503,29 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
- text-align: center;
+  text-align: center;
 }
 .covers_grid img {
   flex-grow: 1;
   width: 300px;
 }
+
+#promo_start_container {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  background-color: rgba(255,255,255,0.3);
+}
+#promo_start {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 300;
+}
+
 .poster {
   width: 380px;
   margin: 0 auto;
@@ -537,4 +557,12 @@ a {
 }
 .bullet_selected {
   color: #E0E0E0;
+}
+
+#hats {
+  background: #EEEEEE;
+  margin-top: 80px;
+}
+.hat {
+  width: 350px;
 }
