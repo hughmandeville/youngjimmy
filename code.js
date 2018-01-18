@@ -78,6 +78,13 @@ $(function() {
     $(".album_cover").on("mouseout", function() {
         $(this).attr("src", $(this).data("cover"));
     });
+
+    $("#promo_start_container").on("click", function() {
+        $(this).hide();
+    });
+    window.setTimeout(function() {
+        $("#promo_start_container").hide()
+    }, 20000);
 });
 
 
