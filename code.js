@@ -14,6 +14,10 @@ var image_index = 0;
 
 var promo_images = [
     {
+        "src"  : "images/promo_yellow_yellow.jpg",
+        "desc" : "Yellow Yellow"
+    },
+    {
         "src"  : "images/the_partys_over_promo.png",
         "desc" : "The Party's Over"
     },
