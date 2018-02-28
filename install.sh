@@ -1,5 +1,5 @@
 # Copy files to the web server (107.180.44.139).
-#scp code.js youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
+scp code.js youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 scp index.html youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp robots.txt youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp sitemap.xml youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
@@ -34,7 +34,8 @@ scp index.html youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp images/poster_show_may_11_2017.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/poster_show_sep_23_2017.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 
-scp images/promo_yellow_yellow.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
+#scp images/poster_tour_ces_cru.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
+#scp images/promo_yellow_yellow.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 
 #scp images/album_cover_black_punks.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/album_back_black_punks.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
