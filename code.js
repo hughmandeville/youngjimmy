@@ -5,7 +5,7 @@
  *  - Have playlist loop.
  *  - Make look good on iphone.
  */
-var audio_state = "paused";
+var audio_state = "playing"; // "paused";
 var sc_widget = null;
 var rotate_covers_timer = null;
 var checking_scroll = false;
