@@ -31,8 +31,6 @@ $(function() {
         $("#social_links").css("margin-top", "100px");
     }
 
-    rotate_images_timer = setInterval(rotate_images, 10000);
-
     // the video is 1920x1080
     var width = $(window).width();
     var height = Math.ceil((width / 1920) * 1080);
@@ -54,13 +52,6 @@ $(function() {
     $(".album_cover").on("mouseout", function() {
         $(this).attr("src", $(this).data("cover"));
     });
-
-    $("#promo_start_container").on("click", function() {
-        $(this).hide();
-    });
-    window.setTimeout(function() {
-        $("#promo_start_container").hide()
-    }, 20000);
 });
 
 
@@ -91,11 +82,11 @@ function setup_soundcloud_player() {
         update_song_info();
         // XXX: instead of state could check isPaused
         if (audio_state == "playing") {
-            $("#button_play_pause").attr("src","images/button_play.png");
+            $("#button_play_pause i").html("play_arrow");
             audio_state = "paused";
             sc_widget.pause();
         } else {
-            $("#button_play_pause").attr("src","images/button_pause.png");
+            $("#button_play_pause i").html("pause");
             audio_state = "playing";
             sc_widget.play();
         }
