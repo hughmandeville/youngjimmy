@@ -159,6 +159,9 @@ a {
 #button_play_pause {
  margin-left: 5px;
 }
+.button:hover {
+  color: #5e92f3;
+}
 
 
 #song_title {
