@@ -17,34 +17,6 @@ var promo_images = [
         "src"  : "images/promo_yellow_yellow.jpg",
         "desc" : "Yellow Yellow"
     },
-    {
-        "src"  : "images/the_partys_over_promo.png",
-        "desc" : "The Party's Over"
-    },
-    {
-        "src"  : "images/tha_black_punks_promo.png",
-        "desc" : "Tha Black Punks!"
-    },
-    {
-        "src"  : "images/boys_in_the_hood_promo.png",
-        "desc" : "Boys in the Hood"
-    },
-    {
-        "src"  : "images/uptown_gun_sounds_promo.png",
-        "desc" : "Uptown Gun Sounds"
-    },
-    {
-        "src"  : "images/the_movies_promo.png",
-        "desc" : "The Movies"
-    },
-    {
-        "src"  : "images/date_night_promo.jpg",
-        "desc" : "Date Night"
-    },
-    {
-        "src"  : "images/hood_rock_2_promo_2.jpg",
-        "desc" : "Hood Rock 2"
-    }
 ];
 
 $(function() {
