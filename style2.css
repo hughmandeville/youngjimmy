@@ -40,25 +40,35 @@ a {
 }
 #controls .button {
   width: 24px;
-  padding: 12px 4px;
+  padding: 11px 2px;
   display: inline-block;
   cursor: pointer;
 }
 
-#menu {
+#menu, #menu_pulldown {
   position: fixed;
   left: 0px;
   top: 0px;
   z-index: 101;
   display: block;
   text-align: center;
+  color: #154af2;
+  font-weight: 600;
 }
 
 #menu li {
   display: inline-block;
-  font-weight: 600;
   margin-right: 20px;
   font-family:  'Ave Fedan', Edition, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+#menu_pulldown {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#menu_pulldown i, #controls .button i {
+  font-size: 28px;
 }
 
 #content {  
@@ -110,6 +120,18 @@ a {
 }
 
 
+#social_links {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.social_link {
+  display: inline-block;
+  width: 30px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
 
 
 @media all and (max-width: 1279px) {
@@ -129,6 +151,12 @@ a {
     width: 60%;
     font-size: 18px;
     line-height: 1.5em;
+  }
+  #menu {
+    display: none;
+  }
+  #menu_pulldown {
+    display: block;
   }
 }
 
@@ -166,5 +194,11 @@ a {
   }
   .wave img {
     width: 140px;
+  }
+  #menu {
+    display: block;
+  }
+  #menu_pulldown {
+    display: none;
   }
 }
