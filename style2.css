@@ -56,6 +56,37 @@ a {
   font-weight: 600;
 }
 
+#menu_panel {
+  position: fixed;
+  background: #FFFF01;
+  z-index: 102;
+  width: 200px;
+  top: 48px;
+  left: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,.26);
+  display: none;
+}
+.menu_item {
+  font-size: 22px;
+  line-height: 22px;
+  border: 1px solid #FFEE58;
+  padding: 12px;
+  vertical-align: top;
+  font-family:  'Ave Fedan', Edition, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+.menu_item:hover {
+  background: #FFFF8D;
+}
+.menu_item .material-icons {
+  margin-right: 14px;
+  display: inline-block;
+}
+
+.menu_item .title {
+  position: fixed;
+}
+
+
 #menu li {
   display: inline-block;
   margin-right: 20px;
@@ -65,6 +96,7 @@ a {
 #menu_pulldown {
   margin-left: 10px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 #menu_pulldown i, #controls .button i {
@@ -149,8 +181,8 @@ a {
   }
   #bio_text {
     width: 60%;
-    font-size: 18px;
-    line-height: 1.5em;
+    font-size: 20px;
+    line-height: 1.6em;
   }
   #menu {
     display: none;
@@ -167,6 +199,9 @@ a {
   }
   #main_img img {
     width: 80%;
+  }
+  #bio_text {
+    font-size: 18px;
   }
 }
 
