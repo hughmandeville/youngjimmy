@@ -103,6 +103,19 @@ a {
   font-size: 28px;
 }
 
+#song_title {
+  position: relative;
+  display: inline-block;
+  font-weight: 200;
+  font-family:  'Ave Fedan', Edition, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: top;
+  margin-top: 20px;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
 #content {  
   margin: 100px auto;
   text-align: center;
@@ -190,6 +203,9 @@ a {
   #menu_pulldown {
     display: block;
   }
+  #song_title {
+    display: none;
+  }
 }
 
 
@@ -215,6 +231,15 @@ a {
 }
 
 @media all and (min-width: 1280px) {
+  #menu {
+    display: block;
+  }
+  #menu_pulldown {
+    display: none;
+  }
+  #song_title {
+    display: inline-block;
+  }
   #content {
     width: 1290px;
   }
@@ -230,10 +255,5 @@ a {
   .wave img {
     width: 140px;
   }
-  #menu {
-    display: block;
-  }
-  #menu_pulldown {
-    display: none;
-  }
+
 }
