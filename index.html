@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
  <meta charset="utf-8"/>
- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
  <title>Young Jimmy</title>
  <meta itemprop="inLanguage" content="en" />
  <link rel="icon" type="image/png" href="images/favicon_32x32.png"/>
@@ -23,12 +23,12 @@
  <meta name="google-site-verification" content="HjEzail2LNsSfUYg7TUYqVyzk3pWM09-7rATLnYbzZo" />
  <meta property="fb:admins" content="706807023" />
  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400,700' rel='stylesheet' type='text/css'/>
- <link rel="stylesheet" type="text/css" href="style.css?version=20180418"/>
+ <link rel="stylesheet" type="text/css" href="style2.css?version=20180418"/>
  <script src="http://code.jquery.com/jquery.min.js"></script>
  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
  <script src="http://connect.soundcloud.com/sdk.js"></script>
  <script src="http://w.soundcloud.com/player/api.js"></script>
- <script src="code.js?version=20180102"></script>
+ <script src="code2.js?version=20180103"></script>
  <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -40,14 +40,45 @@
 </head>
 <body>
   <div id="nav">
-    <img id="young_jimmy_logo" src="images/logo_yjjy_2.png"/>
+    <a href="/"><img id="young_jimmy_logo" src="images/logo_yjjy_2.png"/></a>
   </div>
   <div id="controls">
     <div id="song_title"></div>
     <div id="button_previous" class="button"><i class="material-icons">skip_previous</i></div>
-    <div id="button_play_pause" class="button"><i class="material-icons">pause</i></div>
+    <div id="button_play_pause" class="button"><i class="material-icons">play_arrow</i></div>
     <div id="button_next" class="button"><i class="material-icons">skip_next</i></div>
   </div>
+  <div id="menu">
+    <ul>
+      <li><a href="bio">bio</a></li>
+      <li><a href="music">music</a></li>
+      <li><a href="shows">shows</a></li>
+      <li><a href="merch">merch</a></li>
+      <li><a href="press">press</a></li>
+    </ul>
+  </div>
+  <div id="menu_pulldown"><i class="material-icons">menu</i></div>
+  <div id="menu_panel">
+    <div class="menu_item"><a href="bio"><i class="material-icons">library_books</i></a> <a href="bio" class="title">bio</a></div>
+    <div class="menu_item"><a href="music"><i class="material-icons">library_music</i></a> <a href="music" class="title">music</a></div>
+    <div class="menu_item"><a href="merch"><i class="material-icons">shopping_cart</i></a> <a href="merch" class="title">merch</a></div>
+    <div class="menu_item"><a href="press"><i class="material-icons">message</i></a> <a href="press" class="title">press</a></div>
+  </div>
+
+  <div id="content">
+    <div id="main_img"><img src="images/yj_main_big.jpg"/></div>
+    <div id="bio">
+      <div class="wave wave_left"><img src="images/wave.jpg"/></div>
+      <div id="bio_text">
+    YJ, formally Young Jimmy, guitarist turned rapper coming out of the now notorious East Chester Gardens projects in the Bronx, got his start in music in Bushwick at the age of six. He received his first guitar from a family member, two years later relocating to the Bronx. He attended the High School of Art and Design and received a scholarship from Greenwich House Music School. After dropping out of high school he began busking on the streets of NYC and playing alongside many rock and hip-hop groups including an all black indie rock band called “Sankofa” who were written up in <a href="http://afropunk.com/2014/10/new-music-unreleased-sankofa-album-to-my-chagrin-featuring-young-jimmy/">Afro-Punk</a>.
+      <br/><br/>
+    YJ has opened and shared the stage with such acts as Kendrick Lamar, Saul Williams, Big Krit, Taleb Kweli & michelle williams, Grand Master Mele Mel, Smoke Dza, Lil Debbie, Ces Cru, Tanya Morgan, Res, Jay Boogie, Prince Harvey and Freddie Gibbs. He has performed at such notable venues such as Webster Hall, Santos Party House, House of Yes, South Paw, Arlene’s Grocery, By Robert James, Afro-Punk Showcase, Gold Sounds, Friends and Lovers, Tender Trap and The Danger. His music is a medley of many genres; hip hop, Rap, Trap, punk, jazz, and indie rock music. YJ will Release new music this spring off his independent label, Tri-Skate Records.
+      </div>
+      <div class="wave"><img src="images/wave.jpg"/></div>
+    </div>
+  </div>
+
+  <iframe id="soundcloud_player_iframe" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F153729113&auto_play=false"></iframe>
   <div id="social_links">
     <a href="https://www.facebook.com/YoungJimmy.band"><img class="social_link" src="images/logo_facebook.png" alt="Facebook" title="facebook"/></a>
     <a href="https://instagram.com/youngjimster/"><img class="social_link" src="images/logo_instagram.png" alt="instagram" title="Instagram"/></a>
@@ -58,108 +89,7 @@
     <a href="https://www.amazon.com/dp/B077GH48F3/"><img class="social_link" src="images/logo_amazon.png" alt="amazon" title="Amazon"/></a>
   </div>
 
-  <div class="one-col">
-    <div class="one-col-1"><a href="https://itunes.apple.com/us/artist/young-jimmy/id579723816"><img id="promo_image" src="images/promo_yellow_yellow.jpg"/></a>
-     <!-- <br/><div id="bullets"></div> -->
-    </div>
-  </div>
-
-  <div class="spacer"></div>
-
-  <div class="one-col">
-    <div class="one-col-1"><a href="https://itunes.apple.com/us/artist/young-jimmy/id579723816"><img src="images/yj_main_big.jpg"/></a></div>
-  </div>
-
-  <div class="spacer"></div>
-
-  <div id="bio">
-    <div class="text">
-      YJ, formally Young Jimmy, guitarist turned rapper coming out of the now notorious East Chester Gardens projects in the Bronx, got his start in music in Bushwick at the age of six. He received his first guitar from a family member, two years later relocating to the Bronx. He attended the High School of Art and Design and received a scholarship from Greenwich House Music School. After dropping out of high school he began busking on the streets of NYC and playing alongside many rock and hip-hop groups including an all black indie rock band called “Sankofa” who were written up in <a href="http://afropunk.com/2014/10/new-music-unreleased-sankofa-album-to-my-chagrin-featuring-young-jimmy/">Afro-Punk</a>.
-      <br/><br/>
-      YJ has opened and shared the stage with such acts as Kendrick Lamar, Saul Williams, Big Krit, Taleb Kweli & michelle williams, Grand Master Mele Mel, Smoke Dza, Lil Debbie, Ces Cru, Tanya Morgan, Res, Jay Boogie, Prince Harvey and Freddie Gibbs. He has performed at such notable venues such as Webster Hall, Santos Party House, House of Yes, South Paw, Arlene’s Grocery, By Robert James, Afro-Punk Showcase, Gold Sounds, Friends and Lovers, Tender Trap and The Danger. His music is a medley of many genres; hip hop, Rap, Trap, punk, jazz, and indie rock music. YJ will Release new music this spring off his independent label, Tri-Skate Records.
-    </div>
-  </div>
-
-  <div class="spacer"></div>
-
-  <div class="two-col" id="hats">
-    <div class="two-col-1"><a href="images/hat_kap_ernick.png"><img class="hat" src="images/hat_kap_ernick.png"/></a></div>
-    <div class="two-col-2"><a href="images/hat_yjdad.png"><img class="hat" src="images/hat_yjdad.png"/></a></div>
-    <div class="two-col-1"><a href="images/hat_supremacy.png"><img class="hat" src="images/hat_supremacy.png"/></a></div>
-    <div class="two-col-2"><a href="images/hat_pink_panther.png"><img class="hat" src="images/hat_pink_panther.png"/></a></div>
-  </div>
-
-  <div class="spacer"></div>
-
-  <div class="poster">
-    <div class="album_name"><a href="http://www.goldsoundsbar.com/calendar-page/">Ces Cru</a></div>
-    <div class="album_link"><a href="http://www.goldsoundsbar.com/calendar-page/">March 18 @ Gold Sounds</a></div>
-    <a href="images/poster_tour_ces_cru.jpg"><img src="images/poster_tour_ces_cru.jpg" alt="Ces Cru"/></a>
-  </div>
-
-  <div class="spacer"></div>
-
-  <div class="poster">
-    <div class="album_name">Lil Debbie</div>
-    <a href="images/poster_show_jan_7.jpg"><img src="images/poster_show_jan_7.jpg" alt="Jan. 7 - Webster Hall"/></a>
-  </div>
-
-  <div class="spacer"></div>
-
-  <div class="poster">
-    <div class="album_name"><a href="http://www.teatrolatea.org/ourevents/">Jay Boogie</a></div>
-    <div class="album_link"><a href="http://www.teatrolatea.org/ourevents/">Sep. 23 at LATEA, 107 Suffolk St.</a></div>
-    <a href="images/poster_show_sep_23_2017.jpg"><img src="images/poster_show_sep_23_2017.jpg" alt="Jay Boogie"/></a>
-  </div>
-
-  <div class="spacer"></div>
-
-  <div class="poster">
-    <div class="album_name"><a href="https://itunes.apple.com/us/album/the-partys-over-ep/1304105898">The Party's Over</a></div>
-    <div class="album_link"><a href="https://itunes.apple.com/us/album/the-partys-over-ep/1304105898">Listen on iTunes</a></div>
-    <a href="https://itunes.apple.com/us/album/the-partys-over-ep/1304105898"><img class="album_cover" data-cover="images/album_cover_partys_over.jpg" data-back="images/album_back_partys_over.jpg" src="images/album_cover_partys_over.jpg" alt="The Party's Over"/></a>
-  </div>
-
-  <div class="spacer"></div>
-
-  <div class="poster">
-    <div class="album_name"><a href="https://soundcloud.com/cheezcakekidzrecords/sets/tha-black-punks">Tha Black Punks!</a></div>
-    <div class="album_link"><a href="https://soundcloud.com/cheezcakekidzrecords/sets/tha-black-punks">Listen on SoundCloud</a></div>
-    <a href="https://soundcloud.com/cheezcakekidzrecords/sets/tha-black-punks"><img class="album_cover" data-cover="images/album_cover_black_punks.jpg" data-back="images/album_back_black_punks.jpg" src="images/album_cover_black_punks.jpg" alt="Tha Black Punks"/></a>
-  </div>
-
-  <div class="spacer"></div>
-
-  <div class="poster">
-    <div class="album_name"><a href="https://soundcloud.com/cheezcakekidzrecords/sets/young-jimmy-hood-rock">Hood Rock</a></div>
-    <div class="album_link"><a href="https://soundcloud.com/cheezcakekidzrecords/sets/young-jimmy-hood-rock">Listen on SoundCloud</a></div>
-    <a href="https://soundcloud.com/cheezcakekidzrecords/sets/young-jimmy-hood-rock"><img class="album_cover" data-cover="images/album_cover_hood_rock.jpg" data-back="images/album_cover_hood_rock.jpg" src="images/album_cover_hood_rock.jpg" alt="Hood Rock"/></a>
-  </div>
-
-  <div class="spacer"></div>
-
-  <div class="poster">
-    <div class="album_name"><a href="images/album_back_hood_rock_2.jpg">Hood Rock II</a></div>
-    <a href="images/album_back_hood_rock_2.jpg"><img class="album_cover" data-cover="images/album_cover_hood_rock_2.jpg" data-back="images/album_back_hood_rock_2.jpg" src="images/album_cover_hood_rock_2.jpg" alt="Hood Rock 2"/></a>
-  </div>
-
-  <div class="spacer"></div>
-
-  <div class="poster">
-    <div class="album_name"><a href="https://soundcloud.com/cheezcakekidzrecords/sets/to-my-chagrin">Sankofa - To My Chagrin</a></div>
-    <div class="album_link"><a href="https://soundcloud.com/cheezcakekidzrecords/sets/to-my-chagrin">Listen on SoundCloud</a></div>
-    <a href="https://soundcloud.com/cheezcakekidzrecords/sets/to-my-chagrin"><img class="album_cover" data-cover="images/album_cover_sankofa.jpg" data-back="images/album_cover_sankofa.jpg" src="images/album_cover_sankofa.jpg" alt="Sankofa"/></a>
-  </div>
-
-  <div class="spacer"></div>
-
-
-  <div class="poster"><a href="http://afropunk.com/2014/10/new-music-unreleased-sankofa-album-to-my-chagrin-featuring-young-jimmy/"><img src="images/yj_afropunk.jpg" alt="Afropunk"/></a></div>
-
-  <div class="spacer"></div>
-
   <div id="footer"><a href="images/logo_yjjy_2.png"><img src="images/logo_yjjy_2.png" alt="Young Jimmy"/></a></div>
 
-  <iframe id="soundcloud_player_iframe" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F153729113&auto_play=true"></iframe>
 </body>
 </html>
