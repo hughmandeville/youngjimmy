@@ -11,6 +11,12 @@ $(function() {
     $("#menu_pulldown").on("click", function() {
         $("#menu_panel").toggle();
     });
+    $(".album_cover").on("mouseover", function() {
+        $(this).attr("src", $(this).data("back"));
+    });
+    $(".album_cover").on("mouseout", function() {
+        $(this).attr("src", $(this).data("cover"));
+    });
 });
 
 /**
@@ -34,8 +40,13 @@ function set_content() {
                            "<div class='box'><img class='hat' src='images/hat_supremacy.png'></div>" +
                            "<div class='box'><img class='hat' src='images/hat_pink_panther.png'></div>");
     } else if (page == "music") {
-        $("#content").empty();
-        $("#soundcloud_player_iframe").css("height", "600px");
+        $("#content").html("<div class='box'><a href='https://itunes.apple.com/us/album/the-partys-over-ep/1304105898'><img class='album_cover' data-cover='images/album_cover_partys_over.jpg' data-back='images/album_back_partys_over.jpg' src='images/album_cover_partys_over.jpg' alt='The Partys Over'/></a></div>" +
+                           "<div class='box'><a href='https://soundcloud.com/cheezcakekidzrecords/sets/tha-black-punks'><img class='album_cover' data-cover='images/album_cover_black_punks.jpg' data-back='images/album_back_black_punks.jpg' src='images/album_cover_black_punks.jpg' alt='Tha Black Punks'/></a></div>" +
+                           "<div class='box'><a href='https://soundcloud.com/cheezcakekidzrecords/sets/young-jimmy-hood-rock'><img class='album_cover' data-cover='images/album_cover_hood_rock.jpg' data-back='images/album_cover_hood_rock.jpg' src='images/album_cover_hood_rock.jpg' alt='Hood Rock'/></a></div>" +
+                           "<div class='box'><a href='images/album_back_hood_rock_2.jpg'><img class='album_cover' data-cover='images/album_cover_hood_rock_2.jpg' data-back='images/album_back_hood_rock_2.jpg' src='images/album_cover_hood_rock_2.jpg' alt='Hood Rock 2'/></a></div>" +
+                           "<div class='box'><a href='https://soundcloud.com/cheezcakekidzrecords/sets/to-my-chagrin'><img class='album_cover' data-cover='images/album_cover_sankofa.jpg' data-back='images/album_cover_sankofa.jpg' src='images/album_cover_sankofa.jpg' alt='Sankofa'/></a></div>"
+                          );
+        $("#soundcloud_player_iframe").css("height", "400px");
         $("#soundcloud_player_iframe").css("position", "relative");
     } else if (page == "press") {
         $("#content").html("<a href='http://afropunk.com/2014/10/new-music-unreleased-sankofa-album-to-my-chagrin-featuring-young-jimmy/'><img class='big_img' src='images/yj_afropunk.jpg' alt='Afropunk'/></a>");
