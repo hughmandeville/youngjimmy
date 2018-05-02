@@ -86,11 +86,14 @@ a {
   position: fixed;
 }
 
-
 #menu li {
   display: inline-block;
   margin-right: 20px;
   font-family:  'Ave Fedan', Edition, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+.button:hover, #menu_pulldown:hover, a:hover {
+  color: red;
 }
 
 #menu_pulldown {
@@ -116,7 +119,7 @@ a {
   text-transform: uppercase;
 }
 
-#content {  
+#content {
   margin: 100px auto;
   text-align: center;
 }
@@ -133,7 +136,7 @@ a {
 
 #bio {
   color: #154af2;
-  width: 800px;  
+  width: 800px;
   font-family:  'Ave Fedan', Edition, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
   font-weight: 300;
   display: inline-block;
@@ -144,6 +147,15 @@ a {
   display: inline-block;
 }
 
+.box {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 20px;
+}
+.poster {
+  width: 320px;
+}
+
 #soundcloud_player_iframe {
   bottom: 0;
   position: fixed;
@@ -151,6 +163,7 @@ a {
   width: 100%;
   box-shadow: 2px 0 5px rgba(0,0,0,.26);
   background: #ffff01;
+  z-index: 101;
 }
 
 #footer {
@@ -163,7 +176,6 @@ a {
 #footer img {
   width: 240px;
 }
-
 
 #social_links {
   position: relative;
@@ -178,6 +190,9 @@ a {
   vertical-align: middle;
 }
 
+.hat {
+  width: 320px;
+}
 
 @media all and (max-width: 1279px) {
   #content {
@@ -219,6 +234,9 @@ a {
   #bio_text {
     font-size: 18px;
   }
+  .big_img {
+    width: 100%;
+  }
 }
 
 @media all and (min-width: 600px) and (max-width: 1279px) {
@@ -227,6 +245,9 @@ a {
   }
   .wave img {
     width: 100px;
+  }
+  .big_img {
+    width: 85%;
   }
 }
 
@@ -250,10 +271,11 @@ a {
     width: 500px;
     font-size: 22px;
     line-height: 1.8em;
-    
   }
   .wave img {
     width: 140px;
   }
-
+  .big_img {
+    width: 70%;
+  }
 }
