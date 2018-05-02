@@ -1,11 +1,17 @@
 # Copy files to the web server (107.180.44.139).
-scp code.js youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
+scp code2.js youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
+#scp index2.html youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
+scp style2.css youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
+
+scp .htaccess youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
+
+#scp code.js youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 scp index.html youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp robots.txt youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp sitemap.xml youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp style.css youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp waveform.js youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
-#scp fonts/* youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/fonts/
+#scp fonts/ave_fedan.ttf youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/fonts/
 #scp images/*jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/*png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/boys_in_the_hood_promo.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
@@ -18,6 +24,9 @@ scp index.html youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp images/logo_soundcloud.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/logo_youtube.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/logo_yjjy_2.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
+#scp images/yj_main.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
+#scp images/yj_main_big.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
+#scp images/yj_main_2.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/young_jimmy_og.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/young_jimmy_120x120.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/button_itunes_available.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
@@ -37,6 +46,7 @@ scp index.html youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp images/poster_tour_ces_cru.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/promo_yellow_yellow.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 
+#scp images/wave.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/album_cover_black_punks.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/album_back_black_punks.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/album_cover_partys_over.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
