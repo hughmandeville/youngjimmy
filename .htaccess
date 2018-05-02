@@ -1,3 +1,10 @@
 RewriteOptions inherit
 
 RewriteEngine on
+
+RewriteRule    ^bio$     index.html    [NC,L]
+RewriteRule    ^index$   index.html    [NC,L]
+RewriteRule    ^music$   index.html    [NC,L]
+RewriteRule    ^shows$   index.html    [NC,L]
+RewriteRule    ^merch$   index.html    [NC,L]
+RewriteRule    ^press$   index.html    [NC,L]
