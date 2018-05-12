@@ -31,9 +31,8 @@ function set_content() {
     if ((page == "") || (page == "index.html") || (page == "index2.html")) {
         page = "index";
     }
-
     if (page == "index") {
-        $("#content").html("<img class='big_img' src='images/yj_main_2.jpg'/><br/><br/><img class='big_img' src='images/promo_yellow_yellow.jpg'/>");
+        $("#content").html("<img class='big_img' src='images/promo_yellow_yellow.jpg'/><br/><br/><img class='big_img' src='images/yj_main_2_alone.jpg'/>");
     } else if (page == "merch") {
         $("#content").html("<div class='box'><img class='hat' src='images/hat_kap_ernick.png'></div>" +
                            "<div class='box'><img class='hat' src='images/hat_yjdad.png'></div>" +
