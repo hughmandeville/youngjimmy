@@ -3,7 +3,7 @@ scp code2.js youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp index2.html youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 scp style2.css youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 
-scp .htaccess youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
+#scp .htaccess youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 
 #scp code.js youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 scp index.html youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
@@ -27,6 +27,8 @@ scp index.html youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp images/yj_main.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/yj_main_big.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/yj_main_2.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
+#scp images/yj_main_2_blue.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
+#scp images/yj_main_2_alone.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/young_jimmy_og.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/young_jimmy_120x120.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/button_itunes_available.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
@@ -55,8 +57,14 @@ scp index.html youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp images/album_cover_hood_rock_2.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/album_back_hood_rock_2.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/album_cover_sankofa.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
+
+#scp images/album_back_yy.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
+#scp images/album_cover_yy.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
+
 #scp images/poster_show_aug_12_2017.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/poster_show_aug_12_2017-after.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
+
+#scp images/poster_show_jun_12_2018.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 
 #scp videos/yj.mp4 youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/videos/
 
