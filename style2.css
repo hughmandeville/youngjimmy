@@ -3,6 +3,10 @@
   src: url(fonts/ave_fedan.ttf) format("truetype");
 }
 @font-face {
+  font-family: "Brushed Traveler";
+  src: url(fonts/brushed_traveler.ttf) format("truetype");
+}
+@font-face {
   font-family: "Easycore";
   src: url(fonts/easycore.ttf) format("truetype");
 }
@@ -200,6 +204,12 @@ a {
   width: 320px;
 }
 
+.youtube_iframe {
+  width: 100%;
+  margin: 40px 0;
+}
+
+
 @media all and (max-width: 1279px) {
   #content {
     width: 100%;
@@ -226,6 +236,9 @@ a {
   }
   #song_title {
     display: none;
+  }
+  .youtube_iframe {
+	height: 480px;
   }
 }
 
@@ -284,4 +297,11 @@ a {
   .big_img {
     width: 70%;
   }
+  .youtube_iframe {
+	height: 640px;
+  }
+}
+#bio_text .number {
+  font-family: "Brushed Traveler", Geneva, Verdana, sans-serif;
+  font-size: 60%;
 }
