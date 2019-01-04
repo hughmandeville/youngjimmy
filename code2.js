@@ -5,6 +5,8 @@
 var audio_state = "paused"; // playing or paused
 var sc_widget = null;
 
+var img_timer = null;
+
 $(function() {
     set_content();
     setup_soundcloud_player();
@@ -33,9 +35,13 @@ function set_content() {
     }
     if (page == "index") {
         $("#content").html(
-            "<a href='https://itunes.apple.com/album/id1375809976?ls=1&app=itunes'><img class='big_img' src='images/promo_yellow_yellow.jpg'/></a><br/><br/><br/><br/>" +
-            "<a href='https://www.ticketweb.com/event/late-to-the-party-yj-sobs-tickets/8361045?pl=sobs&edpPlParam=%3Fpl%3Dsobs'><img class='big_img' src='images/poster_show_jun_12_2018.jpg'></a><br/>");
-            // "<img class='big_img' src='images/yj_main_2_alone.jpg'/>"
+            "<a href='https://itunes.apple.com/album/id1375809976?ls=1&app=itunes'><img class='big_img' src='images/promo_yellow_yellow.jpg'/></a><br/><br/><iframe class='youtube_iframe video_main' src='https://www.youtube.com/embed/qF_HVIrmcsY' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><br/><iframe class='youtube_iframe video_main' src='https://www.youtube.com/embed/nfKMVYzotT8' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><br/><br/><br/>" +
+            "<img id='yj_main' class='big_img' src='images/yj_main_2_alone_1.jpg'/>");
+        if (img_timer != null) {
+            clearInterval(img_timer);
+            img_timer = null;
+        }
+        img_timer = setInterval(rotate_img, 7000);
     } else if (page == "merch") {
         $("#content").html("<div class='box'><img class='hat' src='images/hat_kap_ernick.png'></div>" +
                            "<div class='box'><img class='hat' src='images/hat_yjdad.png'></div>" +
@@ -58,8 +64,9 @@ function set_content() {
         $("#content").html(
             "<div class='box'><a href='https://www.ticketweb.com/event/late-to-the-party-yj-sobs-tickets/8361045?pl=sobs&edpPlParam=%3Fpl%3Dsobs'><img class='poster' src='images/poster_show_jun_12_2018.jpg'></a><br/>June 12, 2018</div>" +
             "<div class='box'><img class='poster' src='images/poster_tour_ces_cru.jpg'><br/>March 18, 2018</div>" +
-            "<div class='box'><img class='poster' src='images/poster_show_jan_7.jpg'><br/>January 7, 2018</div>" +
-            "<div class='box'><img class='poster' src='images/poster_show_sep_23_2017.jpg'><br/>September 23, 2017</div>");
+            "<div class='box'><img class='poster' src='images/poster_show_sep_23_2017.jpg'><br/>September 23, 2017</div>" +
+                "<div class='box'><img class='poster' src='images/poster_show_jan_7.jpg'><br/>January 7, 2017</div>");
+
     }
 }
 
@@ -141,4 +148,15 @@ function update_song_info() {
         // https://developers.soundcloud.com/blog/waveforms-let-s-talk-about-them
         // sound.waveform_url
     });
+}
+
+
+function rotate_img() {
+    if ($("#yj_main").attr("src") == "images/yj_main_2_alone_1.jpg") {
+        $("#yj_main").attr("src", "images/yj_main_2_alone_2.jpg");
+    } else if ($("#yj_main").attr("src") == "images/yj_main_2_alone_2.jpg") {
+        $("#yj_main").attr("src", "images/yj_main_2_alone_3.jpg");
+    } else {
+        $("#yj_main").attr("src", "images/yj_main_2_alone_1.jpg");
+    }
 }
