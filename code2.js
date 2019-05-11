@@ -5,8 +5,6 @@
 var audio_state = "paused"; // playing or paused
 var sc_widget = null;
 
-var img_timer = null;
-
 $(function() {
     set_content();
     setup_soundcloud_player();
@@ -33,15 +31,13 @@ function set_content() {
     if ((page == "") || (page == "index.html") || (page == "index2.html")) {
         page = "index";
     }
+    $("body").removeClass();
+    $("body").addClass("bg_yellow");
     if (page == "index") {
+        $("body").removeClass();
+        $("body").addClass("bg_black");
         $("#content").html(
-            "<a href='https://itunes.apple.com/album/id1375809976?ls=1&app=itunes'><img class='big_img' src='images/promo_yellow_yellow.jpg'/></a><br/><br/><iframe class='youtube_iframe video_main' src='https://www.youtube.com/embed/DuwOr4_74cg' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><br/><iframe class='youtube_iframe video_main' src='https://www.youtube.com/embed/qF_HVIrmcsY' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><br/><iframe class='youtube_iframe video_main' src='https://www.youtube.com/embed/nfKMVYzotT8' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><br/><br/><br/>" +
-            "<img id='yj_main' class='big_img' src='images/yj_main_2_alone_1.jpg'/>");
-        if (img_timer != null) {
-            clearInterval(img_timer);
-            img_timer = null;
-        }
-        img_timer = setInterval(rotate_img, 7000);
+            "<a href='https://itunes.apple.com/us/artist/yj/1194698282'><img class='big_img' src='images/promo_yj_black.jpg'/></a><br/><br/><iframe class='youtube_iframe video_main' src='https://www.youtube.com/embed/qF_HVIrmcsY' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><br/><iframe class='youtube_iframe video_main' src='https://www.youtube.com/embed/nfKMVYzotT8' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><br/><br/><br/>");
     } else if (page == "merch") {
         $("#content").html("<div class='box'><img class='hat' src='images/hat_kap_ernick.png'></div>" +
                            "<div class='box'><img class='hat' src='images/hat_yjdad.png'></div>" +
@@ -148,23 +144,4 @@ function update_song_info() {
         // https://developers.soundcloud.com/blog/waveforms-let-s-talk-about-them
         // sound.waveform_url
     });
-}
-
-
-function rotate_img() {
-    if ($("#yj_main").attr("src") == "images/yj_main_2_alone_1.jpg") {
-        $("#yj_main").attr("src", "images/yj_main_2_alone_2.jpg");
-    } else if ($("#yj_main").attr("src") == "images/yj_main_2_alone_2.jpg") {
-        $("#yj_main").attr("src", "images/yj_main_2_alone_3.jpg");
-    } else if ($("#yj_main").attr("src") == "images/yj_main_2_alone_3.jpg") {
-        $("#yj_main").attr("src", "images/yj_main_2_alone_4.jpg");
-    } else if ($("#yj_main").attr("src") == "images/yj_main_2_alone_4.jpg") {
-        $("#yj_main").attr("src", "images/yj_main_2_alone_5.jpg");
-    } else if ($("#yj_main").attr("src") == "images/yj_main_2_alone_5.jpg") {
-        $("#yj_main").attr("src", "images/yj_main_2_alone_6.jpg");
-    } else if ($("#yj_main").attr("src") == "images/yj_main_2_alone_6.jpg") {
-        $("#yj_main").attr("src", "images/yj_main_2_alone_7.jpg");
-    } else {
-        $("#yj_main").attr("src", "images/yj_main_2_alone_1.jpg");
-    }
 }
