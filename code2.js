@@ -1,8 +1,8 @@
 /*
- * http://developers.soundcloud.com/docs/api/html5-widget
+ * https://developers.soundcloud.com/docs/api/html5-widget
  *
  */
-var audio_state = "paused"; // playing or paused
+var audio_state = "playing"; // playing or paused
 var sc_widget = null;
 
 $(function() {
@@ -37,7 +37,7 @@ function set_content() {
         $("body").removeClass();
         $("body").addClass("bg_black");
         $("#content").html(
-            "<a href='https://itunes.apple.com/us/artist/yj/1194698282'><img class='big_img' src='images/promo_yj_black.jpg'/></a><br/><br/><iframe class='youtube_iframe video_main' src='https://www.youtube.com/embed/qF_HVIrmcsY' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><br/><iframe class='youtube_iframe video_main' src='https://www.youtube.com/embed/nfKMVYzotT8' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><br/><br/><br/>");
+            "<a href='https://itunes.apple.com/us/album/uptown-gun-sounds-single/1307063684?app=itunes'><img class='big_img' src='images/yj_main_3.jpg'/></a><br/><br/><iframe class='youtube_iframe video_main' src='https://www.youtube.com/embed/xK6mYENLsfo' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><br/><iframe class='youtube_iframe video_main' src='https://www.youtube.com/embed/DuwOr4_74cg' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><br/><iframe class='youtube_iframe video_main' src='https://www.youtube.com/embed/qF_HVIrmcsY' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><br/><iframe class='youtube_iframe video_main' src='https://www.youtube.com/embed/nfKMVYzotT8' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><br/><br/><br/>");
     } else if (page == "merch") {
         $("#content").html("<div class='box'><img class='hat' src='images/hat_kap_ernick.png'></div>" +
                            "<div class='box'><img class='hat' src='images/hat_yjdad.png'></div>" +
@@ -55,9 +55,10 @@ function set_content() {
         $("#soundcloud_player_iframe").css("height", "400px");
         $("#soundcloud_player_iframe").css("position", "relative");
     } else if (page == "press") {
-        $("#content").html("<a href='http://afropunk.com/2014/10/new-music-unreleased-sankofa-album-to-my-chagrin-featuring-young-jimmy/'><img class='big_img' src='images/yj_afropunk.jpg' alt='Afropunk'/></a>");
+        $("#content").html("<a href='https://afropunk.com/2014/10/new-music-unreleased-sankofa-album-to-my-chagrin-featuring-young-jimmy/'><img class='big_img' src='images/yj_afropunk.jpg' alt='Afropunk'/></a>");
     } else if (page == "shows") {
         $("#content").html(
+            "<div class='box'><a href='https://www.ticketfly.com/event/1864216-soular-t-papa-bare-prof-j-new-york/'><img class='poster' src='images/poster_show_aug_17_2019.jpg'></a><br/>August 17, 2019</div>" +
             "<div class='box'><a href='https://www.ticketweb.com/event/late-to-the-party-yj-sobs-tickets/8361045?pl=sobs&edpPlParam=%3Fpl%3Dsobs'><img class='poster' src='images/poster_show_jun_12_2018.jpg'></a><br/>June 12, 2018</div>" +
             "<div class='box'><img class='poster' src='images/poster_tour_ces_cru.jpg'><br/>March 18, 2018</div>" +
             "<div class='box'><img class='poster' src='images/poster_show_sep_23_2017.jpg'><br/>September 23, 2017</div>" +
