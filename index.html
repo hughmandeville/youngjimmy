@@ -1,241 +1,278 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YJ</title>
-    <meta itemprop="inLanguage" content="en" />
-    <link rel="icon" type="image/png" href="images/favicon_32x32.png" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <meta
-      name="description"
-      content="YJ is a rapper and guitarist from the Bronx.  He has opened for Kendrick Lamar.  His new single 'Date Night' is now available on iTunes."
-    />
-    <meta
-      name="twitter:card"
-      value="YJ is a rapper and guitarist from the Bronx.  He has opened for Kendrick Lamar.  His new single 'Date Night' is now available on iTunes."
-    />
-    <meta
-      name="twitter:description"
-      value="YJ is a rapper and guitarist the Bronx.  He has opened for Kendrick Lamar.  His new single 'Date Night' is now available on iTunes."
-    />
-    <meta name="twitter:site" value="@youngjimster" />
-    <meta name="twitter:creator" value="@youngjimster" />
-    <meta
-      name="twitter:image"
-      content="https://youngjimmy.com/images/young_jimmy_120x120.png"
-    />
-    <meta property="og:title" content="youngjimmy.com" />
-    <meta property="og:site_name" content="YJ" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://youngjimmy.com/" />
-    <meta
-      property="og:image"
-      content="https://youngjimmy.com/images/young_jimmy_og.png"
-    />
-    <meta
-      property="og:description"
-      content="YJ is a rapper and guitarist from the Bronx.  He has opened for Kendrick Lamar.  His new single 'Date Night' is now available on iTunes."
-    />
-    <meta property="og:locale" content="en_US" />
-    <meta
-      name="google-site-verification"
-      content="HjEzail2LNsSfUYg7TUYqVyzk3pWM09-7rATLnYbzZo"
-    />
-    <meta property="fb:admins" content="706807023" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="stylesheet" type="text/css" href="style2.css?version=20200101" />
-    <script src="https://code.jquery.com/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://connect.soundcloud.com/sdk.js"></script>
-    <script src="https://w.soundcloud.com/player/api.js"></script>
-    <script src="code2.js?version=20200601"></script>
-    <script>
-      (function (i, s, o, g, r, a, m) {
-        i["GoogleAnalyticsObject"] = r;
-        (i[r] =
-          i[r] ||
-          function () {
-            (i[r].q = i[r].q || []).push(arguments);
-          }),
-          (i[r].l = 1 * new Date());
-        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m);
-      })(
-        window,
-        document,
-        "script",
-        "//www.google-analytics.com/analytics.js",
-        "ga"
-      );
-      ga("create", "UA-67853900-1", "auto");
-      ga("send", "pageview");
-    </script>
-  </head>
-  <body class="bg_black">
-    <div id="nav">
-      <a href="/"><img id="young_jimmy_logo" src="images/logo_yjjy_2.png" /></a>
-    </div>
-    <div id="controls">
-      <div id="song_title"></div>
-      <div id="button_previous" class="button">
-        <i class="material-icons">skip_previous</i>
-      </div>
-      <div id="button_play_pause" class="button">
-        <i class="material-icons">pause</i>
-      </div>
-      <div id="button_next" class="button">
-        <i class="material-icons">skip_next</i>
-      </div>
-    </div>
-    <div id="menu">
-      <ul>
-        <li><a href="bio">bio</a></li>
-        <li><a href="music">music</a></li>
-        <li><a href="shows">shows</a></li>
-        <li><a href="merch">merch</a></li>
-        <li><a href="press">press</a></li>
-      </ul>
-    </div>
-    <div id="menu_pulldown"><i class="material-icons">menu</i></div>
-    <div id="menu_panel">
-      <div class="menu_item">
-        <a href="bio"><i class="material-icons">library_books</i></a>
-        <a href="bio" class="title">bio</a>
-      </div>
-      <div class="menu_item">
-        <a href="merch"><i class="material-icons">shopping_cart</i></a>
-        <a href="merch" class="title">merch</a>
-      </div>
-      <div class="menu_item">
-        <a href="music"><i class="material-icons">library_music</i></a>
-        <a href="music" class="title">music</a>
-      </div>
-      <div class="menu_item">
-        <a href="press"><i class="material-icons">message</i></a>
-        <a href="press" class="title">press</a>
-      </div>
-      <div class="menu_item">
-        <a href="shows"><i class="material-icons">event</i></a>
-        <a href="shows" class="title">shows</a>
-      </div>
-    </div>
 
-    <div id="content">
-      <div id="main_img"><img src="images/yj_main_big.jpg" /></div>
-      <div id="bio">
-        <div class="wave wave_left"><img src="images/wave.jpg" /></div>
-        <div id="bio_text">
-          YJ, AKA Young Jimmy AKA Young Jimster, Guitarist, Rapper, Graphic
-          Designer Brand’s his self with a custom made logo that reads “YJJY”
-          surrounded by a hand drawn comic speech bubble. He reps his logo along
-          with the color Yellow similar to Prince repping the symbol and the
-          color Purple. Originally from The Bronx NYC, born in Manhattan.
-          African American parents family migrated to NYC from South and North
-          Carolina when his Mother was a child. He received his first guitar
-          from a family member at the age of 6 in Brooklyn, a year later
-          relocating to The Bronx. He attended P.S.
-          <span class="number">66</span> and the High School of Art and Design
-          in the same class as Designer Laquan Smith and Rapper ASAP Ferg and
-          received a Scholarship from Greenwich House Music School. Residing in
-          the South Bronx and the North Bronx East Chester Gardens Projects in
-          the late nineties and early two-thousands. After dropping out of high
-          school he began busking on the streets of NYC and playing alongside
-          many rock and hip-hop groups as a lead Guitarist for Jah-C and The
-          Antidote an all black indie rock band called “Sankofa” formed in
-          <span class="number">2007</span> at the original House of Yes at the
-          height of the Indie-Rock movement releasing their debut EP 'To My
-          Chagrin' was written up in
-          <a
-            href="https://afropunk.com/2014/10/new-music-unreleased-sankofa-album-to-my-chagrin-featuring-young-jimmy/"
-            >Afro-Punk</a
-          >. <br /><br />
-          YJ Former member of Green Light Gang he has been playing Guitar for
-          over twenty years and has opened and shared the stage with such acts
-          as Kendrick Lamar, Saul Williams, Big Krit, Taleb Kweli & Michelle
-          Williams, Grand Master Mele Mel, Smoke Dza, Lil Debbie, Ces Cru, Tanya
-          Morgan, Res, Jay Boogie, Prince Harvey and Freddie Gibbs. YJ has
-          performed at such notable venues in NYC such as Webster Hall, Santos
-          Party House, House of Yes, South Paw, Arlene’s Grocery, By Robert
-          James, Afro-Punk Showcase, Gold Sounds, Friends and Lovers, Tender
-          Trap, The Danger, and Baby's All'Right etc. His music is a medley of
-          many genres; hip hop, Rap, Trap, punk, jazz, and indie rock music.
-        </div>
-        <div class="wave"><img src="images/wave.jpg" /></div>
-      </div>
-    </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YJ</title>
+  <meta itemprop="inLanguage" content="en" />
+  <link rel="icon" type="image/png" href="images/favicon_32x32.png" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <meta name="description"
+    content="YJ is a rapper and guitarist from the Bronx.  He has opened for Kendrick Lamar.  His new single 'Date Night' is now available on iTunes." />
+  <meta name="twitter:card"
+    value="YJ is a rapper and guitarist from the Bronx.  He has opened for Kendrick Lamar.  His new single 'Date Night' is now available on iTunes." />
+  <meta name="twitter:description"
+    value="YJ is a rapper and guitarist the Bronx.  He has opened for Kendrick Lamar.  His new single 'Date Night' is now available on iTunes." />
+  <meta name="twitter:site" value="@youngjimster" />
+  <meta name="twitter:creator" value="@youngjimster" />
+  <meta name="twitter:image" content="https://youngjimmy.com/images/young_jimmy_120x120.png" />
+  <meta property="og:title" content="youngjimmy.com" />
+  <meta property="og:site_name" content="YJ" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://youngjimmy.com/" />
+  <meta property="og:image" content="https://youngjimmy.com/images/young_jimmy_og.png" />
+  <meta property="og:description"
+    content="YJ is a rapper and guitarist from the Bronx.  He has opened for Kendrick Lamar.  His new single 'Date Night' is now available on iTunes." />
+  <meta property="og:locale" content="en_US" />
+  <meta name="google-site-verification" content="HjEzail2LNsSfUYg7TUYqVyzk3pWM09-7rATLnYbzZo" />
+  <meta property="fb:admins" content="706807023" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400,700" rel="stylesheet"
+    type="text/css" />
+  <link rel="stylesheet" type="text/css" href="style2.css?version=20200101" />
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://connect.soundcloud.com/sdk.js"></script>
+  <script src="https://w.soundcloud.com/player/api.js"></script>
+  <script src="code2.js?version=20200901"></script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i["GoogleAnalyticsObject"] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      "script",
+      "//www.google-analytics.com/analytics.js",
+      "ga"
+    );
+    ga("create", "UA-67853900-1", "auto");
+    ga("send", "pageview");
+  </script>
+</head>
 
-    <iframe
-      id="soundcloud_player_iframe"
-      allow="autoplay"
-      scrolling="no"
-      frameborder="no"
-      src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F153729113&auto_play=true"
-    ></iframe>
-    <div id="social_links">
-      <a href="https://instagram.com/youngjimster/"
-        ><img
-          class="social_link"
-          src="images/logo_instagram.png"
-          alt="instagram"
-          title="Instagram"
-      /></a>
-      <a href="https://itunes.apple.com/album/id/1304121727"
-        ><img
-          class="social_link"
-          src="images/logo_itunes.png"
-          alt="itunes"
-          title="iTunes"
-      /></a>
-      <a href="https://open.spotify.com/album/5etEH40aEMpYaLXWkflumH"
-        ><img
-          class="social_link"
-          src="images/logo_spotify.png"
-          alt="Spotify"
-          title="Spotify"
-      /></a>
-      <a href="https://soundcloud.com/cheezcakekidzrecords"
-        ><img
-          class="social_link"
-          src="images/logo_soundcloud.png"
-          alt="soundcloud"
-          title="SoundCloud"
-      /></a>
-      <a href="https://twitter.com/youngjimster"
-        ><img
-          class="social_link"
-          src="images/logo_twitter.png"
-          alt="twitter"
-          title="Twitter"
-      /></a>
-      <a href="https://www.youtube.com/channel/UCCxw7b-bE1p9Xfp2v2jRp7Q"
-        ><img
-          class="social_link"
-          src="images/logo_youtube.png"
-          alt="youtube"
-          title="YouTube"
-      /></a>
+<body class="bg_black">
+  <div id="nav">
+    <a href="/"><img id="young_jimmy_logo" src="images/logo_yjjy_2.png" /></a>
+  </div>
+  <div id="controls">
+    <div id="song_title"></div>
+    <div id="button_previous" class="button">
+      <i class="material-icons">skip_previous</i>
     </div>
-    <div id="footer">
-      <a href="images/logo_yjjy_2.png"
-        ><img src="images/logo_yjjy_2.png" alt="Young Jimmy"
-      /></a>
+    <div id="button_play_pause" class="button">
+      <i class="material-icons">pause</i>
     </div>
-    <span id="siteseal" style="display: none;"
-      ><script
-        async
-        type="text/javascript"
-        src="https://seal.godaddy.com/getSeal?sealID=hB9W0fszz0CmpZJF55AS5Anxc76TPk3C9YRWGjASPSMhpl6saISwslo39qxG"
-      ></script
-    ></span>
-  </body>
+    <div id="button_next" class="button">
+      <i class="material-icons">skip_next</i>
+    </div>
+  </div>
+  <div id="menu">
+    <ul>
+      <li><a href="bio">bio</a></li>
+      <li><a href="music">music</a></li>
+      <li><a href="shows">shows</a></li>
+      <li><a href="merch">merch</a></li>
+      <li><a href="press">press</a></li>
+    </ul>
+  </div>
+  <div id="menu_pulldown"><i class="material-icons">menu</i></div>
+  <div id="menu_panel">
+    <div class="menu_item">
+      <a href="bio"><i class="material-icons">library_books</i></a>
+      <a href="bio" class="title">bio</a>
+    </div>
+    <div class="menu_item">
+      <a href="merch"><i class="material-icons">shopping_cart</i></a>
+      <a href="merch" class="title">merch</a>
+    </div>
+    <div class="menu_item">
+      <a href="music"><i class="material-icons">library_music</i></a>
+      <a href="music" class="title">music</a>
+    </div>
+    <div class="menu_item">
+      <a href="press"><i class="material-icons">message</i></a>
+      <a href="press" class="title">press</a>
+    </div>
+    <div class="menu_item">
+      <a href="shows"><i class="material-icons">event</i></a>
+      <a href="shows" class="title">shows</a>
+    </div>
+  </div>
+
+  <div id="content">
+    <div id="main_img"><img src="images/yj_main_big.jpg" /></div>
+    <div id="bio">
+      <div class="wave wave_left"><img src="images/wave.jpg" /></div>
+      <div id="bio_text">
+        <p>
+          Christopher 'YOUNG JIMMY' Beckwith is a 33-year-old Guitarist, Rapper, Singer-Song Writer, Producer, Graphic
+          Designer, and Video Editor based in Brooklyn, NY. Raised in The Bronx, East Chester Garden's located in the
+          poorest, Congressional District 16, is Notoriously known for the largest gang takedown in New York City
+          history. Young Jimmy picked up the guitar at age 6. A high school dropout, he attended the Art & Design High
+          School class of 2006 and attended Greenwich House Music School. Studied Classical, Jazz, and Rock music
+          performed monthly recitals under a scholarship.
+        </p>
+        <p>
+          At age 19, he moved to the original House of Yes. Working as a Lead Guitarist for various Rock and Hip Hop
+          acts
+          in the New York City area. House of Yes would later burn down in a fire with half of his musical equipment
+          caused by ex-girlfriend negligence. Poverty and homelessness made life a constant struggle. In unfortunate
+          times
+          he slept on trains and park benches. Coming of age, influenced by 2pac, Andre 3000, Thin Lizzy, RHCP, The
+          Police, Micheal Jackson, Prince, STP, Raekwon, Nirvana, Run-D.M.C, Sublime, MF Doom, Rage Against the Machine,
+          Jimmy Page, and Jimi Hendrix.
+        </p>
+        <p>
+          In 2009 Young Jimmy recorded an EP called 'To My Chagrin' with an all-black indie-rock band 'Sankofa' with
+          producer-engineer Paul Mahajan. 'Sankofa' name comes from Ghana means "go back and get it" we must look back
+          to
+          our past so that we may understand how we became what we are and move forward to a better future. Cocaine,
+          ego,
+          and women ended the band 3-year run.
+        </p>
+        <p>
+          Growing up in The Bronx, rock music was not the norm by no means the birthplace of Hip Hop. Young Jimmy was
+          the
+          juxtapose to an environment dominated by Hip Hop, gangs, guns, violence, and Building fires. Raised by a
+          single
+          mother in public housing with three siblings, his stepfather was Hip Hop Legend, and Rock & Roll Hall of Famer
+          Grand Master Mele Mel helped nurture his musical ambitions. Introduced Young Jimmy to the music industry and
+          accompanied Mele Mel on a few sold-out shows playing guitar. Young Jimmy describes his style of music as Hood
+          Rock, a Rap-Rock alternative rock subgenre.
+        </p>
+        <p>
+          Young Jimmy has shared the stage and opened for: Kendrick Lamar, Big Krit, Freddie Gibbs, Saul Williams, Talib
+          Kweli & Michelle Williams, Smoke Dza, Res, Ces Cru, Tanya Morgan, Lil Debbie, Jah C & The Antidote, Jay
+          Boogie,
+          Caviliar, Doodlebug of Digable Planets, and many others.
+        </p>
+        <p>
+          Afro-Punk documentary by filmmaker James Spooner best describes the 'Black Rocker' experience. Black people
+          created rock music in the early 1950s. For the last 50 years, the genre has been dominated and appropriated by
+          white people mainly, white men. Here are excerpts from Jack Hamilton's book 'Just Around Midnight' speaks to
+          the
+          plight of the 'Black Rocker'-
+        </p>
+        <p>
+          "Being a white man had become preconditioned for making "real" rock music."
+        </p>
+        <p>
+          "No black derived musical form in American history has more assiduously moved to erase and blockade
+          participation than rock music."
+        </p>
+        <p>
+          "Which brings us to the third, and by far most common, way that the "whitening" of rock and roll music has
+          been discussed, Simply not at all."
+        </p>
+        <p>
+          Young Jimmy's debut studio album sets the record straight, due to be released in, 2021 allows listeners to
+          dive
+          into his 'raw' unfiltered "HOOD ROCK" fusion sound. His perspective will force listeners to confront the stark
+          reality in these tumultuous times in American History.Christopher 'YOUNG JIMMY' Beckwith is a 33-year-old
+          Guitarist, Rapper, Singer-Song Writer, Producer, Graphic Designer, and Video Editor based in Brooklyn, NY.
+          Raised in The Bronx, East Chester Garden's located in the poorest, Congressional District 16, is Notoriously
+          known for the largest gang takedown in New York City history. Young Jimmy picked up the guitar at age 6. A
+          high
+          school dropout, he attended the Art & Design High School class of 2006 and attended Greenwich House Music
+          School. Studied Classical, Jazz, and Rock music performed monthly recitals under a scholarship.
+        </p>
+        <p>
+          At age 19, he moved to the original House of Yes. Working as a Lead Guitarist for various Rock and Hip Hop
+          acts
+          in the New York City area. House of Yes would later burn down in a fire with half of his musical equipment
+          caused by ex-girlfriend negligence. Poverty and homelessness made life a constant struggle. In unfortunate
+          times
+          he slept on trains and park benches. Coming of age, influenced by 2pac, Andre 3000, Thin Lizzy, RHCP, The
+          Police, Micheal Jackson, Prince, STP, Raekwon, Nirvana, Run-D.M.C, Sublime, MF Doom, Rage Against the Machine,
+          Jimmy Page, and Jimi Hendrix.
+        </p>
+        <p>
+          In 2009 Young Jimmy recorded an EP called 'To My Chagrin' with an all-black indie-rock band 'Sankofa' with
+          producer-engineer Paul Mahajan. 'Sankofa' name comes from Ghana means "go back and get it" we must look back
+          to
+          our past so that we may understand how we became what we are and move forward to a better future. Cocaine,
+          ego,
+          and women ended the band 3-year run.
+        </p>
+        <p>
+          Growing up in The Bronx, rock music was not the norm by no means the birthplace of Hip Hop. Young Jimmy was
+          the
+          juxtapose to an environment dominated by Hip Hop, gangs, guns, violence, and Building fires. Raised by a
+          single
+          mother in public housing with three siblings, his stepfather was Hip Hop Legend, and Rock & Roll Hall of Famer
+          Grand Master Mele Mel helped nurture his musical ambitions. Introduced Young Jimmy to the music industry and
+          accompanied Mele Mel on a few sold-out shows playing guitar. Young Jimmy describes his style of music as Hood
+          Rock, a Rap-Rock alternative rock subgenre.
+        </p>
+        <p>
+          Young Jimmy has shared the stage and opened for: Kendrick Lamar, Big Krit, Freddie Gibbs, Saul Williams, Talib
+          Kweli & Michelle Williams, Smoke Dza, Res, Ces Cru, Tanya Morgan, Lil Debbie, Jah C & The Antidote, Jay
+          Boogie,
+          Caviliar, Doodlebug of Digable Planets, and many others.
+        </p>
+        <p>
+          Afro-Punk documentary by filmmaker James Spooner best describes the 'Black Rocker' experience. Black people
+          created rock music in the early 1950s. For the last 50 years, the genre has been dominated and appropriated by
+          white people mainly, white men. Here are excerpts from Jack Hamilton's book 'Just Around Midnight' speaks to
+          the
+          plight of the 'Black Rocker'-
+        </p>
+        <p>
+          "Being a white man had become preconditioned for making "real" rock music."
+        </p>
+        <p>
+          "No black derived musical form in American history has more assiduously moved to erase and blockade
+          participation than rock music."
+        </p>
+        <p>
+          "Which brings us to the third, and by far most common, way that the "whitening" of rock and roll music has
+          been discussed, Simply not at all."
+        </p>
+        <p>
+          Young Jimmy's debut studio album sets the record straight, due to be released in, 2021 allows listeners to
+          dive
+          into his 'raw' unfiltered "HOOD ROCK" fusion sound. His perspective will force listeners to confront the stark
+          reality in these tumultuous times in American History.
+        </p>
+      </div>
+      <div class="wave"><img src="images/wave.jpg" /></div>
+    </div>
+  </div>
+
+  <iframe id="soundcloud_player_iframe" allow="autoplay" scrolling="no" frameborder="no"
+    src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F153729113&auto_play=true"></iframe>
+  <div id="social_links">
+    <a href="https://instagram.com/youngjimster/"><img class="social_link" src="images/logo_instagram.png"
+        alt="instagram" title="Instagram" /></a>
+    <a href="https://itunes.apple.com/album/id/1304121727"><img class="social_link" src="images/logo_itunes.png"
+        alt="itunes" title="iTunes" /></a>
+    <a href="https://open.spotify.com/album/5etEH40aEMpYaLXWkflumH"><img class="social_link"
+        src="images/logo_spotify.png" alt="Spotify" title="Spotify" /></a>
+    <a href="https://soundcloud.com/cheezcakekidzrecords"><img class="social_link" src="images/logo_soundcloud.png"
+        alt="soundcloud" title="SoundCloud" /></a>
+    <a href="https://twitter.com/youngjimster"><img class="social_link" src="images/logo_twitter.png" alt="twitter"
+        title="Twitter" /></a>
+    <a href="https://www.youtube.com/channel/UCCxw7b-bE1p9Xfp2v2jRp7Q"><img class="social_link"
+        src="images/logo_youtube.png" alt="youtube" title="YouTube" /></a>
+  </div>
+  <div id="footer">
+    <a href="images/logo_yjjy_2.png"><img src="images/logo_yjjy_2.png" alt="Young Jimmy" /></a>
+  </div>
+  <span id="siteseal" style="display: none;">
+    <script async type="text/javascript"
+      src="https://seal.godaddy.com/getSeal?sealID=hB9W0fszz0CmpZJF55AS5Anxc76TPk3C9YRWGjASPSMhpl6saISwslo39qxG">
+      </script>
+  </span>
+</body>
+
 </html>
