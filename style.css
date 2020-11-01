@@ -2,18 +2,22 @@
   font-family: "Ave Fedan";
   src: url(fonts/ave_fedan.ttf) format("truetype");
 }
+
 @font-face {
   font-family: "Brushed Traveler";
   src: url(fonts/brushed_traveler.ttf) format("truetype");
 }
+
 @font-face {
   font-family: "Easycore";
   src: url(fonts/easycore.ttf) format("truetype");
 }
+
 @font-face {
   font-family: "KeepCalm";
   src: url(fonts/keep_calm.ttf) format("truetype");
 }
+
 html,
 body {
   padding: 0;
@@ -25,6 +29,7 @@ body.bg_black {
   background: #000000;
   color: #ffff01;
 }
+
 body.bg_yellow {
   background: #ffff01;
   color: #154af2;
@@ -48,6 +53,7 @@ a {
 .bg_black #nav {
   background: #212121;
 }
+
 .bg_yellow #nav {
   background: #ffff01;
 }
@@ -67,6 +73,7 @@ a {
   display: block;
   text-align: center;
 }
+
 #controls .button {
   width: 24px;
   padding: 11px 2px;
@@ -89,6 +96,7 @@ a {
 .bg_black #menu_pulldown {
   color: #ffff01;
 }
+
 .bg_yellow #menu,
 .bg_yellow #menu_pulldown {
   color: #154af2;
@@ -103,9 +111,11 @@ a {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   display: none;
 }
+
 .bg_black #menu_panel {
   background: #000000;
 }
+
 .bg_yellow #menu_panel {
   background: #ffff01;
 }
@@ -118,15 +128,19 @@ a {
   font-family: "KeepCalm", "Ave Fedan", Edition, "Lucida Grande",
     "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 }
+
 .bg_black .menu_item {
   border: 1px solid #333;
 }
+
 .bg_yellow .menu_item {
   border: 1px solid #ffee58;
 }
+
 .bg_black .menu_item:hover {
   background: #154af2;
 }
+
 .bg_yellow .menu_item:hover {
   background: #ffff8d;
 }
@@ -152,6 +166,7 @@ a {
 .bg_black a:hover {
   color: #ffff8d;
 }
+
 .bg_yellow .button:hover,
 .bg_yellow #menu_pulldown:hover,
 .bg_yellow a:hover {
@@ -208,6 +223,7 @@ a {
   display: inline-block;
   text-align: left;
 }
+
 #main_img {
   vertical-align: top;
   display: inline-block;
@@ -219,6 +235,7 @@ a {
   margin: 20px;
   font-size: 24px;
 }
+
 .poster {
   width: 320px;
 }
@@ -235,6 +252,7 @@ a {
 .bg_black #soundcloud_player_iframe {
   background: #616101;
 }
+
 .bg_yellow #soundcloud_player_iframe {
   background: #ffff01;
 }
@@ -245,22 +263,33 @@ a {
   font-size: 12px;
   text-align: center;
 }
+
 #footer img {
   width: 240px;
 }
+
 .bg_black #footer {
   color: #e0e0e0;
 }
+
 .bg_yellow #footer {
   color: #424242;
 }
 
 #social_links {
-  position: relative;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  position: fixed;
+  right: 20px;
+  top: 10px;
+  z-index: 101;
+  display: block;
   text-align: center;
+  filter: grayscale(100%);
 }
+
+#social_links:hover {
+  filter: none;
+}
+
 .social_link {
   display: inline-block;
   width: 30px;
@@ -281,29 +310,36 @@ a {
   #content {
     width: 100%;
   }
+
   #main_img img {
     margin: 0 auto;
     text-align: center;
   }
+
   #bio {
     width: 100%;
     margin: 0 auto;
     text-align: center;
   }
+
   #bio_text {
     width: 60%;
     font-size: 20px;
     line-height: 1.6em;
   }
+
   #menu {
     display: none;
   }
+
   #menu_pulldown {
     display: block;
   }
+
   #song_title {
     display: none;
   }
+
   .youtube_iframe {
     height: 480px;
   }
@@ -313,12 +349,15 @@ a {
   .wave img {
     width: 50px;
   }
+
   #main_img img {
     width: 80%;
   }
+
   #bio_text {
     font-size: 18px;
   }
+
   .big_img {
     width: 100%;
   }
@@ -328,9 +367,11 @@ a {
   #main_img img {
     width: 50%;
   }
+
   .wave img {
     width: 100px;
   }
+
   .big_img {
     width: 85%;
   }
@@ -340,33 +381,42 @@ a {
   #menu {
     display: block;
   }
+
   #menu_pulldown {
     display: none;
   }
+
   #song_title {
     display: inline-block;
   }
+
   #content {
     width: 1290px;
   }
+
   #main_img img {
     width: 480px;
   }
+
   #bio_text {
     width: 500px;
     font-size: 22px;
     line-height: 1.8em;
   }
+
   .wave img {
     width: 140px;
   }
+
   .big_img {
     width: 70%;
   }
+
   .youtube_iframe {
     height: 640px;
   }
 }
+
 #bio_text .number {
   font-family: "KeepCalm", Geneva, Verdana, sans-serif;
   font-size: 60%;
