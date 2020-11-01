@@ -11,575 +11,363 @@
   src: url(fonts/easycore.ttf) format("truetype");
 }
 @font-face {
-  font-family: "Edition";
-  src: url(fonts/edition.tff) format("truetype");
+  font-family: "KeepCalm";
+  src: url(fonts/keep_calm.ttf) format("truetype");
 }
-@font-face {
-  font-family: "Friday Lovers";
-  src: url(fonts/friday_lovers.otf) format("opentype");
-}
-@font-face {
-  font-family: "La Maison de Papier";
-  src: url(fonts/la_maison_de_papier.ttf) format("truetype");
-}
-
-html, body {
-  background: #ffff01;
+html,
+body {
   padding: 0;
   margin: 0;
+  font-family: "KeepCalm", Geneva, Verdana, sans-serif;
+}
+
+body.bg_black {
+  background: #000000;
+  color: #ffff01;
+}
+body.bg_yellow {
+  background: #ffff01;
   color: #154af2;
 }
+
 a {
- color: inherit;
- text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
+
 #nav {
   position: fixed;
   top: 0;
   left: 0;
-  height: 80px;
+  height: 48px;
   width: 100%;
   z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
+
+.bg_black #nav {
+  background: #212121;
+}
+.bg_yellow #nav {
+  background: #ffff01;
+}
+
 #nav #young_jimmy_logo {
   display: block;
   margin: 0 auto;
-  height: 80px;
+  height: 48px;
   z-index: 105;
 }
 
-.video_main {
- position: relative;
- color: #feef00;
- border: 0;
- width: 100%;
- margin: 0 auto;
+#controls {
+  position: fixed;
+  right: 20px;
+  top: 0px;
+  z-index: 101;
+  display: block;
+  text-align: center;
+}
+#controls .button {
+  width: 24px;
+  padding: 11px 2px;
+  display: inline-block;
+  cursor: pointer;
 }
 
-.spacer {
-  height: 100px;
-}
-.band {
-  position: relative;
-}
-
-.album_name {
-  font-size: 18px;
+#menu,
+#menu_pulldown {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 101;
+  display: block;
+  text-align: center;
   font-weight: 600;
-  text-align: center;
+}
+
+.bg_black #menu,
+.bg_black #menu_pulldown {
+  color: #ffff01;
+}
+.bg_yellow #menu,
+.bg_yellow #menu_pulldown {
   color: #154af2;
-  font-family:  'Ave Fedan', Edition, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
-}
-.album_link {
-  font-size: 14px;
-  font-weight: 400;
-  text-align: center;
-  color: #154af2;
 }
 
-
-.album_title {
-  font-size: 60pt;
-  color: #154af2;
-  z-index: 2;
-  text-align: center;
-  margin-bottom: 10px;
+#menu_panel {
+  position: fixed;
+  z-index: 102;
+  width: 200px;
+  top: 48px;
+  left: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  display: none;
 }
-.album_the_movies {
-  font-size: 60pt;
-  font-family: "La Maison de Papier", Edition, Easycore, arial;
+.bg_black #menu_panel {
+  background: #000000;
 }
-.album_date_night {
-  font-size: 70pt;
-  font-family: Easycore, Edition, arial;
-}
-.album_hood_rock_2 {
-  font-size: 60pt;
-  font-family: Edition, arial;
-}
-.album_hood_rock {
-  font-size: 40pt;
-  font-family: Charcoal, Impact, sans-serif;
-}
-.album_uptown_gun_sounds {
-  font-size: 26pt;
-  font-family: "Brushed Traveler", arial;
+.bg_yellow #menu_panel {
+  background: #ffff01;
 }
 
-.two-col {
- font-family: arial;
- font-size: 24px;
- line-height: 1.5em;
+.menu_item {
+  font-size: 22px;
+  line-height: 22px;
+  padding: 12px;
+  vertical-align: top;
+  font-family: "KeepCalm", "Ave Fedan", Edition, "Lucida Grande",
+    "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 }
-.two-col .album_title {
- font-family:  verdana, tahoma arial;
- font-size: 24px;
+.bg_black .menu_item {
+  border: 1px solid #333;
 }
-.album_date_night .album_title {
- font-family:  verdana, tahoma arial;
+.bg_yellow .menu_item {
+  border: 1px solid #ffee58;
 }
-
-.album_artist {
- color: #feef00;
- font-family:  verdana, tahoma arial;
- font-size: 20px;
+.bg_black .menu_item:hover {
+  background: #154af2;
 }
-.album_label {
- font-family: verdana, tahoma, arial;
- font-size: 18px;
- color: #424242;
-}
-.album_date {
- font-family:  verdana, tahoma arial;
- font-size: 18px;
- font-weight: 600;
-}
-.alt_chars {
- font-family: verdana, tahoma arial;
- font-style: italic;
+.bg_yellow .menu_item:hover {
+  background: #ffff8d;
 }
 
-#footer {
-  margin: 40px auto;
-  font-family: 'Friday Lovers', arial;
-  font-size: 12px;
-  text-align: center;
-  color: #424242;
-}
-#footer img {
-  width: 240px;
+.menu_item .material-icons {
+  margin-right: 14px;
+  display: inline-block;
 }
 
-.button {
- cursor: pointer;
- display: inline-block;
- vertical-align: middle;
- horizontal-align: center;
-}
-#button_play_pause {
- margin-left: 5px;
-}
-.button:hover {
-  color: #5e92f3;
+.menu_item .title {
+  position: fixed;
 }
 
+#menu li {
+  display: inline-block;
+  margin-right: 20px;
+  font-family: "KeepCalm", "Ave Fedan", Edition, "Lucida Grande",
+    "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+.bg_black .button:hover,
+.bg_black #menu_pulldown:hover,
+.bg_black a:hover {
+  color: #ffff8d;
+}
+.bg_yellow .button:hover,
+.bg_yellow #menu_pulldown:hover,
+.bg_yellow a:hover {
+  color: red;
+}
+
+#menu_pulldown {
+  margin-left: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#menu_pulldown i,
+#controls .button i {
+  font-size: 28px;
+}
 
 #song_title {
+  position: relative;
   display: inline-block;
   font-weight: 200;
-  font-family:  Easycore, Edition, 'courier new', monospace;
-  line-height: 20px;
-  font-size: 18pt;
+  font-family: "KeepCalm", "Ave Fedan", Edition, "Lucida Grande",
+    "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-size: 16px;
   text-align: center;
   vertical-align: top;
-}
-#song_art {
- height: 16px;
- margin-right: 10px;
- display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
+  text-transform: uppercase;
 }
 
-#nav {
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.caption {
- font-size: 14px;
- font-family: tahoma, verdana, helvetica;
- color: #424242;
- padding: 0 10px;
-}
-
-
-.table_tracks {
- font-family:  Easycore, Edition, arial;
- font-size: 24pt;
- color: #424242;
-}
-.table_tracks td {
-  padding: 0 10px;
-  border: 1px solid #333;
-  border-collapse: collapse;
-}
-.table_tracks, .table_tracks tr, .table_tracks td, .table_tracks th {
-   border-collapse: collapse;
-}
-.table_tracks tr:hover {
-  background: #222;
-}
-.table_tracks tr:hover .button_itunes {
-  background: #222;
-  color: #424242;
-}
-
-
-.row_track {
- cursor: pointer;
-}
-.track {
-  cursor: pointer;
-  color: #424242;
-}
-.playable {
-  color: #154af2;
-}
-.playable:hover, .table_tracks tr:hover .playable {
- color: #000000;
-}
-
-.button_itunes_available {
-  display:inline-block;
-  width:120px;
-}
-
-
-.one-col-1 {
-  margin: 0 auto;
+#content {
+  margin: 100px auto;
   text-align: center;
 }
 
-.one-col-1 img {
-  width: 100%;
+.wave,
+#bio_text {
+  display: inline-block;
+  vertical-align: top;
 }
 
-@media all and (max-width: 899px) {
-  #song_title {
-    display: block;
-    font-size: 24pt;
-    margin-bottom: 8px;
-  }
-  #controls {
-    position: relative;
-    display: block;
-    text-align: center;
-    margin-top: 100px;
-  }
-  #controls .button {
-    width: 32px;
-    padding: 10px;
-  }
-  #social_links {
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  .social_link {
-    display: inline-block;
-    width: 30px;
-    margin-right: 20px;
-    vertical-align: middle;
-  }
-
-  .one-col, .three-col {
-    width: 100%;
-  }
-  .two-col {
-  }
-  .two-col-1, .two-col-2 {
-    display: block;
-    max-width: 400px;
-    text-align: center;
-    margin: 0 auto;
-    vertical-align: top;
-    padding: 0;
-    font-size: 16pt;
-  }
-
-  .table_tracks {
-    width: 100%;
-    max-width: 400px;
-  }
-  .two-col-1 .album_cover {
-    padding: 0;
-    margin:0;
-    max-width: 300px;
-    max-height: 300px;
-  }
-
-  .three-col {
-    position: relative;
-    display: block;
-    width: 100%;
-  }
-  .three-col-2 {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .img_main {
-    max-width: 384px;
-    width: 100%;
-  }
-  #promo_image {
-    width: 100%;
-  }
-  .three-col-1,.three-col-3 {
-    display: none;
-  }
-  #soundcloud_player_iframe {
-    height: 20px;
-    width: 100%;
-  }
-  .video_main {
-    height: 320px;
-  }
-  #bullets {
-    margin-top: -32px;
-  }
-}
-
-
-@media all and (min-width: 900px) {
-  #controls {
-    position: fixed;
-    right: 20px;
-    top: 20px;
-    z-index: 101;
-  }
-  #controls .button {
-    width: 24px;
-    padding: 0 4px;
-  }
-
-  #song_title  {
-    margin-right: 20px;
-  }
-
-  #social_links {
-    position: fixed;
-    top: 15px;
-    left: 10px;
-    z-index: 101;
-  }
-  .social_link {
-    display: inline-block;
-    width: 30px;
-    margin: 0 10px;
-    vertical-align: middle;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
-  }
-  .social_link:hover {
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
-  }
-
-  #promo_image {
-    margin-top: 100px;
-  }
-
-  .one-col, .three-col {
-    width: 900px;
-  }
-  .two-col {
-    width: 710px;
-  }
-  .table_tracks {
-    max-width: 400px;
-  }
-
-  .two-col-1, .two-col-2 {
-    display: inline-block;
-    text-align: center;
-    vertical-align: top;
-    padding: 0;
-    margin: 0 auto;
-  }
-
-  .two-col-1 {
-    font-size: 16pt;
-    width: 300px;
-  }
-  .two-col-1 .album_cover {
-    padding: 0;
-    margin:0;
-    width: 300px;
-    height: 300px;
-  }
-
-  .two-col-2 {
-    padding: 0 20px;
-    width: 400px;
-  }
-
-  .three-col {
-    vertical-align: center;
-    font-family: 'Friday Lovers', arial;
-    font-size: 22pt;
-    line-height: 2.5em;
-  }
-  .three-col-1,.three-col-3 {
-    vertical-align: top;
-    display: inline-block;
-    width: 250px;
-    text-align: center;
-    margin-top: 80px;
-  }
-  .three-col-2 {
-    vertical-align: top;
-    display: inline-block;
-    width: 385px;
-  }
-  .one-col, .two-col, .three-col {
-    vertical-align: top;
-    padding: 0;
-    margin: 0 auto;
-  }
-  .two-col-1, .two-col-2 {
-    display: inline-block;
-    vertical-align: top;
-    padding: 0;
-    margin: 0 auto;
-  }
-  .one-col #promo_image, .one-col #promo_start img {
-    width: 100%;
-  }
-  .img_main {
-    display: block;
-    width: 384px;
-    margin: 0 auto;
-  }
-  #soundcloud_player_iframe {
-    height: 20px;
-    width: 100%;
-  }
-
-  .video_main {
-    height: 480px;
-  }
-
-  #bullets {
-    margin-top: -60px;
-  }
-}
-
-#modal_jaw {
-  display: none;
-  top: 0;
-  left: 0;
-  position: fixed;
-  background-image: url('images/jaw-x-ray.jpg');
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  z-index: 200;
-  text-align: right;
-}
-.button_close {
-  font-size: 20pt;
-  font-family: "Helvetica Neue","Segoe UI",Helvetica,Arial,"Lucida Grande",sans-serif;
-  font-weight: 600;
-  cursor: pointer;
-  vertical-align: center;
-}
-.button_close:hover {
- color: #feef00;
-}
-#button_xray {
-  cursor: pointer;
-}
-#button_xray:hover {
-  color: #feef00;
-  text-decoration: underline;
-}
-.button_itunes {
-  font-family:  'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  border: 1px solid #c0c0c0;
-  color: #c0c0c0;
-  padding: 4px 8px;
-  border-radius: 4px;
-  vertical-align: middle;
-}
-
-.button_itunes:hover {
-  border: 1px solid white;
-  color: white;
-  z-index: 2;
+.wave_left {
+  transform: scaleX(-1);
+  filter: FlipH;
 }
 
 #bio {
   color: #154af2;
-  max-width: 710px;
-  width: 100%;
-  font-family:  'Ave Fedan', Edition, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
-  font-size: 24px;
-  line-height: 40px;
+  width: 800px;
+  font-family: "KeepCalm", "Ave Fedan", Edition, "Lucida Grande",
+    "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   font-weight: 300;
-  margin: 0 auto;
-}
-#bio .text {
-  padding: 10px;
-}
-
-.covers_grid {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.covers_grid img {
-  flex-grow: 1;
-  width: 300px;
-}
-
-#promo_start_container {
-  position: fixed;
-  top: 0px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding-top: 100px;
-  background-color: rgba(255,255,255,0.3);
-}
-#promo_start {
-  position: relative;
-  margin: 0 auto;
-  text-align: center;
-  z-index: 300;
-}
-
-.poster {
-  width: 380px;
-  margin: 0 auto;
-  text-align: center;
-}
-.poster img {
-  width: 380px;
-}
-.album_cover {
-  cursor: pointer;
-}
-
-#bullets {
-  font-family: arial, sans-serif;
-  font-weight: 700;
-  text-align: center;
-  font-size: 30px;
-  z-index: 2;
-
-}
-.bullet {
   display: inline-block;
-  cursor: pointer;
-  color: #616161;
-  margin: 0 6px;
+  text-align: left;
 }
-.bullet:hover {
-  color: #feef00;
-}
-.bullet_selected {
-  color: #154af2;
+#main_img {
+  vertical-align: top;
+  display: inline-block;
 }
 
-#hats {
-  background: #ffff01;
-  margin-top: 80px;
+.box {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 20px;
+  font-size: 24px;
 }
-.hat {
-  width: 350px;
+.poster {
+  width: 320px;
+}
+
+#soundcloud_player_iframe {
+  bottom: 0;
+  position: fixed;
+  height: 20px;
+  width: 100%;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.26);
+  z-index: 101;
+}
+
+.bg_black #soundcloud_player_iframe {
+  background: #616101;
+}
+.bg_yellow #soundcloud_player_iframe {
+  background: #ffff01;
+}
+
+#footer {
+  margin: 40px auto;
+  font-family: "Friday Lovers", arial;
+  font-size: 12px;
+  text-align: center;
+}
+#footer img {
+  width: 240px;
+}
+.bg_black #footer {
+  color: #e0e0e0;
+}
+.bg_yellow #footer {
+  color: #424242;
+}
+
+#social_links {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.social_link {
+  display: inline-block;
+  width: 30px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.box img {
+  width: 320px;
+}
+
+.youtube_iframe {
+  width: 100%;
+  margin: 40px 0;
+}
+
+@media all and (max-width: 1279px) {
+  #content {
+    width: 100%;
+  }
+  #main_img img {
+    margin: 0 auto;
+    text-align: center;
+  }
+  #bio {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #bio_text {
+    width: 60%;
+    font-size: 20px;
+    line-height: 1.6em;
+  }
+  #menu {
+    display: none;
+  }
+  #menu_pulldown {
+    display: block;
+  }
+  #song_title {
+    display: none;
+  }
+  .youtube_iframe {
+    height: 480px;
+  }
+}
+
+@media all and (max-width: 599px) {
+  .wave img {
+    width: 50px;
+  }
+  #main_img img {
+    width: 80%;
+  }
+  #bio_text {
+    font-size: 18px;
+  }
+  .big_img {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 600px) and (max-width: 1279px) {
+  #main_img img {
+    width: 50%;
+  }
+  .wave img {
+    width: 100px;
+  }
+  .big_img {
+    width: 85%;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  #menu {
+    display: block;
+  }
+  #menu_pulldown {
+    display: none;
+  }
+  #song_title {
+    display: inline-block;
+  }
+  #content {
+    width: 1290px;
+  }
+  #main_img img {
+    width: 480px;
+  }
+  #bio_text {
+    width: 500px;
+    font-size: 22px;
+    line-height: 1.8em;
+  }
+  .wave img {
+    width: 140px;
+  }
+  .big_img {
+    width: 70%;
+  }
+  .youtube_iframe {
+    height: 640px;
+  }
+}
+#bio_text .number {
+  font-family: "KeepCalm", Geneva, Verdana, sans-serif;
+  font-size: 60%;
 }
