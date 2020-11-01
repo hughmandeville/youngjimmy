@@ -30,6 +30,7 @@ $(function () {
   window.addEventListener("resize", function () {
     if (window.innerWidth >= 1280) {
       $("#social_links").show();
+      $("#menu_panel").hide();
     }
   });
 });
