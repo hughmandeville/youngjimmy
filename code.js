@@ -8,6 +8,9 @@ var sc_widget = null;
 $(function () {
   set_content();
   setup_soundcloud_player();
+  $("#more").on("click", function () {
+    $("#social_links").toggle();
+  });
   $("#menu_pulldown").on("click", function () {
     $("#menu_panel").toggle();
   });
@@ -22,6 +25,12 @@ $(function () {
   });
   $("#modal_close").on("click", function () {
     $("#modal_subscribe").hide();
+  });
+
+  window.addEventListener("resize", function () {
+    if (window.innerWidth >= 1280) {
+      $("#social_links").show();
+    }
   });
 });
 

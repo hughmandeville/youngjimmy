@@ -93,12 +93,14 @@ a {
 }
 
 .bg_black #menu,
-.bg_black #menu_pulldown {
+.bg_black #menu_pulldown,
+.bg_black #more {
   color: #ffff01;
 }
 
 .bg_yellow #menu,
-.bg_yellow #menu_pulldown {
+.bg_yellow #menu_pulldown,
+.bg_yellow #more {
   color: #154af2;
 }
 
@@ -163,13 +165,16 @@ a {
 
 .bg_black .button:hover,
 .bg_black #menu_pulldown:hover,
-.bg_black a:hover {
+.bg_black a:hover,
+.bg_block #more,
+.bg_block #more:hover {
   color: #ffff8d;
 }
 
 .bg_yellow .button:hover,
 .bg_yellow #menu_pulldown:hover,
-.bg_yellow a:hover {
+.bg_yellow a:hover,
+.bg_yellow #more:hover {
   color: red;
 }
 
@@ -179,7 +184,14 @@ a {
   cursor: pointer;
 }
 
+#more {
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
 #menu_pulldown i,
+#more i,
 #controls .button i {
   font-size: 28px;
 }
@@ -276,6 +288,16 @@ a {
   color: #424242;
 }
 
+#more {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  z-index: 101;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+}
+
 #social_links {
   position: fixed;
   right: 20px;
@@ -283,7 +305,7 @@ a {
   z-index: 101;
   display: block;
   text-align: center;
-  filter: grayscale(100%);
+  //filter: grayscale(100%);
 }
 
 #social_links:hover {
@@ -328,11 +350,17 @@ a {
     line-height: 1.6em;
   }
 
-  #menu {
+  #menu,
+  #social_links {
     display: none;
   }
 
-  #menu_pulldown {
+  #social_links {
+    top: 60px;
+  }
+
+  #menu_pulldown,
+  #more {
     display: block;
   }
 
@@ -378,11 +406,14 @@ a {
 }
 
 @media all and (min-width: 1280px) {
-  #menu {
+
+  #menu,
+  #social_links {
     display: block;
   }
 
-  #menu_pulldown {
+  #menu_pulldown,
+  #more {
     display: none;
   }
 
