@@ -18,7 +18,10 @@ $(function () {
     $(this).attr("src", $(this).data("cover"));
   });
   $("#link_subscribe").on("click", function () {
-    console.log("subscribe");
+    $("#modal_subscribe").toggle();
+  });
+  $("#modal_close").on("click", function () {
+    $("#modal_subscribe").hide();
   });
 });
 
