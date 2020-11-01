@@ -17,7 +17,7 @@ $(function () {
   $(".album_cover").on("mouseout", function () {
     $(this).attr("src", $(this).data("cover"));
   });
-  $("#link_subscribe").on("click", function () {
+  $(".link_subscribe").on("click", function () {
     $("#modal_subscribe").toggle();
   });
   $("#modal_close").on("click", function () {
