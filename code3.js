@@ -6,6 +6,9 @@ $(function () {
   handleLink("videos");
   handleLink("music");
   handleLink("subscribe");
+  $("#menu_pulldown").on("click", function () {
+    $("#menu_panel").toggle();
+  });
   $("#button_video_previous").on("click", function () {
     yt_id--;
     if (yt_id < 0) {
@@ -27,7 +30,7 @@ function setVideo() {
 }
 
 function handleLink(name) {
-  $("#link_" + name).click(function () {
+  $(".link_" + name).click(function () {
     $([document.documentElement, document.body]).animate(
       {
         scrollTop: $("#" + name).offset().top,
