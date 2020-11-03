@@ -82,6 +82,12 @@ function setAlbum() {
     album["title"] +
     `</a></div>`;
   $("#album").html(html);
+  $(".album_cover").on("mouseover", function () {
+    $(this).attr("src", $(this).data("back"));
+  });
+  $(".album_cover").on("mouseout", function () {
+    $(this).attr("src", $(this).data("cover"));
+  });
 }
 
 function handleLink(name) {
