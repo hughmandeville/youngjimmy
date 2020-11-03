@@ -48,6 +48,13 @@ $(function () {
     nextID(albums, "albums");
     setAlbum();
   });
+  window.addEventListener("resize", function () {
+    if (window.innerWidth >= 1280) {
+      $("#social_links").show();
+      cr;
+      $("#menu_panel").hide();
+    }
+  });
 });
 
 function nextID(arr, id) {
@@ -101,7 +108,7 @@ function handleLink(name) {
   $(".link_" + name).click(function () {
     $([document.documentElement, document.body]).animate(
       {
-        scrollTop: $("#" + name).offset().top,
+        scrollTop: $("#" + name).offset().top - 80,
       },
       1000
     );
