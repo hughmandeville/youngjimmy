@@ -1,9 +1,15 @@
 var ids = { albums: 0, videos: 0 };
-var videos = ["xK6mYENLsfo", "DuwOr4_74cg", "qF_HVIrmcsY", "nfKMVYzotT8"];
+var videos = [
+  "xK6mYENLsfo",
+  "DuwOr4_74cg",
+  "qF_HVIrmcsY",
+  "nfKMVYzotT8",
+  "uC3PjsUqikE",
+];
 var albums = [
   {
     font: "album_cover_rockett_88.jpg",
-    back: "album_cover_rockett_88.jpg",
+    back: "album_back_rockett_88.jpg",
     title: "Rockett 88 - 2/26/2021",
     url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
   },
