@@ -19,7 +19,7 @@ body {
   margin: 0;
   font-family: "KeepCalm", Geneva, Verdana, sans-serif;
   background: #000000;
-  color: #ffff01;
+  color: #ffffff;
 }
 
 a {
@@ -34,8 +34,8 @@ a {
   height: 48px;
   width: 100%;
   z-index: 100;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-  background: #212121;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 #nav #young_jimmy_logo {
@@ -54,7 +54,7 @@ a {
   display: block;
   text-align: center;
   font-weight: 600;
-  color: #ffff01;
+  color: #ffffff;
 }
 
 #menu_panel {
@@ -79,7 +79,8 @@ a {
 }
 
 .menu_item:hover {
-  background: #154af2;
+  color: #ffff01;
+  background: #212121;
 }
 
 .menu_item .material-icons {
@@ -101,7 +102,7 @@ a {
 .button:hover,
 #menu_pulldown:hover,
 a:hover {
-  color: #ffff8d;
+  color: #ffff01;
 }
 
 #menu_pulldown {

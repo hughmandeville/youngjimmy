@@ -82,22 +82,26 @@
 
   <div id="menu">
     <ul>
-      <li class="link link_videos">Videos</li>
       <li class="link link_music">Music</li>
+      <li class="link link_videos">Videos</li>
+      <li class="link link_bio">Bio</li>
       <li class="link link_subscribe">Subscribe</li>
     </ul>
   </div>
 
   <div id="menu_pulldown"><i class="material-icons">menu</i></div>
   <div id="menu_panel">
-
+    <div class="menu_item link link_music">
+      <span class="material-icons">library_music</span>
+      <span class="title">music</span>
+    </div>
     <div class="menu_item link link_videos">
       <span class="material-icons">local_movies</span>
       <span class="title">videos</span>
     </div>
-    <div class="menu_item link link_music">
-      <span class="material-icons">library_music</span>
-      <span class="title">music</span>
+    <div class="menu_item link link_bio">
+      <span class="material-icons">perm_identity</span>
+      <span class="title">bio</span>
     </div>
     <div class="menu_item link link_subscribe">
       <i class="material-icons">email</i></a>
@@ -119,12 +123,17 @@
       <a href="https://www.youtube.com/channel/UCCxw7b-bE1p9Xfp2v2jRp7Q"><img class="social_link"
           src="images/logo_youtube.png" alt="youtube" title="YouTube" /></a>
     </div>
-
   </div>
 
-  <div class="row">
+  <div class="row" style="margin-top: 80px;">
     <a href='https://itunes.apple.com/us/album/uptown-gun-sounds-single/1307063684?app=itunes'><img class='big_img'
-        src='images/yj_main_4.jpg' /></a>
+        src='images/yj_main_5.png' /></a>
+  </div>
+
+  <h1 id="music"><span id="button_album_previous" class="button material-icons">navigate_before</span> Music <span
+      id="button_album_next" class="button material-icons">navigate_next</span></h1>
+  <div class="row" style="flex-wrap: wrap">
+    <div class="box" id="album"></div>
   </div>
 
   <h1 id="videos"><span id="button_video_previous" class="button material-icons">navigate_before</span> Videos <span
@@ -134,13 +143,9 @@
       webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </div>
 
-  <h1 id="music"><span id="button_album_previous" class="button material-icons">navigate_before</span> Music <span
-      id="button_album_next" class="button material-icons">navigate_next</span></h1>
-  <div class="row" style="flex-wrap: wrap">
-    <div class="box" id="album"></div>
-  </div>
 
-  <h1 id="subscribe">Bio</h1>
+
+  <h1 id="bio">Bio</h1>
   <div id="div_bio">
     <p>
       Christopher 'YOUNG JIMMY' Beckwith is a 33-year-old Guitarist, Rapper, Singer-Song Writer, Producer, Graphic

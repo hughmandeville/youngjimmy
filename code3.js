@@ -25,8 +25,9 @@ var album_id = 0;
 $(function () {
   setVideo();
   setAlbum();
-  handleLink("videos");
   handleLink("music");
+  handleLink("videos");
+  handleLink("bio");
   handleLink("subscribe");
   $("#menu_pulldown").on("click", function () {
     $("#menu_panel").toggle();
