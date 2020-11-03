@@ -50,8 +50,6 @@ $(function () {
   });
   window.addEventListener("resize", function () {
     if (window.innerWidth >= 1280) {
-      $("#social_links").show();
-      cr;
       $("#menu_panel").hide();
     }
   });
