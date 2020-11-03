@@ -208,6 +208,16 @@ h1 {
   text-align: center;
 }
 
+.album_title {
+  position: relative;
+  font-weight: 200;
+  font-family: "KeepCalm", "Ave Fedan", Edition, "Lucida Grande",
+    "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+
 @media all and (max-width: 1279px) {
   #main_img img {
     margin: 0 auto;
