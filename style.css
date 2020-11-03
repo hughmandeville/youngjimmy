@@ -4,13 +4,8 @@
 }
 
 @font-face {
-  font-family: "Brushed Traveler";
-  src: url(fonts/brushed_traveler.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "Easycore";
-  src: url(fonts/easycore.ttf) format("truetype");
+  font-family: "Fontello";
+  src: url(fonts/fontello.ttf) format("truetype");
 }
 
 @font-face {
@@ -23,16 +18,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: "KeepCalm", Geneva, Verdana, sans-serif;
-}
-
-body.bg_black {
   background: #000000;
-  color: #ffff01;
-}
-
-body.bg_yellow {
-  background: #ffff01;
-  color: #154af2;
+  color: #ffffff;
 }
 
 a {
@@ -47,15 +34,8 @@ a {
   height: 48px;
   width: 100%;
   z-index: 100;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-}
-
-.bg_black #nav {
-  background: #212121;
-}
-
-.bg_yellow #nav {
-  background: #ffff01;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 #nav #young_jimmy_logo {
@@ -63,22 +43,6 @@ a {
   margin: 0 auto;
   height: 48px;
   z-index: 105;
-}
-
-#controls {
-  position: fixed;
-  right: 20px;
-  top: 0px;
-  z-index: 101;
-  display: block;
-  text-align: center;
-}
-
-#controls .button {
-  width: 24px;
-  padding: 11px 2px;
-  display: inline-block;
-  cursor: pointer;
 }
 
 #menu,
@@ -90,18 +54,7 @@ a {
   display: block;
   text-align: center;
   font-weight: 600;
-}
-
-.bg_black #menu,
-.bg_black #menu_pulldown,
-.bg_black #more {
-  color: #ffff01;
-}
-
-.bg_yellow #menu,
-.bg_yellow #menu_pulldown,
-.bg_yellow #more {
-  color: #154af2;
+  color: #ffffff;
 }
 
 #menu_panel {
@@ -112,14 +65,7 @@ a {
   left: 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   display: none;
-}
-
-.bg_black #menu_panel {
   background: #000000;
-}
-
-.bg_yellow #menu_panel {
-  background: #ffff01;
 }
 
 .menu_item {
@@ -129,22 +75,12 @@ a {
   vertical-align: top;
   font-family: "KeepCalm", "Ave Fedan", Edition, "Lucida Grande",
     "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-}
-
-.bg_black .menu_item {
   border: 1px solid #333;
 }
 
-.bg_yellow .menu_item {
-  border: 1px solid #ffee58;
-}
-
-.bg_black .menu_item:hover {
-  background: #154af2;
-}
-
-.bg_yellow .menu_item:hover {
-  background: #ffff8d;
+.menu_item:hover {
+  color: #ffff01;
+  background: #212121;
 }
 
 .menu_item .material-icons {
@@ -163,19 +99,10 @@ a {
     "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 }
 
-.bg_black .button:hover,
-.bg_black #menu_pulldown:hover,
-.bg_black a:hover,
-.bg_block #more,
-.bg_block #more:hover {
-  color: #ffff8d;
-}
-
-.bg_yellow .button:hover,
-.bg_yellow #menu_pulldown:hover,
-.bg_yellow a:hover,
-.bg_yellow #more:hover {
-  color: red;
+.button:hover,
+#menu_pulldown:hover,
+a:hover {
+  color: #ffff01;
 }
 
 #menu_pulldown {
@@ -184,61 +111,88 @@ a {
   cursor: pointer;
 }
 
-#more {
-  margin-right: 10px;
-  margin-top: 10px;
-  cursor: pointer;
-}
-
 #menu_pulldown i,
-#more i,
 #controls .button i {
   font-size: 28px;
-}
-
-#song_title {
-  position: relative;
-  display: inline-block;
-  font-weight: 200;
-  font-family: "KeepCalm", "Ave Fedan", Edition, "Lucida Grande",
-    "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-  font-size: 16px;
-  text-align: center;
-  vertical-align: top;
-  margin-top: 20px;
-  margin-right: 20px;
-  text-transform: uppercase;
-}
-
-#content {
-  margin: 100px auto;
-  text-align: center;
-}
-
-.wave,
-#bio_text {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.wave_left {
-  transform: scaleX(-1);
-  filter: FlipH;
-}
-
-#bio {
-  color: #154af2;
-  width: 800px;
-  font-family: "KeepCalm", "Ave Fedan", Edition, "Lucida Grande",
-    "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-  font-weight: 300;
-  display: inline-block;
-  text-align: left;
 }
 
 #main_img {
   vertical-align: top;
   display: inline-block;
+}
+
+#footer {
+  margin: 40px auto;
+  font-family: arial;
+  font-size: 12px;
+  text-align: center;
+  color: #e0e0e0;
+}
+
+#footer img {
+  width: 240px;
+}
+
+
+#social_links {
+  position: fixed;
+  right: 20px;
+  top: 10px;
+  z-index: 101;
+  display: block;
+  text-align: center;
+
+}
+
+.social_link {
+  display: inline-block;
+  width: 20px;
+  margin-right: 20px;
+  margin-top: 4px;
+  vertical-align: middle;
+  filter: grayscale(100%);
+}
+
+.social_link:hover {
+  filter: none;
+}
+
+.link,
+.button {
+  cursor: pointer;
+}
+
+.button {
+  font-size: 48px;
+  line-height: 24px;
+  vertical-align: middle;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: flex-start;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.box_side {
+  flex-grow: 1;
+}
+
+.box_side .material-icons {
+  font-size: 48px;
+}
+
+.box_main {
+  flex-grow: 8;
 }
 
 .box {
@@ -248,142 +202,42 @@ a {
   font-size: 24px;
 }
 
-.poster {
-  width: 320px;
-}
-
-#soundcloud_player_iframe {
-  bottom: 0;
-  position: fixed;
-  height: 20px;
+.youtube_iframe {
   width: 100%;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.26);
-  z-index: 101;
+  max-width: 1000px;
+  height: 420px;
 }
 
-.bg_black #soundcloud_player_iframe {
-  background: #616101;
+.album_cover {
+  width: 100%;
+  max-width: 600px;
 }
 
-.bg_yellow #soundcloud_player_iframe {
-  background: #ffff01;
-}
-
-#footer {
-  margin: 40px auto;
-  font-family: "Friday Lovers", arial;
-  font-size: 12px;
+#div_subscribe {
   text-align: center;
 }
 
-#footer img {
-  width: 240px;
-}
-
-.bg_black #footer {
-  color: #e0e0e0;
-}
-
-.bg_yellow #footer {
-  color: #424242;
-}
-
-#more {
-  position: fixed;
-  right: 0px;
-  top: 0px;
-  z-index: 101;
-  display: block;
+.album_title {
+  position: relative;
+  font-weight: 200;
+  font-family: "KeepCalm", "Ave Fedan", Edition, "Lucida Grande",
+    "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-size: 16px;
   text-align: center;
-  font-weight: 600;
-}
-
-#social_links {
-  position: fixed;
-  right: 20px;
-  top: 10px;
-  z-index: 101;
-  display: block;
-  text-align: center;
-}
-
-#social_links:hover {
-  filter: none;
-}
-
-.social_link {
-  display: inline-block;
-  width: 30px;
-  margin-right: 20px;
   vertical-align: middle;
 }
 
-.box img {
-  width: 320px;
-}
-
-.youtube_iframe {
-  width: 100%;
-  margin: 40px 0;
-}
-
-#mc_embed_signup {}
-
-.link_subscribe {
-  cursor: pointer;
-}
-
-#modal_subscribe {
-  display: none;
-  padding: 40px;
-  text-align: center;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-top: -70px;
-  border: 1px solid #424242;
-  background: #212121;
+#div_bio {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
   color: #ffffff;
-  z-index: 110;
-}
-
-#modal_close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-#modal_close:hover {
-  color: #ffff01;
-}
-
-#modal_subscribe {
-  width: 500px;
-  margin-left: -290px;
 }
 
 @media all and (max-width: 1279px) {
-  #content {
-    width: 100%;
-  }
-
   #main_img img {
     margin: 0 auto;
     text-align: center;
-  }
-
-  #bio {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  #bio_text {
-    width: 60%;
-    font-size: 20px;
-    line-height: 1.6em;
   }
 
   #menu,
@@ -391,55 +245,25 @@ a {
     display: none;
   }
 
-  #social_links {
-    top: 60px;
-  }
-
-  #menu_pulldown,
-  #more {
+  #menu_pulldown {
     display: block;
   }
 
-  #song_title {
-    display: none;
-  }
-
-  .youtube_iframe {
-    height: 480px;
-  }
 }
 
 @media all and (max-width: 599px) {
-  .wave img {
-    width: 50px;
-  }
-
   #main_img img {
     width: 80%;
   }
 
-  #bio_text {
-    font-size: 18px;
-  }
-
   .big_img {
     width: 100%;
-  }
-
-  #modal_subscribe {
-    width: 280px;
-    margin-top: -200px;
-    margin-left: -180px;
   }
 }
 
 @media all and (min-width: 600px) and (max-width: 1279px) {
   #main_img img {
     width: 50%;
-  }
-
-  .wave img {
-    width: 100px;
   }
 
   .big_img {
@@ -454,43 +278,15 @@ a {
     display: block;
   }
 
-  #menu_pulldown,
-  #more {
+  #menu_pulldown {
     display: none;
-  }
-
-  #song_title {
-    display: inline-block;
-  }
-
-  #content {
-    width: 1290px;
   }
 
   #main_img img {
     width: 480px;
   }
 
-  #bio_text {
-    width: 500px;
-    font-size: 22px;
-    line-height: 1.8em;
-  }
-
-  .wave img {
-    width: 140px;
-  }
-
   .big_img {
     width: 70%;
   }
-
-  .youtube_iframe {
-    height: 640px;
-  }
-}
-
-#bio_text .number {
-  font-family: "KeepCalm", Geneva, Verdana, sans-serif;
-  font-size: 60%;
 }

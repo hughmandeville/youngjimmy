@@ -29,13 +29,13 @@
   <meta property="fb:admins" content="706807023" />
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400,700" rel="stylesheet"
     type="text/css" />
-  <link rel="stylesheet" type="text/css" href="style.css?version=20201003" />
+  <link rel="stylesheet" type="text/css" href="style.css?version=20201004" />
   <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
   <script src="https://code.jquery.com/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
   <script src="https://connect.soundcloud.com/sdk.js"></script>
   <script src="https://w.soundcloud.com/player/api.js"></script>
-  <script src="code.js?version=20201003"></script>
+  <script src="code.js?version=20201004"></script>
   <script>
     (function (i, s, o, g, r, a, m) {
       i["GoogleAnalyticsObject"] = r;
@@ -79,65 +79,142 @@
     <a href="https://www.youtube.com/channel/UCCxw7b-bE1p9Xfp2v2jRp7Q"><img class="social_link"
         src="images/logo_youtube.png" alt="youtube" title="YouTube" /></a>
   </div>
-  <div id="more"><i class="material-icons">more_horiz</i></div>
 
   <div id="menu">
     <ul>
-      <li><a href="bio">bio</a></li>
-      <li><a href="music">music</a></li>
-      <li><a href="shows">shows</a></li>
-      <li><a href="merch">merch</a></li>
-      <li class="link_subscribe">subscribe</li>
+      <li class="link link_music">Music</li>
+      <li class="link link_videos">Videos</li>
+      <li class="link link_bio">Bio</li>
+      <li class="link link_subscribe">Subscribe</li>
     </ul>
   </div>
 
   <div id="menu_pulldown"><i class="material-icons">menu</i></div>
   <div id="menu_panel">
-    <div class="menu_item">
-      <a href="bio"><i class="material-icons">library_books</i></a>
-      <a href="bio" class="title">bio</a>
+    <div class="menu_item link link_music">
+      <span class="material-icons">library_music</span>
+      <span class="title">music</span>
     </div>
-    <div class="menu_item">
-      <a href="merch"><i class="material-icons">shopping_cart</i></a>
-      <a href="merch" class="title">merch</a>
+    <div class="menu_item link link_videos">
+      <span class="material-icons">local_movies</span>
+      <span class="title">videos</span>
     </div>
-    <div class="menu_item">
-      <a href="music"><i class="material-icons">library_music</i></a>
-      <a href="music" class="title">music</a>
+    <div class="menu_item link link_bio">
+      <span class="material-icons">perm_identity</span>
+      <span class="title">bio</span>
     </div>
-    <div class="menu_item">
-      <a href="shows"><i class="material-icons">event</i></a>
-      <a href="shows" class="title">shows</a>
-    </div>
-    <div class="menu_item">
+    <div class="menu_item link link_subscribe">
       <i class="material-icons">email</i></a>
-      <span class="title link_subscribe">subscribe</span>
+      <span class="title">subscribe</span>
+    </div>
+    <div class="menu_item" style="text-align: center">
+      <a href="https://instagram.com/youngjimster/"><img class="social_link" src="images/logo_instagram.png"
+          alt="instagram" title="Instagram" /></a>
+      <a href="https://itunes.apple.com/ca/artist/young-jimmy/579723816"><img class="social_link"
+          src="images/logo_itunes.png" alt="itunes" title="iTunes" /></a>
+      <a href="https://artists.spotify.com/c/artist/4OkaIOFd0Jel60XKiZaSiz/profile/overview"><img class=" social_link"
+          src="images/logo_spotify.png" alt="Spotify" title="Spotify" /></a>
+    </div>
+    <div class="menu_item" style="text-align: center">
+      <a href="https://soundcloud.com/cheezcakekidzrecords"><img class="social_link" src="images/logo_soundcloud.png"
+          alt="soundcloud" title="SoundCloud" /></a>
+      <a href="https://twitter.com/youngjimster"><img class="social_link" src="images/logo_twitter.png" alt="twitter"
+          title="Twitter" /></a>
+      <a href="https://www.youtube.com/channel/UCCxw7b-bE1p9Xfp2v2jRp7Q"><img class="social_link"
+          src="images/logo_youtube.png" alt="youtube" title="YouTube" /></a>
     </div>
   </div>
 
-  <div id="content"></div>
-
-  <!--
-  <div id="controls">
-    <div id="song_title"></div>
-    <div id="button_previous" class="button">
-      <i class="material-icons">skip_previous</i>
-    </div>
-    <div id="button_play_pause" class="button">
-      <i class="material-icons">pause</i>
-    </div>
-    <div id="button_next" class="button">
-      <i class="material-icons">skip_next</i>
-    </div>
+  <div class="row" style="margin-top: 80px;">
+    <a href='https://itunes.apple.com/us/album/uptown-gun-sounds-single/1307063684?app=itunes'><img class='big_img'
+        src='images/yj_main_5.png' /></a>
   </div>
--->
 
-  <div id="modal_subscribe">
-    Subscribe to receive email updates from Young Jimmy!
+  <h1 id="music"><span id="button_album_previous" class="button material-icons">navigate_before</span> Music <span
+      id="button_album_next" class="button material-icons">navigate_next</span></h1>
+  <div class="row" style="flex-wrap: wrap">
+    <div class="box" id="album"></div>
+  </div>
+
+  <h1 id="videos"><span id="button_video_previous" class="button material-icons">navigate_before</span> Videos <span
+      id="button_video_next" class="button material-icons">navigate_next</span></h1>
+  <div class="row">
+    <iframe id="video" class='youtube_iframe video_main' src='https://www.youtube.com/embed/xK6mYENLsfo' frameborder='0'
+      webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+
+
+
+  <h1 id="bio">Bio</h1>
+  <div id="div_bio">
+    <p>
+      Christopher 'YOUNG JIMMY' Beckwith is a 33-year-old Guitarist, Rapper, Singer-Song Writer, Producer, Graphic
+      Designer, and Video Editor based in Brooklyn, NY. Raised in The Bronx, East Chester Garden's located in the
+      poorest, Congressional District 16, is Notoriously known for the largest gang takedown in New York City
+      history. Young Jimmy picked up the guitar at age 6. A high school dropout, he attended the Art &amp; Design High
+      School class of 2006 and attended Greenwich House Music School. Studied Classical, Jazz, and Rock music
+      and performed monthly recitals under a scholarship.
+    </p>
+    <p>
+      At age 19, he moved to the original House of Yes. Working as a Lead Guitarist for various Rock and Hip Hop
+      acts in the New York City area. House of Yes would later burn down in a fire with half of his musical equipment
+      caused by ex-girlfriend negligence. Poverty and homelessness made life a constant struggle. In unfortunate
+      times he slept on trains and park benches. Coming of age, influenced by 2pac, Andre 3000, Thin Lizzy, RHCP, The
+      Police, Micheal Jackson, Prince, STP, Raekwon, Nirvana, Run-D.M.C, Sublime, MF Doom, Rage Against the Machine,
+      Jimmy Page, and Jimi Hendrix.
+    </p>
+    <p>
+      In 2009 Young Jimmy recorded an EP called 'To My Chagrin' with an all-black indie-rock band 'Sankofa' with
+      producer-engineer Paul Mahajan. 'Sankofa' name comes from Ghana means "go back and get it" we must look back
+      to our past so that we may understand how we became what we are and move forward to a better future. Cocaine,
+      ego, and women ended the band 3-year run.
+    </p>
+    <p>
+      Growing up in The Bronx, rock music was not the norm by no means the birthplace of Hip Hop. Young Jimmy was
+      the juxtapose to an environment dominated by Hip Hop, gangs, guns, violence, and Building fires. Raised by a
+      single mother in public housing with three siblings, his stepfather was Hip Hop Legend, and Rock & Roll Hall of
+      Famer
+      Grand Master Mele Mel helped nurture his musical ambitions. Introduced Young Jimmy to the music industry and
+      accompanied Mele Mel on a few sold-out shows playing guitar. Young Jimmy describes his style of music as Hood
+      Rock, a Rap-Rock alternative rock subgenre.
+    </p>
+    <p>
+      Young Jimmy has shared the stage and opened for: Kendrick Lamar, Big Krit, Freddie Gibbs, Saul Williams, Talib
+      Kweli &amp; Michelle Williams, Smoke Dza, Res, Ces Cru, Tanya Morgan, Lil Debbie, Jah C & The Antidote, Jay
+      Boogie, Caviliar, Doodlebug of Digable Planets, and many others.
+    </p>
+    <p>
+      Afro-Punk documentary by filmmaker James Spooner best describes the 'Black Rocker' experience. Black people
+      created rock music in the early 1950s. For the last 50 years, the genre has been dominated and appropriated by
+      white people mainly, white men. Here are excerpts from Jack Hamilton's book 'Just Around Midnight' speaks to
+      the plight of the 'Black Rocker'-
+    </p>
+    <p>
+      "Being a white man had become preconditioned for making "real" rock music."
+    </p>
+    <p>
+      "No black derived musical form in American history has more assiduously moved to erase and blockade
+      participation than rock music."
+    </p>
+    <p>
+      "Which brings us to the third, and by far most common, way that the "whitening" of rock and roll music has
+      been discussed, Simply not at all."
+    </p>
+    <p>
+      Young Jimmy's debut studio album sets the record straight, due to be released in, 2021 allows listeners to
+      dive into his 'raw' unfiltered "HOOD ROCK" fusion sound. His perspective will force listeners to confront the
+      stark
+      reality in these tumultuous times in American History.
+    </p>
+  </div>
+
+  <h1 id="subscribe">Subscribe</h1>
+  <div id="div_subscribe">
+    <p>Subscribe to receive email updates from Young Jimmy!</p>
     <div id="mc_embed_signup">
       <form action="https://youngjimmy.us2.list-manage.com/subscribe/post?u=1ad75f3869a9601822ab119d3&amp;id=3d5a6fdf79"
         method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
-        novalidate onsubmit="$('#modal_subscribe').hide()">
+        novalidate>
         <div id="mc_embed_signup_scroll">
           <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
           <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
@@ -148,212 +225,16 @@
         </div>
       </form>
     </div>
-    <div id="modal_close">X</div>
   </div>
 
-  <iframe id="soundcloud_player_iframe" allow="autoplay" scrolling="no" frameborder="no"
-    src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F153729113&auto_play=true"></iframe>
   <div id="footer">
-    <a href="images/logo_yjjy_2.png"><img src="images/logo_yjjy_2.png" alt="Young Jimmy" /></a>
+    <img src="images/logo_hood_rock_records_white.png" alt="Hood Rock Records" />
   </div>
   <span id="siteseal" style="display: none;">
     <script async type="text/javascript"
       src="https://seal.godaddy.com/getSeal?sealID=hB9W0fszz0CmpZJF55AS5Anxc76TPk3C9YRWGjASPSMhpl6saISwslo39qxG">
       </script>
   </span>
-
-  <template id="template_bio">
-    <div id="main_img"><img src="images/yj_main_big.jpg" /></div>
-    <div class="wave wave_left"><img src="images/wave.jpg" /></div>
-    <div id="bio_text">
-      <p>
-        Christopher 'YOUNG JIMMY' Beckwith is a 33-year-old Guitarist, Rapper, Singer-Song Writer, Producer, Graphic
-        Designer, and Video Editor based in Brooklyn, NY. Raised in The Bronx, East Chester Garden's located in the
-        poorest, Congressional District 16, is Notoriously known for the largest gang takedown in New York City
-        history. Young Jimmy picked up the guitar at age 6. A high school dropout, he attended the Art & Design High
-        School class of 2006 and attended Greenwich House Music School. Studied Classical, Jazz, and Rock music
-        performed monthly recitals under a scholarship.
-      </p>
-      <p>
-        At age 19, he moved to the original House of Yes. Working as a Lead Guitarist for various Rock and Hip Hop
-        acts
-        in the New York City area. House of Yes would later burn down in a fire with half of his musical equipment
-        caused by ex-girlfriend negligence. Poverty and homelessness made life a constant struggle. In unfortunate
-        times
-        he slept on trains and park benches. Coming of age, influenced by 2pac, Andre 3000, Thin Lizzy, RHCP, The
-        Police, Micheal Jackson, Prince, STP, Raekwon, Nirvana, Run-D.M.C, Sublime, MF Doom, Rage Against the Machine,
-        Jimmy Page, and Jimi Hendrix.
-      </p>
-      <p>
-        In 2009 Young Jimmy recorded an EP called 'To My Chagrin' with an all-black indie-rock band 'Sankofa' with
-        producer-engineer Paul Mahajan. 'Sankofa' name comes from Ghana means "go back and get it" we must look back
-        to
-        our past so that we may understand how we became what we are and move forward to a better future. Cocaine,
-        ego,
-        and women ended the band 3-year run.
-      </p>
-      <p>
-        Growing up in The Bronx, rock music was not the norm by no means the birthplace of Hip Hop. Young Jimmy was
-        the
-        juxtapose to an environment dominated by Hip Hop, gangs, guns, violence, and Building fires. Raised by a
-        single
-        mother in public housing with three siblings, his stepfather was Hip Hop Legend, and Rock & Roll Hall of Famer
-        Grand Master Mele Mel helped nurture his musical ambitions. Introduced Young Jimmy to the music industry and
-        accompanied Mele Mel on a few sold-out shows playing guitar. Young Jimmy describes his style of music as Hood
-        Rock, a Rap-Rock alternative rock subgenre.
-      </p>
-      <p>
-        Young Jimmy has shared the stage and opened for: Kendrick Lamar, Big Krit, Freddie Gibbs, Saul Williams, Talib
-        Kweli & Michelle Williams, Smoke Dza, Res, Ces Cru, Tanya Morgan, Lil Debbie, Jah C & The Antidote, Jay
-        Boogie,
-        Caviliar, Doodlebug of Digable Planets, and many others.
-      </p>
-      <p>
-        Afro-Punk documentary by filmmaker James Spooner best describes the 'Black Rocker' experience. Black people
-        created rock music in the early 1950s. For the last 50 years, the genre has been dominated and appropriated by
-        white people mainly, white men. Here are excerpts from Jack Hamilton's book 'Just Around Midnight' speaks to
-        the
-        plight of the 'Black Rocker'-
-      </p>
-      <p>
-        "Being a white man had become preconditioned for making "real" rock music."
-      </p>
-      <p>
-        "No black derived musical form in American history has more assiduously moved to erase and blockade
-        participation than rock music."
-      </p>
-      <p>
-        "Which brings us to the third, and by far most common, way that the "whitening" of rock and roll music has
-        been discussed, Simply not at all."
-      </p>
-      <p>
-        Young Jimmy's debut studio album sets the record straight, due to be released in, 2021 allows listeners to
-        dive
-        into his 'raw' unfiltered "HOOD ROCK" fusion sound. His perspective will force listeners to confront the stark
-        reality in these tumultuous times in American History.Christopher 'YOUNG JIMMY' Beckwith is a 33-year-old
-        Guitarist, Rapper, Singer-Song Writer, Producer, Graphic Designer, and Video Editor based in Brooklyn, NY.
-        Raised in The Bronx, East Chester Garden's located in the poorest, Congressional District 16, is Notoriously
-        known for the largest gang takedown in New York City history. Young Jimmy picked up the guitar at age 6. A
-        high
-        school dropout, he attended the Art & Design High School class of 2006 and attended Greenwich House Music
-        School. Studied Classical, Jazz, and Rock music performed monthly recitals under a scholarship.
-      </p>
-      <p>
-        At age 19, he moved to the original House of Yes. Working as a Lead Guitarist for various Rock and Hip Hop
-        acts
-        in the New York City area. House of Yes would later burn down in a fire with half of his musical equipment
-        caused by ex-girlfriend negligence. Poverty and homelessness made life a constant struggle. In unfortunate
-        times
-        he slept on trains and park benches. Coming of age, influenced by 2pac, Andre 3000, Thin Lizzy, RHCP, The
-        Police, Micheal Jackson, Prince, STP, Raekwon, Nirvana, Run-D.M.C, Sublime, MF Doom, Rage Against the Machine,
-        Jimmy Page, and Jimi Hendrix.
-      </p>
-      <p>
-        In 2009 Young Jimmy recorded an EP called 'To My Chagrin' with an all-black indie-rock band 'Sankofa' with
-        producer-engineer Paul Mahajan. 'Sankofa' name comes from Ghana means "go back and get it" we must look back
-        to
-        our past so that we may understand how we became what we are and move forward to a better future. Cocaine,
-        ego,
-        and women ended the band 3-year run.
-      </p>
-      <p>
-        Growing up in The Bronx, rock music was not the norm by no means the birthplace of Hip Hop. Young Jimmy was
-        the
-        juxtapose to an environment dominated by Hip Hop, gangs, guns, violence, and Building fires. Raised by a
-        single
-        mother in public housing with three siblings, his stepfather was Hip Hop Legend, and Rock & Roll Hall of Famer
-        Grand Master Mele Mel helped nurture his musical ambitions. Introduced Young Jimmy to the music industry and
-        accompanied Mele Mel on a few sold-out shows playing guitar. Young Jimmy describes his style of music as Hood
-        Rock, a Rap-Rock alternative rock subgenre.
-      </p>
-      <p>
-        Young Jimmy has shared the stage and opened for: Kendrick Lamar, Big Krit, Freddie Gibbs, Saul Williams, Talib
-        Kweli & Michelle Williams, Smoke Dza, Res, Ces Cru, Tanya Morgan, Lil Debbie, Jah C & The Antidote, Jay
-        Boogie,
-        Caviliar, Doodlebug of Digable Planets, and many others.
-      </p>
-      <p>
-        Afro-Punk documentary by filmmaker James Spooner best describes the 'Black Rocker' experience. Black people
-        created rock music in the early 1950s. For the last 50 years, the genre has been dominated and appropriated by
-        white people mainly, white men. Here are excerpts from Jack Hamilton's book 'Just Around Midnight' speaks to
-        the
-        plight of the 'Black Rocker'-
-      </p>
-      <p>
-        "Being a white man had become preconditioned for making "real" rock music."
-      </p>
-      <p>
-        "No black derived musical form in American history has more assiduously moved to erase and blockade
-        participation than rock music."
-      </p>
-      <p>
-        "Which brings us to the third, and by far most common, way that the "whitening" of rock and roll music has
-        been discussed, Simply not at all."
-      </p>
-      <p>
-        Young Jimmy's debut studio album sets the record straight, due to be released in, 2021 allows listeners to
-        dive
-        into his 'raw' unfiltered "HOOD ROCK" fusion sound. His perspective will force listeners to confront the stark
-        reality in these tumultuous times in American History.
-      </p>
-    </div>
-    <div class="wave"><img src="images/wave.jpg" /></div>
-    </div>
-  </template>
-  </template>
-  <template id="template_index">
-    <a href='https://itunes.apple.com/us/album/uptown-gun-sounds-single/1307063684?app=itunes'><img class='big_img'
-        src='images/yj_main_4.jpg' /></a>
-    <br /><br />
-    <iframe class='youtube_iframe video_main' src='https://www.youtube.com/embed/xK6mYENLsfo' frameborder='0'
-      webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><br /><iframe class='youtube_iframe video_main'
-      src='https://www.youtube.com/embed/DuwOr4_74cg' frameborder='0' webkitallowfullscreen mozallowfullscreen
-      allowfullscreen></iframe><br /><iframe class='youtube_iframe video_main'
-      src='https://www.youtube.com/embed/qF_HVIrmcsY' frameborder='0' webkitallowfullscreen mozallowfullscreen
-      allowfullscreen></iframe><br /><iframe class='youtube_iframe video_main'
-      src='https://www.youtube.com/embed/nfKMVYzotT8' frameborder='0' webkitallowfullscreen mozallowfullscreen
-      allowfullscreen></iframe><br /><br /><br />
-  </template>
-  <template id="template_merch">
-    <div class='box'><img class='hat' src='images/hat_kap_ernick.png'></div>
-    <div class='box'><img class='hat' src='images/hat_yjdad.png'></div>
-    <div class='box'><img class='hat' src='images/hat_supremacy.png'></div>
-    <div class='box'><img class='hat' src='images/hat_pink_panther.png'></div>
-  </template>
-  <template id="template_music">
-    <div class='box'><a href='https://itunes.apple.com/album/id1375809976?ls=1&app=itunes'><img class='album_cover'
-          src='images/album_cover_yy.jpg' data-cover='images/album_cover_yy.jpg' data-back='images/album_back_yy.jpg'
-          alt='Yellow Yellow' /></a></div>
-    <div class='box'><a href='https://itunes.apple.com/us/album/the-partys-over-ep/1304105898'><img class='album_cover'
-          data-cover='images/album_cover_partys_over.jpg' data-back='images/album_back_partys_over.jpg'
-          src='images/album_cover_partys_over.jpg' alt='The Partys Over' /></a></div>
-    <div class='box'><a href='https://soundcloud.com/cheezcakekidzrecords/sets/tha-black-punks'><img class='album_cover'
-          data-cover='images/album_cover_black_punks.jpg' data-back='images/album_back_black_punks.jpg'
-          src='images/album_cover_black_punks.jpg' alt='Tha Black Punks' /></a></div>
-    <div class='box'><a href='https://soundcloud.com/cheezcakekidzrecords/sets/young-jimmy-hood-rock'><img
-          class='album_cover' data-cover='images/album_cover_hood_rock.jpg' data-back='images/album_cover_hood_rock.jpg'
-          src='images/album_cover_hood_rock.jpg' alt='Hood Rock' /></a></div>
-    <div class='box'><a href='images/album_back_hood_rock_2.jpg'><img class='album_cover'
-          data-cover='images/album_cover_hood_rock_2.jpg' data-back='images/album_back_hood_rock_2.jpg'
-          src='images/album_cover_hood_rock_2.jpg' alt='Hood Rock 2' /></a></div>
-    <div class='box'><a href='https://soundcloud.com/cheezcakekidzrecords/sets/to-my-chagrin'><img class='album_cover'
-          data-cover='images/album_cover_sankofa.jpg' data-back='images/album_cover_sankofa.jpg'
-          src='images/album_cover_sankofa.jpg' alt='Sankofa' /></a></div>
-  </template>
-  <template id="template_press">
-    <a href='https://afropunk.com/2014/10/new-music-unreleased-sankofa-album-to-my-chagrin-featuring-young-jimmy/'><img
-        class='big_img' src='images/yj_afropunk.jpg' alt='Afropunk' /></a>
-  </template>
-  <template id="template_shows">
-    <div class='box'><a href='https://www.ticketfly.com/event/1864216-soular-t-papa-bare-prof-j-new-york/'><img
-          class='poster' src='images/poster_show_aug_17_2019.jpg'></a><br />August 17, 2019</div>
-    <div class='box'><a
-        href='https://www.ticketweb.com/event/late-to-the-party-yj-sobs-tickets/8361045?pl=sobs&edpPlParam=%3Fpl%3Dsobs'><img
-          class='poster' src='images/poster_show_jun_12_2018.jpg'></a><br />June 12, 2018</div>
-    <div class='box'><img class='poster' src='images/poster_tour_ces_cru.jpg'><br />March 18, 2018</div>
-    <div class='box'><img class='poster' src='images/poster_show_sep_23_2017.jpg'><br />September 23, 2017</div>
-    <div class='box'><img class='poster' src='images/poster_show_jan_7.jpg'><br />January 7, 2017</div>
-  </template>
 </body>
 
 </html>
