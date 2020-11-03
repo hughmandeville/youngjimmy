@@ -140,6 +140,7 @@ a:hover {
   z-index: 101;
   display: block;
   text-align: center;
+
 }
 
 .social_link {
@@ -147,6 +148,11 @@ a:hover {
   width: 30px;
   margin-right: 20px;
   vertical-align: middle;
+  filter: grayscale(100%);
+}
+
+.social_link:hover {
+  filter: none;
 }
 
 .link,
