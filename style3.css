@@ -206,8 +206,9 @@ h1 {
   height: 420px;
 }
 
-.box img {
-  width: 320px;
+.album_cover {
+  width: 100%;
+  max-width: 600px;
 }
 
 #div_subscribe {
