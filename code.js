@@ -48,6 +48,12 @@ $(function () {
     nextID(albums, "albums");
     setAlbum();
   });
+  $("#button_read_more").on("click", function () {
+    console.log("button read more");
+    $("#read_more").hide();
+    $("#div_bio").css("max-height", "100%");
+    $("#div_bio").css("overflow-y", "scroll");
+  });
   window.addEventListener("resize", function () {
     if (window.innerWidth >= 1280) {
       $("#menu_panel").hide();
