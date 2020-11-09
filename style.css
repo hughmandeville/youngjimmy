@@ -215,6 +215,8 @@ h1 {
 
 #div_subscribe {
   text-align: center;
+  margin: 0 auto;
+  max-width: 80%;
 }
 
 .album_title {
