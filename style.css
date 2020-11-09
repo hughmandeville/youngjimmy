@@ -263,6 +263,14 @@ h1 {
   transition: all 0.23s ease-in-out 0s;
 }
 
+.quote {
+  line-height: 1.5em;
+  padding: 20px;
+  background: #212121;
+  font-style: italic;
+  color: #ffff01;
+
+}
 
 #button_read_more:hover,
 #mc_embed_signup .button:hover {
