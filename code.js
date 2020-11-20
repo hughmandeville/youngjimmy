@@ -119,13 +119,3 @@ function handleLink(name) {
     );
   });
 }
-
-/*
-  setup_soundcloud_player();
-  $(".album_cover").on("mouseover", function () {
-    $(this).attr("src", $(this).data("back"));
-  });
-  $(".album_cover").on("mouseout", function () {
-    $(this).attr("src", $(this).data("cover"));
-  });
-*/
