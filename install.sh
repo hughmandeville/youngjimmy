@@ -17,6 +17,7 @@ scp style.css youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp images/hat_pink_panther.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/hat_supremacy.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/hat_yjdad.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
+#scp images/logo_facebook.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/logo_spotify.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/logo_itunes.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/logo_amazon.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
@@ -31,6 +32,7 @@ scp style.css youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp images/album_cover_rockett_88.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/album_back_rockett_88.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/logo_hood_rock_records_white.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
+#scp images/logo_hood_rock_records_red.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 
 #scp images/promo_yj_black.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/yj_main_3.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
