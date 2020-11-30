@@ -11,7 +11,7 @@ var albums = [
     font: "album_cover_rockett_88.jpg",
     back: "album_back_rockett_88.jpg",
     title:
-      "ROCKETT 88<br/>DEBUT STUDIO ALBUM<br/>2/26/2021<br/>PRE-ORDER 2/12/2021",
+      "ROCKETT 88<br/>DEBUT STUDIO ALBUM<br/>3/19/2021<br/>PRE-ORDER 3/5/2021",
     url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
   },
   {
@@ -55,6 +55,14 @@ $(function () {
     $("#div_bio").css("max-height", "100%");
     $("#div_bio").css("overflow-y", "scroll");
   });
+
+  $("#logo_hood_rock").on("mouseover", function () {
+    $(this).attr("src", "images/logo_hood_rock_records_red.png");
+  });
+  $("#logo_hood_rock").on("mouseout", function () {
+    $(this).attr("src", "images/logo_hood_rock_records_white.png");
+  });
+
   window.addEventListener("resize", function () {
     if (window.innerWidth >= 1280) {
       $("#menu_panel").hide();
