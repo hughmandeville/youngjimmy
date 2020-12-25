@@ -1,11 +1,5 @@
 var ids = { albums: 0, videos: 0 };
-var videos = [
-  "xK6mYENLsfo",
-  "DuwOr4_74cg",
-  "qF_HVIrmcsY",
-  "nfKMVYzotT8",
-  "uC3PjsUqikE",
-];
+var videos = ["uC3PjsUqikE", "DuwOr4_74cg", "qF_HVIrmcsY", "nfKMVYzotT8"];
 var albums = [
   {
     font: "album_cover_rockett_88.jpg",
@@ -16,7 +10,7 @@ var albums = [
   },
   {
     font: "album_cover_yy.jpg",
-    back: "album_back_yy.jpg",
+    back: "",
     title: "Yellow Yellow",
     url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
   },
