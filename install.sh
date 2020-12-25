@@ -3,6 +3,7 @@ scp code.js youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 scp index.html youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 scp style.css youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 
+#scp shopify.js youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp .htaccess youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp robots.txt youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp sitemap.xml youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
@@ -25,6 +26,7 @@ scp style.css youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp images/logo_soundcloud.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/logo_youtube.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/logo_yjjy_2.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
+#scp images/logo_yjjy_3.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/yj_main.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/yj_main_big.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/yj_main_2_alone_1.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
