@@ -4,20 +4,23 @@ var albums = [
   {
     font: "album_cover_beast_mode.jpg",
     back: "",
-    title: "Beast Mode<br/>NEW SINGLE<br/>1/29/2021",
+    title: "BEAST MODE<br/>New Single<br/>1/29/2021",
+    alt: "BEAST MODE",
     url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
   },
   {
     font: "album_cover_rockett_88.jpg",
     back: "album_back_rockett_88.jpg",
     title:
-      "ROCKETT 88<br/>DEBUT STUDIO ALBUM<br/>3/19/2021<br/>PRE-ORDER 2/12/2021",
+      "ROCKETT 88<br/>Debut Studio Album<br/>3/19/2021<br/>Pre-Order 2/12/2021",
+    alt: "ROCKETT 88",
     url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
   },
   {
     font: "album_cover_yy.jpg",
     back: "",
-    title: "Yellow Yellow",
+    title: "YELLOW YELLOW<br/>Re-Release 1/22/2021",
+    alt: "YELLOW YELLOW",
     url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
   },
 ];
@@ -102,7 +105,7 @@ function setAlbum() {
     ` data-back="images/` +
     album["back"] +
     `" alt="` +
-    album["title"] +
+    album["alt"] +
     `"></a><div class="album_title"><a href="` +
     album["url"] +
     `">` +
