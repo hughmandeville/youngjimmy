@@ -2,6 +2,12 @@ var ids = { albums: 0, videos: 0 };
 var videos = ["uC3PjsUqikE", "DuwOr4_74cg", "qF_HVIrmcsY", "nfKMVYzotT8"];
 var albums = [
   {
+    font: "album_cover_beast_mode.jpg",
+    back: "",
+    title: "Beast Mode<br/>NEW SINGLE<br/>1/29/2021",
+    url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
+  },
+  {
     font: "album_cover_rockett_88.jpg",
     back: "album_back_rockett_88.jpg",
     title:
@@ -104,7 +110,9 @@ function setAlbum() {
     `</a></div>`;
   $("#album").html(html);
   $(".album_cover").on("mouseover", function () {
-    $(this).attr("src", $(this).data("back"));
+    if ($(this).data("back") !== "images/") {
+      $(this).attr("src", $(this).data("back"));
+    }
   });
   $(".album_cover").on("mouseout", function () {
     $(this).attr("src", $(this).data("cover"));
