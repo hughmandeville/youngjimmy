@@ -4,7 +4,7 @@ var albums = [
   {
     font: "album_cover_beast_mode.jpg",
     back: "",
-    title: "BEAST MODE<br/>New Single<br/>1/29/2021",
+    title: "BEAST MODE<br/>New Single",
     alt: "BEAST MODE",
     url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
   },
