@@ -1,5 +1,11 @@
 var ids = { albums: 0, videos: 0 };
-var videos = ["uC3PjsUqikE", "DuwOr4_74cg", "qF_HVIrmcsY", "nfKMVYzotT8"];
+var videos = [
+  "uC3PjsUqikE",
+  "DuwOr4_74cg",
+  "qF_HVIrmcsY",
+  "nfKMVYzotT8",
+  "fanQHFAxXH0",
+];
 var albums = [
   {
     font: "album_cover_beast_mode.jpg",
