@@ -72,7 +72,7 @@ a {
   font-size: 22px;
   line-height: 22px;
   padding: 12px;
-  vertical-align: top;
+  vertical-align: middle;
   font-family: "KeepCalm", "Ave Fedan", Edition, "Lucida Grande",
     "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   border: 1px solid #333;
@@ -86,10 +86,7 @@ a {
 .menu_item .material-icons {
   margin-right: 14px;
   display: inline-block;
-}
-
-.menu_item .title {
-  position: fixed;
+  vertical-align: middle;
 }
 
 #menu li {
