@@ -13,7 +13,7 @@ scp style.css youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp fonts/keep_calm.ttf youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/fonts/
 #scp images/*jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/*png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
-scp images/favicon_32x32.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
+#scp images/favicon_32x32.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/boys_in_the_hood_promo.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/hat_kap_ernick.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/hat_pink_panther.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
