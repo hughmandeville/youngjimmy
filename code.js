@@ -17,14 +17,14 @@ var albums = [
   {
     font: "album_cover_rockett_88.jpg",
     back: "album_back_rockett_88.jpg",
-    title: "ROCKETT 88<br/>Debut Studio Album<br/>3/19/2021",
+    title: "ROCKETT 88<br/>Debut Studio Album<br/>5/7/2021",
     alt: "ROCKETT 88",
     url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
   },
   {
     font: "album_cover_yy.jpg",
     back: "",
-    title: "YELLOW YELLOW<br/>Re-Release 1/22/2021",
+    title: "YELLOW YELLOW",
     alt: "YELLOW YELLOW",
     url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
   },
