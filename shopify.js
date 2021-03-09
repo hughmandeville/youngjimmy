@@ -29,7 +29,7 @@
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent("collection", {
         id: "237882900662",
-        node: document.getElementById("collection-component-1615124970798"),
+        node: document.getElementById("collection-component-1608208487968"),
         moneyFormat: "%24%7B%7Bamount%7D%7D",
         options: {
           product: {
@@ -117,36 +117,11 @@
                   "background-color": "#e10505",
                 },
               },
-              title: {
-                "font-family": "Helvetica Neue, sans-serif",
-                "font-weight": "bold",
-                "font-size": "26px",
-                color: "#4c4c4c",
-              },
-              price: {
-                "font-family": "Helvetica Neue, sans-serif",
-                "font-weight": "normal",
-                "font-size": "18px",
-                color: "#4c4c4c",
-              },
-              compareAt: {
-                "font-family": "Helvetica Neue, sans-serif",
-                "font-weight": "normal",
-                "font-size": "15.299999999999999px",
-                color: "#4c4c4c",
-              },
-              unitPrice: {
-                "font-family": "Helvetica Neue, sans-serif",
-                "font-weight": "normal",
-                "font-size": "15.299999999999999px",
-                color: "#4c4c4c",
-              },
             },
             text: {
               button: "Add to cart",
             },
           },
-          option: {},
           cart: {
             styles: {
               button: {
