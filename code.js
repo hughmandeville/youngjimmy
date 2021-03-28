@@ -8,17 +8,17 @@ var videos = [
 ];
 var albums = [
   {
-    font: "album_cover_beast_mode.jpg",
-    back: "",
-    title: "BEAST MODE<br/>New Single",
-    alt: "BEAST MODE",
-    url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
-  },
-  {
     font: "album_cover_rockett_88.jpg",
     back: "album_back_rockett_88.jpg",
     title: "ROCKETT 88<br/>Debut Studio Album<br/>5/7/2021",
     alt: "ROCKETT 88",
+    url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
+  },
+  {
+    font: "album_cover_beast_mode.jpg",
+    back: "",
+    title: "BEAST MODE<br/>New Single",
+    alt: "BEAST MODE",
     url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
   },
   {
