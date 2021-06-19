@@ -276,6 +276,13 @@ h1 {
   background: #858585;
 }
 
+#twitter {
+  margin: 40px auto;
+  max-width: 640px;
+  width: 80%;
+  text-align: center;
+}
+
 @media all and (max-width: 1279px) {
   #main_img img {
     margin: 0 auto;
