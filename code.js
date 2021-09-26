@@ -1,17 +1,10 @@
 var ids = { albums: 0, videos: 0 };
-var videos = [
-  "Y9QAvd7ZDzU",
-  "uC3PjsUqikE",
-  "DuwOr4_74cg",
-  "qF_HVIrmcsY",
-  "nfKMVYzotT8",
-  "fanQHFAxXH0",
-];
+var videos = ["Y9QAvd7ZDzU", "uC3PjsUqikE", "DuwOr4_74cg", "fanQHFAxXH0"];
 var albums = [
   {
     font: "album_cover_rockett_88.jpg",
     back: "album_back_rockett_88.jpg",
-    title: "ROCKETT 88<br/>Debut Studio Album<br/>5/7/2021",
+    title: "ROCKETT 88<br/>Debut Studio Album<br/>OUT NOW!",
     alt: "ROCKETT 88",
     url: "https://music.apple.com/us/album/rockett-88/1562590289",
   },
