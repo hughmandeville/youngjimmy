@@ -1,5 +1,12 @@
 var ids = { albums: 0, videos: 0 };
-var videos = ["Y9QAvd7ZDzU", "uC3PjsUqikE", "DuwOr4_74cg", "fanQHFAxXH0"];
+var videos = [
+  "Y9QAvd7ZDzU", // Summer Days
+  "uC3PjsUqikE", // Date Night
+  "DuwOr4_74cg", // Uptown Gun Sounds
+  "5m7gpzyyX3Y", // The Movies
+  "R-wFKlSaMck", // Beast Mode
+  "fanQHFAxXH0", // Afropunk
+];
 var albums = [
   {
     font: "album_cover_rockett_88.jpg",
