@@ -113,11 +113,6 @@ a:hover {
   font-size: 28px;
 }
 
-#main_img {
-  vertical-align: top;
-  display: inline-block;
-}
-
 #footer {
   margin: 40px auto;
   font-family: arial;
@@ -284,10 +279,6 @@ h1 {
 }
 
 @media all and (max-width: 1279px) {
-  #main_img img {
-    margin: 0 auto;
-    text-align: center;
-  }
 
   #menu,
   #social_links {
@@ -297,24 +288,15 @@ h1 {
   #menu_pulldown {
     display: block;
   }
-
 }
 
 @media all and (max-width: 599px) {
-  #main_img img {
-    width: 80%;
-  }
-
   .big_img {
     width: 100%;
   }
 }
 
 @media all and (min-width: 600px) and (max-width: 1279px) {
-  #main_img img {
-    width: 50%;
-  }
-
   .big_img {
     width: 85%;
   }
@@ -329,10 +311,6 @@ h1 {
 
   #menu_pulldown {
     display: none;
-  }
-
-  #main_img img {
-    width: 480px;
   }
 
   .big_img {
