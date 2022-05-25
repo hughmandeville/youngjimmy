@@ -1,12 +1,5 @@
-var ids = { albums: 0, videos: 0 };
-var videos = [
-  "Y9QAvd7ZDzU", // Summer Days
-  "uC3PjsUqikE", // Date Night
-  "DuwOr4_74cg", // Uptown Gun Sounds
-  "5m7gpzyyX3Y", // The Movies
-  "R-wFKlSaMck", // Beast Mode
-  "fanQHFAxXH0", // Afropunk
-];
+var ids = { albums: 0, images: 0, videos: 0 };
+
 var albums = [
   {
     font: "album_cover_rockett_88.jpg",
@@ -30,11 +23,26 @@ var albums = [
     url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
   },
 ];
-var album_id = 0;
+var images = [
+  "yj_main_5.jpg",
+  "yj_main_6.jpg",
+  "yj_main_7.jpg",
+  "yj_main_8.jpg",
+];
+
+var videos = [
+  "Y9QAvd7ZDzU", // Summer Days
+  "DuwOr4_74cg", // Uptown Gun Sounds
+  "5m7gpzyyX3Y", // The Movies
+  "R-wFKlSaMck", // Beast Mode
+  "ycg0657Pgb8", // C'est La Vie In NYC
+  "uC3PjsUqikE", // Date Night
+  "fanQHFAxXH0", // Afropunk
+];
 
 $(function () {
-  setVideo();
   setAlbum();
+  setVideo();
   handleLink("music");
   handleLink("videos");
   handleLink("bio");
@@ -77,6 +85,7 @@ $(function () {
       $("#menu_panel").hide();
     }
   });
+  setInterval(nextImage, 30000);
 });
 
 function nextID(arr, id) {
@@ -88,13 +97,6 @@ function prevID(arr, id) {
   if (--ids[id] < 0) {
     ids[id] = arr.length - 1;
   }
-}
-
-function setVideo() {
-  $("#video").attr(
-    "src",
-    "https://www.youtube.com/embed/" + videos[ids["videos"]]
-  );
 }
 
 function setAlbum() {
@@ -126,6 +128,21 @@ function setAlbum() {
   $(".album_cover").on("mouseout", function () {
     $(this).attr("src", $(this).data("cover"));
   });
+}
+
+function nextImage() {
+  ids["images"]++;
+  if (ids["images"] >= images.length) {
+    ids["images"] = 0;
+  }
+  $("#main_img").attr("src", "images/" + images[ids["images"]]);
+}
+
+function setVideo() {
+  $("#video").attr(
+    "src",
+    "https://www.youtube.com/embed/" + videos[ids["videos"]]
+  );
 }
 
 function handleLink(name) {
