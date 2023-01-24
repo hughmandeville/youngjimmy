@@ -43,6 +43,13 @@ var albums = [
     alt: "Come As You Are",
     url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
   },
+  {
+    font: "album_cover_sweet_maria.jpg",
+    back: "",
+    title: "Sweet Maria<br/>3/24/2023",
+    alt: "Sweet Maria",
+    url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
+  },
 ];
 var images = [
   "yj_main_5.jpg",
