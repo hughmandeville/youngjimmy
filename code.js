@@ -37,17 +37,17 @@ var albums = [
     url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
   },
   {
-    font: "album_cover_come_as_you_are.jpg",
+    font: "album_cover_sweet_maria.jpg",
     back: "",
-    title: "Come As You Are<br/>2/17/2023",
-    alt: "Come As You Are",
+    title: "Sweet Maria<br/>2/17/2023",
+    alt: "Sweet Maria",
     url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
   },
   {
-    font: "album_cover_sweet_maria.jpg",
+    font: "album_cover_come_as_you_are.jpg",
     back: "",
-    title: "Sweet Maria<br/>3/24/2023",
-    alt: "Sweet Maria",
+    title: "Come As You Are<br/> 3/24/2023",
+    alt: "Come As You Are",
     url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
   },
 ];
