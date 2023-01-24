@@ -36,6 +36,13 @@ var albums = [
     alt: "Pull Up to the Party",
     url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
   },
+  {
+    font: "album_cover_come_as_you_are.jpg",
+    back: "",
+    title: "Come As You Are<br/>2/17/2023",
+    alt: "Come As You Are",
+    url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
+  },
 ];
 var images = [
   "yj_main_5.jpg",
