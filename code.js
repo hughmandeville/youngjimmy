@@ -4,7 +4,7 @@ var albums = [
   {
     font: "album_cover_rockett_88_new.jpg",
     back: "",
-    title: "ROCKETT 88<br/>Debut Studio Album<br/>OUT NOW!",
+    title: "ROCKETT 88<br/>2/24/2023",
     alt: "ROCKETT 88",
     url: "https://music.apple.com/us/album/rockett-88/1562590289",
   },
@@ -27,6 +27,13 @@ var albums = [
     back: "",
     title: "YELLOW YELLOW",
     alt: "YELLOW YELLOW",
+    url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
+  },
+  {
+    font: "album_cover_pull_up_to_the_party.jpg",
+    back: "",
+    title: "Pull Up to the Party<br/>1/27/2023",
+    alt: "Pull Up to the Party",
     url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
   },
 ];
