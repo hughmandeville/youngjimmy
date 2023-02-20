@@ -4,7 +4,7 @@ var albums = [
   {
     font: "album_cover_rockett_88_new.jpg",
     back: "",
-    title: "ROCKETT 88<br/>2/24/2023",
+    title: "ROCKETT 88 (Deluxe)<br/>2023",
     alt: "ROCKETT 88",
     url: "https://music.apple.com/us/album/rockett-88/1562590289",
   },
@@ -34,7 +34,7 @@ var albums = [
     back: "",
     title: "Pull Up to the Party<br/>1/27/2023",
     alt: "Pull Up to the Party",
-    url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
+    url: "https://youngjimmy.lnk.to/pulluptotheparty",
   },
   {
     font: "album_cover_sweet_maria.jpg",
@@ -52,10 +52,13 @@ var albums = [
   },
 ];
 var images = [
-  "yj_main_5.jpg",
-  "yj_main_6.jpg",
-  "yj_main_7.jpg",
-  "yj_main_8.jpg",
+  //"yj_main_5.jpg",
+  //"yj_main_6.jpg",
+  //"yj_main_7.jpg",
+  //"yj_main_8.jpg",
+  "yj_main_9.jpg",
+  "yj_main_10.jpg",
+  "yj_main_11.jpg",
 ];
 
 var videos = [
@@ -106,7 +109,7 @@ $(function () {
     $(this).attr("src", "images/logo_hood_rock_records_red.png");
   });
   $("#logo_hood_rock").on("mouseout", function () {
-    $(this).attr("src", "images/logo_hood_rock_records_white.png");
+    $(this).attr("src", "images/logo_hood_rock_records_black.png");
   });
 
   window.addEventListener("resize", function () {
