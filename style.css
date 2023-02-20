@@ -18,8 +18,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: "KeepCalm", Geneva, Verdana, sans-serif;
-  background: #000000;
-  color: #ffffff;
+  background: #ffffff;
+  color: #000000;
 }
 
 a {
@@ -34,8 +34,8 @@ a {
   height: 48px;
   width: 100%;
   z-index: 100;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(220, 220, 220, 0.9);
+  background: rgba(220, 220, 220, 0.7);
 }
 
 #nav #young_jimmy_logo {
@@ -54,7 +54,7 @@ a {
   display: block;
   text-align: center;
   font-weight: 600;
-  color: #ffffff;
+  color: #757575;
 }
 
 #menu_panel {
@@ -65,7 +65,7 @@ a {
   left: 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   display: none;
-  background: #000000;
+  background: #EEEEEE;
 }
 
 .menu_item {
@@ -75,12 +75,12 @@ a {
   vertical-align: middle;
   font-family: "KeepCalm", "Ave Fedan", Edition, "Lucida Grande",
     "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-  border: 1px solid #333;
+  border: 1px solid #E0E0E0;
 }
 
 .menu_item:hover {
-  color: #ffff01;
-  background: #212121;
+  color: #0047f7;
+  background: #f4f4f4;
 }
 
 .menu_item .material-icons {
@@ -99,7 +99,7 @@ a {
 .button:hover,
 #menu_pulldown:hover,
 a:hover {
-  color: #ffff01;
+  color: #0047f7;
 }
 
 #menu_pulldown {
@@ -133,7 +133,6 @@ a:hover {
   z-index: 101;
   display: block;
   text-align: center;
-
 }
 
 .social_link {
@@ -203,6 +202,7 @@ h1 {
 .album_cover {
   width: 100%;
   max-width: 600px;
+  min-height: 350px;
 }
 
 #div_subscribe {
@@ -226,10 +226,9 @@ h1 {
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
-  color: #ffffff;
+  color: #000000;
   max-height: 200px;
   overflow-y: hidden;
-
 }
 
 #div_bio #read_more {
@@ -240,7 +239,7 @@ h1 {
   text-align: center;
   margin: 0;
   padding: 30px 0;
-  background-image: linear-gradient(to bottom, transparent, black);
+  background-image: linear-gradient(to bottom, transparent, #ffffff);
   cursor: pointer;
 }
 
@@ -259,7 +258,7 @@ h1 {
 
 .quote {
   padding: 20px;
-  background: #212121;
+  background: #EEEEEE;
   font-style: italic;
   font-family: Retina, Helvetica Neue, Helvetica, Arial, sans-serif;
 
@@ -267,7 +266,7 @@ h1 {
 
 #button_read_more:hover,
 #mc_embed_signup .button:hover {
-  color: #ffff01;
+  color: #0047f7;
   background: #858585;
 }
 
@@ -277,6 +276,7 @@ h1 {
   width: 80%;
   text-align: center;
 }
+
 
 @media all and (max-width: 1279px) {
 
