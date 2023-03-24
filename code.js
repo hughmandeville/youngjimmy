@@ -152,11 +152,11 @@ function setAlbum() {
     html =
       `<video class="album_cover" name="` +
       album["alt"] +
-      `"  autoplay loop>` +
+      `" autoplay loop muted>` +
       `<source src="videos/` +
       album["video"] +
       `">` +
-      `<img src="` +
+      `<img src="images/` +
       album["front"] +
       `" title="` +
       album["alt"] +
