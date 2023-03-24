@@ -2,7 +2,8 @@ var ids = { albums: 0, images: 0, videos: 0 };
 
 var albums = [
   {
-    front: "rockett-88.mov", // "album_cover_rockett_88_new.jpg",
+    video: "rockett-88.mov",
+    front: "album_cover_rockett_88_new.jpg",
     back: "",
     title: "ROCKETT 88 (Deluxe)<br/>2023",
     alt: "ROCKETT 88",
@@ -147,12 +148,20 @@ function setAlbum() {
     album["alt"] +
     `"></a>`;
 
-  if (album["front"].endsWith(".mov")) {
+  if (album["video"]) {
     html =
-      `<video class="album_cover" name="Rockett 88"  autoplay><source src="videos/` +
+      `<video class="album_cover" name="` +
+      album["alt"] +
+      `"  autoplay>` +
+      `<source src="videos/` +
+      album["video"] +
+      `">` +
+      `<img src="` +
       album["front"] +
-      `"></video>`;
-    console.log("video html: ", html);
+      `" title="` +
+      album["alt"] +
+      `"></img>` +
+      `</video>`;
   }
 
   html +=
