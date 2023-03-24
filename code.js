@@ -2,49 +2,49 @@ var ids = { albums: 0, images: 0, videos: 0 };
 
 var albums = [
   {
-    font: "album_cover_rockett_88_new.jpg",
+    front: "rockett-88.mov", // "album_cover_rockett_88_new.jpg",
     back: "",
     title: "ROCKETT 88 (Deluxe)<br/>2023",
     alt: "ROCKETT 88",
     url: "https://music.apple.com/us/album/rockett-88/1562590289",
   },
   {
-    font: "album_cover_rockett_88.jpg",
+    front: "album_cover_rockett_88.jpg",
     back: "album_back_rockett_88.jpg",
     title: "ROCKETT 88<br/>Debut Studio Album<br/>OUT NOW!",
     alt: "ROCKETT 88",
     url: "https://music.apple.com/us/album/rockett-88/1562590289",
   },
   {
-    font: "album_cover_beast_mode.jpg",
+    front: "album_cover_beast_mode.jpg",
     back: "",
     title: "BEAST MODE<br/>New Single",
     alt: "BEAST MODE",
     url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
   },
   {
-    font: "album_cover_yy.jpg",
+    front: "album_cover_yy.jpg",
     back: "",
     title: "YELLOW YELLOW",
     alt: "YELLOW YELLOW",
     url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
   },
   {
-    font: "album_cover_pull_up_to_the_party.jpg",
+    front: "album_cover_pull_up_to_the_party.jpg",
     back: "",
     title: "Pull Up to the Party<br/>1/27/2023",
     alt: "Pull Up to the Party",
     url: "https://youngjimmy.lnk.to/pulluptotheparty",
   },
   {
-    font: "album_cover_sweet_maria.jpg",
+    front: "album_cover_sweet_maria.jpg",
     back: "",
     title: "Sweet Maria<br/>2/17/2023",
     alt: "Sweet Maria",
     url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
   },
   {
-    font: "album_cover_come_as_you_are.jpg",
+    front: "album_cover_come_as_you_are.jpg",
     back: "",
     title: "Come As You Are<br/> 3/24/2023",
     alt: "Come As You Are",
@@ -136,21 +136,32 @@ function setAlbum() {
   let html =
     `<a href="` +
     album["url"] +
-    `"><img class="album_cover"
-  src="images/` +
-    album["font"] +
+    `"><img class="album_cover" src="images/` +
+    album["front"] +
     `" data-cover="images/` +
-    album["font"] +
+    album["front"] +
     `"` +
     ` data-back="images/` +
     album["back"] +
     `" alt="` +
     album["alt"] +
-    `"></a><div class="album_title"><a href="` +
+    `"></a>`;
+
+  if (album["front"].endsWith(".mov")) {
+    html =
+      `<video class="album_cover" name="Rockett 88"  autoplay><source src="videos/` +
+      album["front"] +
+      `"></video>`;
+    console.log("video html: ", html);
+  }
+
+  html +=
+    `<div class="album_title"><a href="` +
     album["url"] +
     `">` +
     album["title"] +
     `</a></div>`;
+
   $("#album").html(html);
   $(".album_cover").on("mouseover", function () {
     if ($(this).data("back") !== "images/") {
