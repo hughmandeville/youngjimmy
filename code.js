@@ -2,7 +2,7 @@ var ids = { albums: 0, images: 0, videos: 0 };
 
 var albums = [
   {
-    video: "rockett-88.mov",
+    video: "rockett-88.mp4",
     front: "album_cover_rockett_88_new.jpg",
     back: "",
     title: "ROCKETT 88 (Deluxe)<br/>2023",
@@ -155,7 +155,7 @@ function setAlbum() {
       `" autoplay loop muted>` +
       `<source src="videos/` +
       album["video"] +
-      `">` +
+      `" type="video/mp4">` +
       `<img src="images/` +
       album["front"] +
       `" title="` +
