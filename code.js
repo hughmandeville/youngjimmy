@@ -80,6 +80,7 @@ $(function () {
   handleLink("videos");
   handleLink("bio");
   handleLink("subscribe");
+  handleLink("merch");
   $("#menu_pulldown").on("click", function () {
     $("#menu_panel").toggle();
   });

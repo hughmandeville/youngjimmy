@@ -99,4 +99,4 @@ scp style.css youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp images/poster_show_jun_12_2018.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 
 #scp videos/yj.mp4 youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/videos/
-scp videos/rockett-88.mp4 youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/videos/
+#scp videos/rockett-88.mp4 youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/videos/
