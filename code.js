@@ -4,7 +4,7 @@ var albums = [
   {
     video: "rockett-88.mp4",
     front: "album_cover_rockett_88_new.jpg",
-    back: "",
+    back: "album_back_rockett_88_new.jpg",
     title: "ROCKETT 88 (Deluxe)<br/>2023",
     alt: "ROCKETT 88",
     url: "https://music.apple.com/us/album/rockett-88/1562590289",
