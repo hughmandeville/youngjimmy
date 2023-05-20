@@ -4,14 +4,14 @@ var albums = [
   {
     video: "rockett-88.mp4",
     front: "album_cover_rockett_88_new.jpg",
-    back: "album_back_rockett_88_new.jpg",
+    back: "",
     title: "ROCKETT 88 (Deluxe)<br/>2023",
     alt: "ROCKETT 88",
     url: "https://music.apple.com/us/album/rockett-88/1562590289",
   },
   {
     front: "album_cover_rockett_88.jpg",
-    back: "album_back_rockett_88.jpg",
+    back: "album_back_rockett_88_new.jpg",
     title: "ROCKETT 88<br/>Debut Studio Album<br/>OUT NOW!",
     alt: "ROCKETT 88",
     url: "https://music.apple.com/us/album/rockett-88/1562590289",
@@ -151,7 +151,9 @@ function setAlbum() {
 
   if (album["video"]) {
     html =
-      `<video class="album_cover" name="` +
+      `<a href="` +
+      album["url"] +
+      `"><video class="album_cover" name="` +
       album["alt"] +
       `" autoplay loop muted>` +
       `<source src="videos/` +
@@ -162,7 +164,7 @@ function setAlbum() {
       `" title="` +
       album["alt"] +
       `"></img>` +
-      `</video>`;
+      `</video></a>`;
   }
 
   html +=
