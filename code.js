@@ -2,16 +2,15 @@ var ids = { albums: 0, images: 0, videos: 0 };
 
 var albums = [
   {
-    video: "rockett-88.mp4",
     front: "album_cover_rockett_88_new.jpg",
-    back: "",
+    back: "album_back_rockett_88_new.jpg",
     title: "ROCKETT 88 (Deluxe)<br/>2023",
     alt: "ROCKETT 88",
-    url: "https://music.apple.com/us/album/rockett-88/1562590289",
+    url: "https://music.apple.com/us/album/rockett-88-deluxe/1688510860",
   },
   {
     front: "album_cover_rockett_88.jpg",
-    back: "album_back_rockett_88_new.jpg",
+    back: "album_back_rockett_88.jpg",
     title: "ROCKETT 88<br/>Debut Studio Album<br/>OUT NOW!",
     alt: "ROCKETT 88",
     url: "https://music.apple.com/us/album/rockett-88/1562590289",
