@@ -62,14 +62,16 @@ var images = [
 ];
 
 var videos = [
+  "tcNazqG77xA", // Come as You Are
+  "BLHhZICQm1A", // Sweet Maria
   "W8ey9YNbEAM", // Pull Up To The Party
   "Y9QAvd7ZDzU", // Summer Days
-  "DuwOr4_74cg", // Uptown Gun Sounds
+  // "DuwOr4_74cg", // Uptown Gun Sounds
   "5m7gpzyyX3Y", // The Movies
   "R-wFKlSaMck", // Beast Mode
-  "ycg0657Pgb8", // C'est La Vie In NYC
+  // "ycg0657Pgb8", // C'est La Vie In NYC
   "uC3PjsUqikE", // Date Night
-  "fanQHFAxXH0", // Afropunk
+  // "fanQHFAxXH0", // Afropunk
 ];
 
 $(function () {
