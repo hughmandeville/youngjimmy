@@ -125,7 +125,6 @@ a:hover {
   width: 240px;
 }
 
-
 #social_links {
   position: fixed;
   right: 20px;
@@ -316,4 +315,32 @@ h1 {
   .big_img {
     width: 70%;
   }
+}
+
+#div_press {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#div_press ul {
+  list-style-type: none;
+}
+
+.press_logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  max-width: 640px;
+}
+
+.press_logo {
+  margin: 20px;
+}
+
+.press_logo img {
+  max-height: 100px;
+  max-width: 150px;
 }
