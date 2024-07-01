@@ -62,8 +62,8 @@ var images = [
 ];
 
 var videos = [
+  "xbdNrsjIkBY", // Sweet Maria
   "tcNazqG77xA", // Come as You Are
-  "BLHhZICQm1A", // Sweet Maria
   "W8ey9YNbEAM", // Pull Up To The Party
   "Y9QAvd7ZDzU", // Summer Days
   // "DuwOr4_74cg", // Uptown Gun Sounds
@@ -80,6 +80,7 @@ $(function () {
   handleLink("music");
   handleLink("videos");
   handleLink("bio");
+  handleLink("press");
   handleLink("subscribe");
   handleLink("merch");
   $("#menu_pulldown").on("click", function () {
