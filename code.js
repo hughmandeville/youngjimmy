@@ -2,7 +2,14 @@ var ids = { albums: 0, images: 0, videos: 0 };
 
 var albums = [
   {
-    front: "album_cover_rockett_88_new.jpg",
+    front: "album_cover_heavy.png",
+    back: "",
+    title: "HEAVY. (Feat. Kam Franklin)",
+    alt: "Heavy.",
+    url: "",
+  },
+  {
+    front: "album_cover_rockett_88_new.png",
     back: "album_back_rockett_88_new.jpg",
     title: "ROCKETT 88 (Deluxe)<br/>2023",
     alt: "ROCKETT 88",
