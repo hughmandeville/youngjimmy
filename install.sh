@@ -46,6 +46,7 @@ scp style.css youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp images/yj_main_2_alone_3.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/album_back_rockett_88_new.gif youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/album_back_rockett_88_new.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
+#scp images/album_back_rockett_88_new.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/album_cover_beast_mode.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/album_cover_heavy.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/album_cover_rockett_88.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
@@ -59,6 +60,7 @@ scp style.css youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp images/logo_hood_rock_records_red.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 
 #scp images/promo_yj_black.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
+#scp images/yearbook_chris.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/yj_main_3.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/yj_main_4.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/yj_main_5.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/

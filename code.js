@@ -9,7 +9,7 @@ var albums = [
     url: "",
   },
   {
-    front: "album_cover_rockett_88_new.png",
+    front: "album_cover_rockett_88_new.jpg",
     back: "album_back_rockett_88_new.jpg",
     title: "ROCKETT 88 (Deluxe)<br/>2023",
     alt: "ROCKETT 88",
