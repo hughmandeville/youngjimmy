@@ -9,7 +9,7 @@ var albums = [
     url: "",
   },
   {
-    front: "album_cover_rockett_88_new.jpg",
+    front: "album_cover_rocket_88_new_animated.png",
     back: "album_back_rockett_88_new.jpg",
     title: "ROCKETT 88 (Deluxe)<br/>2023",
     alt: "ROCKETT 88",
@@ -69,8 +69,8 @@ var images = [
 ];
 
 var videos = [
+  "ulNuhGaIG5A", // Come as You Are
   "xbdNrsjIkBY", // Sweet Maria
-  "tcNazqG77xA", // Come as You Are
   "W8ey9YNbEAM", // Pull Up To The Party
   "Y9QAvd7ZDzU", // Summer Days
   // "DuwOr4_74cg", // Uptown Gun Sounds

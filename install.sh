@@ -47,6 +47,7 @@ scp style.css youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp images/album_back_rockett_88_new.gif youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/album_back_rockett_88_new.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/album_back_rockett_88_new.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
+#scp images/album_cover_rockett_88_new_animated.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/album_cover_beast_mode.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/album_cover_heavy.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/album_cover_rockett_88.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
