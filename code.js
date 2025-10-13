@@ -2,18 +2,18 @@ var ids = { albums: 0, images: 0, videos: 0 };
 
 var albums = [
   {
-    front: "album_cover_heavy.png",
-    back: "",
-    title: "HEAVY. (Feat. Kam Franklin)",
-    alt: "Heavy.",
-    url: "",
-  },
-  {
     front: "album_cover_rockett_88_new_animated.png",
     back: "album_back_rockett_88_new.jpg",
     title: "ROCKETT 88 (Deluxe)<br/>2023",
     alt: "ROCKETT 88",
     url: "https://music.apple.com/us/album/rockett-88-deluxe/1688510860",
+  },
+  {
+    front: "album_cover_heavy.png",
+    back: "",
+    title: "HEAVY. (Feat. Kam Franklin)",
+    alt: "Heavy.",
+    url: "",
   },
   {
     front: "album_cover_rockett_88.jpg",
@@ -53,9 +53,16 @@ var albums = [
   {
     front: "album_cover_come_as_you_are.jpg",
     back: "",
-    title: "Come As You Are<br/> 3/24/2023",
+    title: "Come As You Are<br/>3/24/2023",
     alt: "Come As You Are",
     url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
+  },
+  {
+    front: "album_cover_to_my_chagrin.png",
+    back: "",
+    title: "Sankofa - To My Chagrin<br/>2007",
+    alt: "To My Chagrin",
+    url: "https://music.apple.com/us/album/to-my-chagrin-2007-ep/1839560416",
   },
 ];
 var images = [
