@@ -53,7 +53,9 @@ scp style.css youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp images/album_cover_rockett_88.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/album_back_rockett_88.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/album_cover_rockett_88_new.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
+#scp images/album_cover_to_my_chagrin.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/album_cover_to_my_chagrin.png youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
+#scp images/album_back_to_my_chagrin.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/album_cover_pull_up_to_the_party.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/album_cover_come_as_you_are.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/album_cover_sweet_maria.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
@@ -107,8 +109,10 @@ scp style.css youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/
 #scp images/album_back_hood_rock_2.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/album_cover_sankofa.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 
+
 #scp images/album_back_yy.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/album_cover_yy.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
+
 
 #scp images/poster_show_aug_12_2017.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/
 #scp images/poster_show_aug_12_2017-after.jpg youngjimmy777@107.180.44.139:/home/youngjimmy777/public_html/images/

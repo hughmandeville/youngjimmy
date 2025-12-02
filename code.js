@@ -2,7 +2,7 @@ var ids = { albums: 0, images: 0, videos: 0 };
 
 var albums = [
   {
-    front: "album_cover_rockett_88_new_animated.png",
+    front: "album_cover_rockett_88_new.jpg",
     back: "album_back_rockett_88_new.jpg",
     title: "ROCKETT 88 (Deluxe)<br/>2023",
     alt: "ROCKETT 88",
@@ -31,10 +31,11 @@ var albums = [
   },
   {
     front: "album_cover_yy.jpg",
-    back: "",
-    title: "YELLOW YELLOW",
-    alt: "YELLOW YELLOW",
-    url: "https://itunes.apple.com/ca/artist/young-jimmy/579723816",
+    back: "album_back_yy.jpg",
+    title: "Yellow Yellow (10th Anniversary)",
+    alt: "Yellow Yellow",
+    url:
+      "https://music.apple.com/us/album/yellow-yellow-10th-anniversary-ep/1855382860",
   },
   {
     front: "album_cover_pull_up_to_the_party.jpg",
@@ -59,7 +60,7 @@ var albums = [
   },
   {
     front: "album_cover_to_my_chagrin.png",
-    back: "",
+    back: "album_back_to_my_chagrin.jpg",
     title: "Sankofa - To My Chagrin<br/>2007",
     alt: "To My Chagrin",
     url: "https://music.apple.com/us/album/to-my-chagrin-2007-ep/1839560416",
